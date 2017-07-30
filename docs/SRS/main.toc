@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}About the Client}{3}
+\contentsline {subsection}{\numberline {1.2}Domain Description}{3}
+\contentsline {subsection}{\numberline {1.3}Current System}{3}
+\contentsline {subsection}{\numberline {1.4}Objectives and Goals}{3}
+\contentsline {subsection}{\numberline {1.5}Scope of the Project}{4}
+\contentsline {subsection}{\numberline {1.6}Assumptions and Constraints}{4}
+\contentsline {subsubsection}{\numberline {1.6.1}Assumptions}{4}
+\contentsline {subsubsection}{\numberline {1.6.2}Constraints}{4}
+\contentsline {section}{\numberline {2}Feasibility Study}{5}
+\contentsline {subsection}{\numberline {2.1}Web Based System}{5}
+\contentsline {subsubsection}{\numberline {2.1.1}Operational Feasibility}{5}
+\contentsline {subsubsection}{\numberline {2.1.2}Cultural Feasibility}{6}
+\contentsline {subsubsection}{\numberline {2.1.3}Economical Feasibility}{6}
+\contentsline {paragraph}{\textbf {Cost Benefit Analysis}}{6}
+\contentsline {paragraph}{\textbf {Costs}}{6}
+\contentsline {subsubsection}{\numberline {2.1.4}Technical Feasibility}{6}
+\contentsline {subsubsection}{\numberline {2.1.5}Schedule feasibility}{7}
+\contentsline {subsubsection}{\numberline {2.1.6}Legal Feasibility}{7}
+\contentsline {section}{\numberline {3}Requirements}{9}
+\contentsline {subsection}{\numberline {3.1}Stakeholders}{9}
+\contentsline {subsection}{\numberline {3.2}Use cases}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Use case Diagram}{10}
+\contentsline {subsection}{\numberline {3.3}Functional Requirements}{11}
+\contentsline {subsection}{\numberline {3.4}Non-Functional Requirements}{11}
+\contentsline {section}{\numberline {4}System's Architecture}{13}
+\contentsline {subsection}{\numberline {4.1}Components and their Responsibilities}{14}
+\contentsline {subsection}{\numberline {4.2}Component Interactions}{14}
+\contentsline {section}{\numberline {5}System's Design}{15}
+\contentsline {subsection}{\numberline {5.1}Class Diagrams}{15}
+\contentsline {subsection}{\numberline {5.2}Sequence Diagrams}{15}
+\contentsline {subsection}{\numberline {5.3}User Interface Flow Diagram}{15}
+\contentsline {subsection}{\numberline {5.4}Entity Relationship Diagram}{16}
+\contentsline {subsection}{\numberline {5.5}Data Flow Diagram}{17}
