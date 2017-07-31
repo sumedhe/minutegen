@@ -6,9 +6,12 @@
 \usepackage{chngpage}
 \usepackage{fancyhdr}
 \usepackage{rotating}
+\usepackage[thinlines]{easytable}
 \bibliographystyle{plain}
 \usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,a4paper]{geometry} % Page margins
-%\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{fontspec}
+%\setsansfont{Roboto}
+\renewcommand{\familydefault}{\sfdefault}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -31,7 +34,6 @@
 				\huge Group No: 10 \\}
 		\end{adjustwidth}
 	\egroup
-	
 	%\maketitle
 	\newpage
 	
@@ -219,8 +221,184 @@
 	
 	\subsection{Use cases}
 	
-	\textbf{Use case narratives}
-	We need to have 15 use case narratives.
+		\textbf{Use case narratives}\\
+		%We need to have 15 use case narratives.\\
+
+		% Start Tables
+		\bgroup
+			\def\arraystretch{2}% row height
+		
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC01}  \\ \hline
+					Name & Login to the System \\ \hline 
+					Description & Member login to the system \\ \hline 
+					Primary actors & Member \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & 1. Enter username. \\
+												& 2. Enter password.\\ \hline 
+					Main Flow & 1. Enter username \\
+										& 2. Enter Password \\  
+										& 3. The use case ends. \\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC02}  \\ \hline
+					Name & Check the status of a minute matter \\ \hline 
+					Description & Member checks whether the minute matter is approved  , rejected or in ‘ hold on’ status \\ \hline 
+					Primary actors & Member \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline 
+					Main Flow & 1. Log into the system. \\
+										&	2.1. Search the matter in the selected criteria. \\
+										&	2.1.1. View the matter \& check the matter status (approved , rejected, hold on) \\
+										&	2.1.2. Searched matter does not exist.\\ 
+										&	2.2. View existing matter \& check the status.  \\
+										&	3. The use case ends.\\ \hline		
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC03}  \\ \hline
+					Name & Check the stage where the minute matter is discussed. \\ \hline 
+					Description & Member checks in which level the minute matter is being discussed (IUD,Academic Syndicate,Board of management or senate) \\ \hline 
+					Primary actors & Member \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system. \\
+										& 2.1 Search the matter in the selected criteria.\\
+										& 2.1.1 View the matter \& check the level of the matter where it is being discussed. \\
+										& 2.1.2 Searched matter does not exist. \\
+										& 2.2 View existing matter \& check the level of the matter\\
+										& 3. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+				
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC04}  \\ \hline
+					Name & Search previous minute matters.\\ \hline 
+					Description & Member checks  matters of previous minutes.\\ \hline 
+					Primary actors & Member \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system.\\
+							& 2. Search the matter in the selected criteria.\\ 
+							& 2.1  Search using a keyword \\
+							& 2.2  Search  using minute ID\\
+							& 2.3  Searched matter does not exist\\
+							& 3. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC05}  \\ \hline
+					Name & Submit memo \\ \hline 
+					Description & Submitting  memos (a new matter )to the system \\ \hline 
+					Primary actors & Member \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system.\\
+										& 2. Enter the new memo. \\
+										& 3. Save the entered memo.\\
+										& 4. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC06}  \\ \hline
+					Name & Discuss any other business II \\ \hline 
+					Description & Only a staff member can view any other business II \\ \hline 
+					Primary actors & Staff Member \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system.\\
+										& 2. View any other business II \\
+										& 3. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC07}  \\ \hline
+					Name & Review minutes \\ \hline 
+					Description & Director review the minute document \\ \hline 
+					Primary actors & Director \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system.\\
+										& 2. View the minute document before the  document is emailed. \\
+										& 3. Mark changes that should be done.\\
+										& 4. Save the edited changes \\
+										& 5.End use case \\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC08}  \\ \hline
+					Name & Administrating the System \\ \hline 
+					Description & The whole system is administered by The Secretary \\ \hline 
+					Primary actors & Secretary \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow &	1. Log into the system.\\
+										& 2. Administer the System ** \\
+										& 3. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC09}  \\ \hline
+					Name & Generate/Edit the minute document. \\ \hline 
+					Description & Secretary Generate/Edit the minute document \\ \hline 
+					Primary actors & Secretary \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow &	1. Log into the system.\\
+										& 2.1 Generate the minute document\\
+										& 2.1.1 add memos\\
+										& 2.1.2 add previously discussed matters for their 2nd hearing \\
+										& 2.1.3 add matters for any other business II\\
+										& 2.2 Edit the minute document \\
+										& 2.2.1 Remove unwanted matters\\
+										& 2.2.2 Amendment of matters\\
+										& 3. Save the edited/generated  matters.\\
+										& 4. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC10}  \\ \hline
+					Name & Recommend matters after first hearing \\ \hline 
+					Description & Secretary recommend new matters after the first hearing \\ \hline 
+					Primary actors & Secretary \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system.\\
+										& 2. Recommend new matters as memo cards.\\
+										& 3. Save the edited changes \\
+										& 4. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+			
+			\begin{tabular}{|p{4cm}|p{8cm}|} \hline 
+					\textbf{Use case ID} & \textbf{UC11}  \\ \hline
+					Name & Extract matters and submit to the academic syndicate \\ \hline 
+					Description & Secretary Extract the matters which are approved , amended for further discussions or fast tracked matters and submit them to the academic syndicate \\ \hline 
+					Primary actors & Secretary \\ \hline 
+					Secondary actors & None \\ \hline 
+					Pre Conditions & None \\ \hline
+					Main Flow & 1. Log into the system.\\
+							& 2.1. Select all approved matters\\
+							& 2.2. Select all matters to be fast tracked\\
+							& 2.3. Select all the matters that are amended for further discussions. \\
+							& 3. Save them separately\\
+							& 4. Edit if needed\\
+							& 5. Save all the changes\\
+							& 6. Submit to the academic syndicate\\
+							& 4. The use case ends.\\ \hline
+					Postconditions & None \\ \hline 
+			\end{tabular} \\[.6cm]
+		
+	\egroup
 	\newpage      
 	
 	\subsubsection{Use case Diagram}
@@ -290,8 +468,23 @@
 	System components must be easy to modify, to correct faults and to adapt when new requirements are observed. System must contain separate storage for testing with real data before changed components active for the system’s use.\newline
 	
 	\newpage
-	
+
 	\section{System's Architecture}
+	
+	\subsection{Components and their Responsibilities}
+	\begin{itemize}
+		\item Login \& authentication - Validates the credentials of the user
+		\item UAAPI - Assign access privileges and roles to the user.
+		\item Control panel - Generating the system log.
+		\item User management interface - Add/Edit Users.
+		\item Restricted viewer - Generate details available for the normal user
+		\item Data requesting and inserting layer - Validates whether the data is in correct format.
+		\item Data access layer - Check user privileges
+		\item Security layer - Establishing security measures
+	\end{itemize}
+	
+	\subsection{Component Interactions}
+
 	\begin{figure}[h!]
 		\begin{center}
 			\includegraphics[width=6in,height=3in]{img/component-diagram}
@@ -301,6 +494,7 @@
 	\end{figure}
 	\vspace{2cm}
 	
+	\newpage
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=5in,height=3in]{img/higher-level-architecture}
@@ -308,58 +502,129 @@
 		\caption{The Higher level Architecture}
 		\label{fig:architecture}
 	\end{figure}
-	\vspace{2cm}
-
-	\subsection{Components and their Responsibilities}
-	\begin{itemize}
-		\item Login \& authentication - Validates the credentials of the user
-		\item UAAPI - Assign access privileges and roles to the user.
-		\item Control panel - Generating the system log.
-		\item User management interface - Add/Edit Users.
-		
-		\item Restricted viewer - Generate details available for the normal user
-		\item Data requesting and inserting layer - Validates whether the data is in correct format.
-		\item Data access layer - Check user privileges
-		\item Security layer - Establishing security measures
-	\end{itemize}
-	
-	\subsection{Component Interactions}
-	Should have an image
 	
 	\newpage
 	
 	\section{System's Design}
 	
 	\subsection{Class Diagrams}
+		\vspace{1cm}
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=6in,height=4in]{img/class-diagram}
+			\end{center}
+			\caption{Class Diagram}
+			\label{fig:class-diagram}
+		\end{figure}
+		\newpage
 	
 	\subsection{Sequence Diagrams}
-	For few important functions we should have the sequence diagrams.(4 diagrams)
-	\textbf{Log in}\newline
-	When a user who has access to the system enters his username and password, the system checks if the entered credentials tally with that in the database. Once the credentials are verified the user could log into the system and perform necessary functions.\newline
+		\textbf{Log in}\newline
+			
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=6in,height=4in]{img/seq-login}
+			\end{center}
+			\caption{Log In}
+			\label{fig:Log In}
+		\end{figure}
+		\vspace{1.5cm}
+		
+		 Users who are signed up with system can log into the system by entering their username and password.First there username is verified by the database and then the password is matched with the username.\newline
+		Then, system will determine to which type (student, lecturer, etc.) the user belongs to, using the username.Then  the user is provided with a suitable view of home screen according to their type.\newline
+
+		\newpage
+		
+		\textbf{Search Matter}\newline
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=6in,height=4in]{img/seq-search-matter}
+			\end{center}
+			\caption{Search Matter}
+			\label{fig:search-matter}
+		\end{figure}
+		        
+		Each matter stored in the matter database are assigned with an unique ID (primary key).Users can use these matter IDs to search matters.\newline
+		
+		Within the web application we can find a search bar in top of every window. By entering matter IDs on these search bar users can get data (eg: statuses of the matters) of the matters on a search result page. \newline
+		
+		A matter will be displayed on the search result page if the entered ID is correct  unless it have been deleted from the database nor the database is not updated with the minute at the point.\newline
+		\newpage
+		
+		\textbf{Edit Matter}\newline
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=6in,height=5in]{img/seq-edit-matter}
+			\end{center}
+			\caption{Edit Matter}
+			\label{fig:edit-matter}
+		\end{figure}
+		        
+		When its comes to editing a matter, users can amend matters or delete matters from the database.Users can select a matter to be edited using the matter view window or by searching for matter by its ID.\newline
+		When amending the users get the chance to edit the content of a matter.
+		When a minute is edited(amended or deleted) first the matters database is updated and then if the relevant edited matter is included in a minute then with the updated matter, minute is also get updated.\newline
+		\newpage
+		
+		\textbf{Review Matter}\newline
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=6in,height=4in]{img/seq-review-matter}
+			\end{center}
+			\caption{Review-Matter}
+			\label{fig:review-matter}
+		\end{figure}
+		        
+		Users have to select a matter before reviewing, for that they can either search for it using matter ID or select a matter in the matters view window.By selecting a matter the user can get all the necessary data of a matter stored in the matter database.By using the matter data users can review the matter and if the matter is suitable to be added to the minute they can update the minute by adding the matter into the minute.
+		
+		\newpage
 	
 	\subsection{User Interface Flow Diagram}
-	
+		\vspace{2cm}
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=6in,height=4in]{img/user-interface-flow}
+			\end{center}
+			\caption{User Interface Flow Diagram}
+			\label{fig:user-interface-flow}
+		\end{figure}
 	\newpage
+
 	\subsection{Entity Relationship Diagram}
-	
-	\begin{figure}[h]
-		\begin{center}
-			\includegraphics[width=6in,height=4in]{img/entity-relationship-diagram}
-		\end{center}
-		\caption{The Entity Relationship Diagram}
-		\label{fig:ERD}
-	\end{figure}
-	\newpage  
+		\vspace{2cm}
+		\begin{figure}[h]
+			\begin{center}
+				\includegraphics[width=6in,height=4in]{img/entity-relationship-diagram}
+			\end{center}
+			\caption{The Entity Relationship Diagram}
+			\label{fig:ERD}
+		\end{figure}
+		\newpage  
 	
 	\subsection{Data Flow Diagram}
+		\vspace{2cm}
+		\begin{figure}[h]
+			\begin{center}
+				\includegraphics[width=5in,height=3in]{img/data-flow-diagram}
+			\end{center}
+			\caption{Data Flow Diagram}
+			\label{fig:dataflow}
+		\end{figure}
+		\newpage
 	
-	\begin{figure}[h]
-		\begin{center}
-			\includegraphics[width=5in,height=3in]{img/data-flow-diagram}
-		\end{center}
-		\caption{Data Flow Diagram}
-		\label{fig:dataflow}
-	\end{figure}
-	\newpage  
+		%Group details
+		\textbf{Group Details}\\
+		\vspace{1cm}\\	
+				\bgroup
+					\def\arraystretch{2}% row height
+					\begin{tabular}{|p{.5cm}|p{5cm}|p{4cm}|p{3cm}|} \hline 
+					  & \textbf{Full Name}  & \textbf{Registration Number} & \textbf{Index No } \\ \hline
+					1) & D.M.S Dissanayake	 & 2015/CS/038 & 15000389\\ \hline
+					2) & H. Chamika  P.  Hewainna & 2015/IS/028 & 15020282\\ \hline
+					3) & S.D.P Devotta & 2015/CS/031 & 15000311\\ \hline
+					4) & Samadhi S.P Abeywickrama & 2015/CS/004 & 15000044\\ \hline
+					5) & B.C.P.S.K. Peiris	 & 2015/CS/094 & 15000941\\ \hline
+					6) & G.Y.A.C Sarathchandra & 2015/IS/069 & 15020691\\ \hline
+					\end{tabular} \\[.6cm]
+				\egroup
 	
 \end{document}

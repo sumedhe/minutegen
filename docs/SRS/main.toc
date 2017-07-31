@@ -20,15 +20,15 @@
 \contentsline {section}{\numberline {3}Requirements}{9}
 \contentsline {subsection}{\numberline {3.1}Stakeholders}{9}
 \contentsline {subsection}{\numberline {3.2}Use cases}{9}
-\contentsline {subsubsection}{\numberline {3.2.1}Use case Diagram}{10}
-\contentsline {subsection}{\numberline {3.3}Functional Requirements}{11}
-\contentsline {subsection}{\numberline {3.4}Non-Functional Requirements}{11}
-\contentsline {section}{\numberline {4}System's Architecture}{13}
-\contentsline {subsection}{\numberline {4.1}Components and their Responsibilities}{14}
-\contentsline {subsection}{\numberline {4.2}Component Interactions}{14}
-\contentsline {section}{\numberline {5}System's Design}{15}
-\contentsline {subsection}{\numberline {5.1}Class Diagrams}{15}
-\contentsline {subsection}{\numberline {5.2}Sequence Diagrams}{15}
-\contentsline {subsection}{\numberline {5.3}User Interface Flow Diagram}{15}
-\contentsline {subsection}{\numberline {5.4}Entity Relationship Diagram}{16}
-\contentsline {subsection}{\numberline {5.5}Data Flow Diagram}{17}
+\contentsline {subsubsection}{\numberline {3.2.1}Use case Diagram}{18}
+\contentsline {subsection}{\numberline {3.3}Functional Requirements}{19}
+\contentsline {subsection}{\numberline {3.4}Non-Functional Requirements}{19}
+\contentsline {section}{\numberline {4}System's Architecture}{21}
+\contentsline {subsection}{\numberline {4.1}Components and their Responsibilities}{21}
+\contentsline {subsection}{\numberline {4.2}Component Interactions}{21}
+\contentsline {section}{\numberline {5}System's Design}{23}
+\contentsline {subsection}{\numberline {5.1}Class Diagrams}{23}
+\contentsline {subsection}{\numberline {5.2}Sequence Diagrams}{24}
+\contentsline {subsection}{\numberline {5.3}User Interface Flow Diagram}{28}
+\contentsline {subsection}{\numberline {5.4}Entity Relationship Diagram}{29}
+\contentsline {subsection}{\numberline {5.5}Data Flow Diagram}{30}

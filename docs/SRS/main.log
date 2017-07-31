@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.7.29)  30 JUL 2017 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.7.29)  1 AUG 2017 04:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,7 +367,122 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box37
 \rot@mess@toks=\toks27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/easy/easytable.sty
+Document Style `easytable' v1.0 <2001/06/13>.
+(/usr/share/texlive/texmf-dist/tex/latex/easy/easy.sty
+Document Style `easy' v1.1 <2001/05/31>.
+Package: easy 2001/05/31 v1.1
+\@easy@level=\count110
+\@easy@ncol=\count111
+\@easy@nrow=\count112
+\@easy@cnt=\count113
+\@easy@boxviii=\box38
+\@easy@minxviii=\dimen151
+\@easy@minyviii=\dimen152
+\@easy@maxxviii=\dimen153
+\@easy@maxyviii=\dimen154
+\@easy@boxvii=\box39
+\@easy@minxvii=\dimen155
+\@easy@minyvii=\dimen156
+\@easy@maxxvii=\dimen157
+\@easy@maxyvii=\dimen158
+\@easy@boxvi=\box40
+\@easy@minxvi=\dimen159
+\@easy@minyvi=\dimen160
+\@easy@maxxvi=\dimen161
+\@easy@maxyvi=\dimen162
+\@easy@boxv=\box41
+\@easy@minxv=\dimen163
+\@easy@minyv=\dimen164
+\@easy@maxxv=\dimen165
+\@easy@maxyv=\dimen166
+\@easy@boxiv=\box42
+\@easy@minxiv=\dimen167
+\@easy@minyiv=\dimen168
+\@easy@maxxiv=\dimen169
+\@easy@maxyiv=\dimen170
+\@easy@boxiii=\box43
+\@easy@minxiii=\dimen171
+\@easy@minyiii=\dimen172
+\@easy@maxxiii=\dimen173
+\@easy@maxyiii=\dimen174
+\@easy@boxii=\box44
+\@easy@minxii=\dimen175
+\@easy@minyii=\dimen176
+\@easy@maxxii=\dimen177
+\@easy@maxyii=\dimen178
+\@easy@boxi=\box45
+\@easy@minxi=\dimen179
+\@easy@minyi=\dimen180
+\@easy@maxxi=\dimen181
+\@easy@maxyi=\dimen182
+\@easy@hsizexxx=\dimen183
+\@easy@vsizexxx=\dimen184
+\@easy@hsizexxix=\dimen185
+\@easy@vsizexxix=\dimen186
+\@easy@hsizexxviii=\dimen187
+\@easy@vsizexxviii=\dimen188
+\@easy@hsizexxvii=\dimen189
+\@easy@vsizexxvii=\dimen190
+\@easy@hsizexxvi=\dimen191
+\@easy@vsizexxvi=\dimen192
+\@easy@hsizexxv=\dimen193
+\@easy@vsizexxv=\dimen194
+\@easy@hsizexxiv=\dimen195
+\@easy@vsizexxiv=\dimen196
+\@easy@hsizexxiii=\dimen197
+\@easy@vsizexxiii=\dimen198
+\@easy@hsizexxii=\dimen199
+\@easy@vsizexxii=\dimen256
+\@easy@hsizexxi=\dimen257
+\@easy@vsizexxi=\dimen258
+\@easy@hsizexx=\dimen259
+\@easy@vsizexx=\dimen260
+\@easy@hsizexix=\dimen261
+\@easy@vsizexix=\dimen262
+\@easy@hsizexviii=\dimen263
+\@easy@vsizexviii=\dimen264
+\@easy@hsizexvii=\dimen265
+\@easy@vsizexvii=\dimen266
+\@easy@hsizexvi=\dimen267
+\@easy@vsizexvi=\dimen268
+\@easy@hsizexv=\dimen269
+\@easy@vsizexv=\dimen270
+\@easy@hsizexiv=\dimen271
+\@easy@vsizexiv=\dimen272
+\@easy@hsizexiii=\dimen273
+\@easy@vsizexiii=\dimen274
+\@easy@hsizexii=\dimen275
+\@easy@vsizexii=\dimen276
+\@easy@hsizexi=\dimen277
+\@easy@vsizexi=\dimen278
+\@easy@hsizex=\dimen279
+\@easy@vsizex=\dimen280
+\@easy@hsizeix=\dimen281
+\@easy@vsizeix=\dimen282
+\@easy@hsizeviii=\dimen283
+\@easy@vsizeviii=\dimen284
+\@easy@hsizevii=\dimen285
+\@easy@vsizevii=\dimen286
+\@easy@hsizevi=\dimen287
+\@easy@vsizevi=\dimen288
+\@easy@hsizev=\dimen289
+\@easy@vsizev=\dimen290
+\@easy@hsizeiv=\dimen291
+\@easy@vsizeiv=\dimen292
+\@easy@hsizeiii=\dimen293
+\@easy@vsizeiii=\dimen294
+\@easy@hsizeii=\dimen295
+\@easy@vsizeii=\dimen296
+\@easy@hsizei=\dimen297
+\@easy@vsizei=\dimen298
+\@easy@dash@len=\dimen299
+\@easy@dash@sep=\dimen300
+)
+Package: easytable 2001/05/31v1.1
+\@tab@size@rule=\dimen301
+\@tab@size@dash=\dimen302
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -380,17 +495,17 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count110
-\Gm@cntv=\count111
-\c@Gm@tempcnt=\count112
-\Gm@bindingoffset=\dimen151
-\Gm@wd@mp=\dimen152
-\Gm@odd@mp=\dimen153
-\Gm@even@mp=\dimen154
-\Gm@layoutwidth=\dimen155
-\Gm@layoutheight=\dimen156
-\Gm@layouthoffset=\dimen157
-\Gm@layoutvoffset=\dimen158
+\Gm@cnth=\count114
+\Gm@cntv=\count115
+\c@Gm@tempcnt=\count116
+\Gm@bindingoffset=\dimen303
+\Gm@wd@mp=\dimen304
+\Gm@odd@mp=\dimen305
+\Gm@even@mp=\dimen306
+\Gm@layoutwidth=\dimen307
+\Gm@layoutheight=\dimen308
+\Gm@layouthoffset=\dimen309
+\Gm@layoutvoffset=\dimen310
 \Gm@dimlist=\toks28
 )
 
@@ -400,32 +515,32 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen159
-\scratchbox=\box38
-\nofMPsegments=\count114
-\nofMParguments=\count115
+\scratchcounter=\count117
+\scratchdimen=\dimen311
+\scratchbox=\box46
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen160
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen312
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -511,7 +626,7 @@ ABD: EveryShipout initializing macros
 <img/cover.png, id=4, 180.675pt x 255.47446pt>
 File: img/cover.png Graphic file (type png)
  <use img/cover.png>
-Package pdftex.def Info: img/cover.png used on input line 25.
+Package pdftex.def Info: img/cover.png used on input line 28.
 (pdftex.def)             Requested size: 597.67114pt x 845.16551pt.
  [1
 
@@ -525,174 +640,348 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 48.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 46.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
+LaTeX Font Info:    No file OMScmss.fd. on input line 48.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbar' on input line 48.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
 
  []
 
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 67.
+
 [3]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
  [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
-<img/grantt.png, id=33, 467.346pt x 235.47975pt>
+<img/grantt.png, id=31, 467.346pt x 235.47975pt>
 File: img/grantt.png Graphic file (type png)
  <use img/grantt.png>
-Package pdftex.def Info: img/grantt.png used on input line 186.
+Package pdftex.def Info: img/grantt.png used on input line 188.
 (pdftex.def)             Requested size: 433.61465pt x 216.81647pt.
 
-Overfull \hbox (18.20422pt too wide) in paragraph at lines 186--187
+Overfull \hbox (18.20422pt too wide) in paragraph at lines 188--189
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--203
 
  []
 
 [7 <./img/grantt.png>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-[9] <img/use-case-diagram.png, id=45, 911.405pt x 1054.94125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--244
+
+ []
+
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ˜ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--260
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 261--276
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 277--292
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 293--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--319
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 320--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--347
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 348--367
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 368--381
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 382--400
+
+ []
+
+[16] [17] <img/use-case-diagram.png, id=68, 911.405pt x 1054.94125pt>
 File: img/use-case-diagram.png Graphic file (type png)
 
 <use img/use-case-diagram.png>
-Package pdftex.def Info: img/use-case-diagram.png used on input line 230.
+Package pdftex.def Info: img/use-case-diagram.png used on input line 408.
 (pdftex.def)             Requested size: 433.63112pt x 433.60722pt.
 
-Overfull \hbox (18.22069pt too wide) in paragraph at lines 230--231
+Overfull \hbox (18.22069pt too wide) in paragraph at lines 408--409
  [] 
  []
 
-[10 <./img/use-case-diagram.png>]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
+[18 <./img/use-case-diagram.png>]
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--291
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--291
+Underfull \hbox (badness 10000) in paragraph at lines 455--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--291
+Underfull \hbox (badness 10000) in paragraph at lines 455--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--291
+Underfull \hbox (badness 10000) in paragraph at lines 455--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--291
+Underfull \hbox (badness 10000) in paragraph at lines 455--469
 
  []
 
-[11] [12] <img/component-diagram.PNG, id=56, 415.5525pt x 242.70676pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--469
+
+ []
+
+[19] [20] <img/component-diagram.PNG, id=80, 415.5525pt x 242.70676pt>
 File: img/component-diagram.PNG Graphic file (type png)
 
 <use img/component-diagram.PNG>
-Package pdftex.def Info: img/component-diagram.PNG used on input line 297.
+Package pdftex.def Info: img/component-diagram.PNG used on input line 490.
 (pdftex.def)             Requested size: 433.63547pt x 216.81195pt.
 
-Overfull \hbox (18.22504pt too wide) in paragraph at lines 297--298
+Overfull \hbox (18.22504pt too wide) in paragraph at lines 490--491
  [] 
  []
 
-<img/higher-level-architecture.png, id=57, 431.211pt x 243.91125pt>
+[21 <./img/component-diagram.PNG>]
+<img/higher-level-architecture.png, id=85, 431.211pt x 243.91125pt>
 File: img/higher-level-architecture.png Graphic file (type png)
 
 <use img/higher-level-architecture.png>
-Package pdftex.def Info: img/higher-level-architecture.png used on input line 3
-06.
+Package pdftex.def Info: img/higher-level-architecture.png used on input line 5
+00.
 (pdftex.def)             Requested size: 361.36598pt x 216.81235pt.
- [13 <./img/component-diagram.PNG> <./img/higher-level-architecture.png>] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 336--339
+ [22 <./img/higher-level-architecture.png>] <img/class-diagram.png, id=90, 824.
+07875pt x 501.875pt>
+File: img/class-diagram.png Graphic file (type png)
 
- []
+<use img/class-diagram.png>
+Package pdftex.def Info: img/class-diagram.png used on input line 514.
+(pdftex.def)             Requested size: 433.61606pt x 289.09662pt.
 
-[15] <img/entity-relationship-diagram.PNG, id=70, 466.74374pt x 301.125pt>
-File: img/entity-relationship-diagram.PNG Graphic file (type png)
-
-<use img/entity-relationship-diagram.PNG>
-Package pdftex.def Info: img/entity-relationship-diagram.PNG used on input line
- 347.
-(pdftex.def)             Requested size: 433.63988pt x 289.10887pt.
-
-Overfull \hbox (18.22945pt too wide) in paragraph at lines 347--348
+Overfull \hbox (18.20563pt too wide) in paragraph at lines 514--515
  [] 
  []
 
-[16 <./img/entity-relationship-diagram.PNG>]
-<img/data-flow-diagram.png, id=75, 683.55376pt x 445.665pt>
+[23 <./img/class-diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+<img/seq-login.png, id=95, 813.0375pt x 532.23843pt>
+File: img/seq-login.png Graphic file (type png)
+ <use img/seq-login.png>
+Package pdftex.def Info: img/seq-login.png used on input line 526.
+(pdftex.def)             Requested size: 433.61232pt x 289.08557pt.
+
+Overfull \hbox (18.20189pt too wide) in paragraph at lines 526--527
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
+
+ []
+
+[24 <./img/seq-login.png>]
+<img/seq-search-matter.png, id=100, 602.25pt x 432.11438pt>
+File: img/seq-search-matter.png Graphic file (type png)
+
+<use img/seq-search-matter.png>
+Package pdftex.def Info: img/seq-search-matter.png used on input line 541.
+(pdftex.def)             Requested size: 433.63805pt x 289.08655pt.
+
+Overfull \hbox (18.22762pt too wide) in paragraph at lines 541--542
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+[25 <./img/seq-search-matter.png>]
+<img/seq-edit-matter.png, id=106, 677.53125pt x 630.85687pt>
+File: img/seq-edit-matter.png Graphic file (type png)
+
+<use img/seq-edit-matter.png>
+Package pdftex.def Info: img/seq-edit-matter.png used on input line 557.
+(pdftex.def)             Requested size: 433.62885pt x 361.35373pt.
+
+Overfull \hbox (18.21841pt too wide) in paragraph at lines 557--558
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--566
+
+ []
+
+[26 <./img/seq-edit-matter.png>]
+<img/seq-review-matter.png, id=111, 598.48593pt x 365.86688pt>
+File: img/seq-review-matter.png Graphic file (type png)
+
+<use img/seq-review-matter.png>
+Package pdftex.def Info: img/seq-review-matter.png used on input line 571.
+(pdftex.def)             Requested size: 433.63092pt x 289.09308pt.
+
+Overfull \hbox (18.22049pt too wide) in paragraph at lines 571--572
+ [] 
+ []
+
+[27 <./img/seq-review-matter.png>]
+<img/user-interface-flow.png, id=116, 1575.8875pt x 803.0pt>
+File: img/user-interface-flow.png Graphic file (type png)
+
+<use img/user-interface-flow.png>
+Package pdftex.def Info: img/user-interface-flow.png used on input line 585.
+(pdftex.def)             Requested size: 433.59885pt x 289.07977pt.
+
+Overfull \hbox (18.18842pt too wide) in paragraph at lines 585--586
+ [] 
+ []
+
+[28 <./img/user-interface-flow.png>]
+<img/entity-relationship-diagram.png, id=121, 1234.6125pt x 975.645pt>
+File: img/entity-relationship-diagram.png Graphic file (type png)
+
+<use img/entity-relationship-diagram.png>
+Package pdftex.def Info: img/entity-relationship-diagram.png used on input line
+ 596.
+(pdftex.def)             Requested size: 433.6091pt x 289.07819pt.
+
+Overfull \hbox (18.19867pt too wide) in paragraph at lines 596--597
+ [] 
+ []
+
+[29 <./img/entity-relationship-diagram.png>]
+<img/data-flow-diagram.png, id=126, 683.55376pt x 445.665pt>
 File: img/data-flow-diagram.png Graphic file (type png)
 
 <use img/data-flow-diagram.png>
-Package pdftex.def Info: img/data-flow-diagram.png used on input line 358.
+Package pdftex.def Info: img/data-flow-diagram.png used on input line 607.
 (pdftex.def)             Requested size: 361.35349pt x 216.81369pt.
- [17 <./img/data-flow-diagram.png>] (./main.aux) ) 
+ [30 <./img/data-flow-diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 615--629
+
+ []
+
+[31] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 12585 strings out of 494945
- 252821 string characters out of 6181032
- 284680 words of memory out of 5000000
- 15636 multiletter control sequences out of 15000+600000
- 6330 words of font info for 23 fonts, out of 8000000 for 9000
+ 12824 strings out of 494945
+ 256491 string characters out of 6181032
+ 292526 words of memory out of 5000000
+ 15865 multiletter control sequences out of 15000+600000
+ 6053 words of font info for 22 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,11n,54p,1004b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb>
-Output written on main.pdf (17 pages, 846331 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (31 pages, 1017812 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
