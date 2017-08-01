@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+table {
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+}
+
+th {
+    border: none;
+  
+}
+
+input[type=text] {
+    width: 225px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 100px 100px; 
+    background-repeat: no-repeat;
+    padding: 5px 15px 5px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+</style>
+	<title></title>
+</head>
+<body>
+
+<table cellpadding="10">
+    <th><button id="menu" class="menu" onClick="javascript:close_clip()"><img src="menu.png" alt="" height=30 width=30></img></th>
+
+    <th><img src="logo.jpg" alt="" height=40 width=40></img></th>
+    <th><input type="text"  name="search" placeholder="Search.."></th>
+
+	<th><button id="settings" class="settings" onClick="javascript:close_clip()"><img src="settings.png" height=40 width=40 /></button></th>
+   
+
+   <th><button id="nort" class="nort" onClick="javascript:close_clip()"><img src="bell.png" height=40 width=40 /></button></th>
+ 
+
+    <th><button id="profile" class="profile" onClick="javascript:close_clip()"><img src="profile.png" height=40 width=40 /></button></th>
+  </table>
+ 
+</body>
+</html>
