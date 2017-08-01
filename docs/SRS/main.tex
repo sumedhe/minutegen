@@ -11,7 +11,7 @@
 \usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,a4paper]{geometry} % Page margins
 %\usepackage{fontspec}
 %\setsansfont{Roboto}
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -50,11 +50,14 @@
 	\section{Introduction}
 	
 	\subsection{About the Client}
+	
 	University of Colombo School of Computing holds a monthly general meeting to  discuss about the student matters , operational details and other matters of the board.Every meeting has its agenda and the minute which contains the details discussed in the previous minute.\newline
+	
 	Each minute matter is discussed twice and after  approval of any minute matter in its 2nd hearing  is been sent to the  Board of study (BOS),Academic Syndicate,Board of Management(BOM) and finally to the Senate.Every matter does not reach the senate.The priority level(until which level a minute matter should be reached) is been decided by the IUD.Whenever a matter is being rejected ,it is sent back to the IUD.Then the IUD tries to re discuss it  by making relevant changes to the matter.Some urgent matters are being fast tracked directly to the higher board expecting a quick response. This project  mainly focuses  on a minute tracking process for BOS/IUD (Board of Study/Internal Undergraduate Degree)of UCSC which helps to know what matters are approved and what are rejected,which level the matter is being discussed now etc.Creating this automated minute tracker  helps to maintain a very stable way of storing ,manipulating and tracking  all the minutes of monthly general meetings
 	
 	\subsection{Domain Description}
 	This product will be offered as a web-based platform service.This  lets only a limited amount of members (staff members and limited number of students) to login so all the details  so that the minutes are well secured.The system sends email containing the information about the next meeting to all the staff members.The editing privileges are limited only to secretary and assistant registrar.The review privileges are limited only  to the Head of IUD and Director. whenever a staff member needs to find out which stage the minute matter is situated (IUD,Academic Syndicate, board of management, senate) the system indicates the stage of the minute matter.\newline
+	
 	All the results (approved/reject/hold on) of minute matters are visible to members so that every stage is aware of the result of the minute matter, either it is accepted or rejected.\newline
 	After every meeting the whole document is being saved in the database .Incase if any member wants to find  out a minute of a previous meeting ,the system helps filtering the needed minute.\newline
 	Fast tracked minutes are saved in another format so  they can be identified easily.\newline
@@ -178,18 +181,20 @@
 	\noindent\textbf{Do we have the expertise needed to develop the solution?}\newline
 	All members are familiar with technologies which will be used in the development. And the members are willing to share the knowledge they possess with other members when necessary. All members will put their maximum effort in order to make this project a success.\newline
 	
-	\subsubsection{Schedule feasibility}
+	\subsubsection{Schedule Feasibility}
 	Schedule feasibility measures if it is a possible task to complete the project within a particular time frame.\newline
 	The Gantt chart prepared shows the mandatory deadlines that all group members are expected to achieve. Tasks are allocated to each member based on the capacities considering all other external factors. \newline
 
+	\vspace{1cm}
 	\noindent\textbf{Gantt chart (2017/2018)}
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=6in,height=3in]{img/grantt}
+			\includegraphics[width=6in,height=2.5in]{img/grantt}
 		\end{center}
 		\caption{The Gantt Chart}
 		\label{fig:gantt}
 	\end{figure}
+	\newpage
 
 	\subsubsection{Legal Feasibility}
 	Determines whether the proposed system conflicts with the existing legal requirements. Legal feasibility verifies the legal validity of the proposed system.\newline
@@ -448,8 +453,7 @@
 		
 	\end{enumerate}
 	
-	
-	
+	\newpage 
 	
 	\subsection{Non-Functional Requirements}
 	\textbf{Performance}\\
@@ -528,8 +532,7 @@
 			\caption{Log In}
 			\label{fig:Log In}
 		\end{figure}
-		\vspace{1.5cm}
-		
+
 		 Users who are signed up with system can log into the system by entering their username and password.First there username is verified by the database and then the password is matched with the username.\newline
 		Then, system will determine to which type (student, lecturer, etc.) the user belongs to, using the username.Then  the user is provided with a suitable view of home screen according to their type.\newline
 
@@ -582,34 +585,59 @@
 		\vspace{2cm}
 		\begin{figure}[h!]
 			\begin{center}
-			\includegraphics[width=6in,height=4in]{img/user-interface-flow}
+			\includegraphics[width=6in,height=3in]{img/user-interface-flow}
 			\end{center}
 			\caption{User Interface Flow Diagram}
 			\label{fig:user-interface-flow}
 		\end{figure}
-	\newpage
+		\newpage
+		
+		\vspace{1cm}
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=5in,height=3in]{img/ui-dashboard}
+			\end{center}
+			\caption{Dashboard View}
+			\label{fig:ui-dashboard}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=5in,height=3in]{img/ui-matters}
+			\end{center}
+			\caption{Matters View}
+			\label{fig:ui-matters}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=5in,height=3in]{img/ui-minutes}
+			\end{center}
+			\caption{Minutes View}
+			\label{fig:ui-minutes}
+		\end{figure}
+		
+		\begin{figure}[h!]
+			\begin{center}
+			\includegraphics[width=5in,height=3in]{img/ui-members}
+			\end{center}
+			\caption{Members View}
+			\label{fig:ui-members}
+		\end{figure}
+		
+		\clearpage
+		\newpage
 
 	\subsection{Entity Relationship Diagram}
 		\vspace{2cm}
 		\begin{figure}[h]
 			\begin{center}
-				\includegraphics[width=6in,height=4in]{img/entity-relationship-diagram}
+				\includegraphics[width=6in,height=5in]{img/entity-relationship-diagram}
 			\end{center}
 			\caption{The Entity Relationship Diagram}
 			\label{fig:ERD}
 		\end{figure}
 		\newpage  
-	
-	\subsection{Data Flow Diagram}
-		\vspace{2cm}
-		\begin{figure}[h]
-			\begin{center}
-				\includegraphics[width=5in,height=3in]{img/data-flow-diagram}
-			\end{center}
-			\caption{Data Flow Diagram}
-			\label{fig:dataflow}
-		\end{figure}
-		\newpage
 	
 		%Group details
 		\textbf{Group Details}\\
