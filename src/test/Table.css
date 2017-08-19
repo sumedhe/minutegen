@@ -22,12 +22,15 @@ td{
 }
 /*The button to go to the page creating minutes, matters*/
 .w3-circle{
-    position:fixed;
-    border: none;
-    top: 90%;
-    left: 95%;
-    z-index: 3000;
+  position:fixed;
+  border: none;
+  top: 90%;
+  left: 95%;
+  z-index: 3000;
 }
 .w3-circle{
   font-size: 36px;
+}
+.w3-circle :hover{
+  color: #004080;
 }

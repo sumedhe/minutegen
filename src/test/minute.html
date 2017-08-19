@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Minute Creation</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Table.css">
 
   </head>
   <body>
@@ -12,6 +13,7 @@
       <form class="form1" action="index.html" method="post">
         <label for="minute_id"><b>Meeting Number</b></label><br>
         <input type="text" id="minute_id" name="minute_id" placeholder="Enter Meeting Number."><br>
+        <input type="submit" name="submit" value="Submit"><br>
         <label for="date"><b>Date</b></label><br>
         <input type="date" id="date" name="date" value="2017-08-19"><br><br>
         <label for="preliminaries"><b>Preliminaries</b></label><br>
@@ -20,9 +22,90 @@
         <textarea name="p_minute" id="p_minute" rows="6" cols="80" placeholder="Enter details of previously confirmed minutes."></textarea><br>
         <label for="tags"><b>Matters Arising from Minutes</b></label><br>
         <br>
+        <table align="center">
+          <thead>
+            <tr>
+              <th  class="accent-color text-primary-color" width="10%">Matter No.</th>
+              <th  class="accent-color text-primary-color" width="30%">Matter Title</th>
+              <th  class="accent-color text-primary-color" width="60%">Content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+            <?php while( $row = $sql->fetch()) : ?>
+            <tr>
+                //Each table column is echoed in to a td cell
+                <td><?php echo $row['This']; ?></td>
+                <td><?php echo $row['That']; ?></td>
+                <td><?php echo $row['Other']; ?></td>
+            </tr>
+            <?php endwhile ?>
+            -->
+            <tr>
+              <td>129.3.2</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
         <label for="tags"><b>Any other Business I</b></label><br>
         <br>
+        <table align="center">
+          <thead>
+            <tr>
+              <th  class="accent-color text-primary-color" width="10%">Matter No.</th>
+              <th  class="accent-color text-primary-color" width="30%">Matter Title</th>
+              <th  class="accent-color text-primary-color" width="60%">Content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+            <?php while( $row = $sql->fetch()) : ?>
+            <tr>
+                //Each table column is echoed in to a td cell
+                <td><?php echo $row['This']; ?></td>
+                <td><?php echo $row['That']; ?></td>
+                <td><?php echo $row['Other']; ?></td>
+            </tr>
+            <?php endwhile ?>
+            -->
+            <tr>
+              <td>129.4.1</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
         <label for="tags"><b>Any other Business II</b></label><br>
+        <br>
+        <table align="center">
+          <thead>
+            <tr>
+              <th  class="accent-color text-primary-color" width="10%">Matter No.</th>
+              <th  class="accent-color text-primary-color" width="30%">Matter Title</th>
+              <th  class="accent-color text-primary-color" width="60%">Content</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+            <?php while( $row = $sql->fetch()) : ?>
+            <tr>
+                //Each table column is echoed in to a td cell
+                <td><?php echo $row['This']; ?></td>
+                <td><?php echo $row['That']; ?></td>
+                <td><?php echo $row['Other']; ?></td>
+            </tr>
+            <?php endwhile ?>
+            -->
+            <tr>
+              <td>129.5.1</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
         <br>
         <input type="submit" name="submit" value="Save">
         <input type="reset" name="reset" value="Cancel">
