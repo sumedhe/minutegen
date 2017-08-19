@@ -5,6 +5,7 @@
     <title>member view</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Palette.css">
     <style media="screen">
     table{
       font-family: arial,sans-serif;
@@ -19,15 +20,16 @@
       text-align: left;
       padding: 8px;
     }
-    th{
-      background-color: #006080;
-      color: #ffffff;
-    }
     tr:nth-child(even){
-      background-color: #eff9ff;
+      background-color: #C5CAE9;
+    }
+
+    tr:nth-child(odd){
+      background-color: #ffffff;
     }
     .w3-circle{
         position:fixed;
+        border: none;
         top: 520px;
         left: 1122px;
         z-index: 3000;
@@ -35,16 +37,20 @@
     td{
       font-size: 80%
     }
+    .w3-circle{
+      font-size: 36px;
+    }
+
     </style>
   </head>
-  <body>
+  <body class="default-primary-color">
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Registered on</th>
-          <th></th>
+          <th class="accent-color text-primary-color">Name</th>
+          <th class="accent-color text-primary-color">Email</th>
+          <th class="accent-color text-primary-color">Registered on</th>
+          <th class="accent-color text-primary-color"></th>
         </tr>
       </thead>
       <tbody><br><br>
@@ -76,7 +82,7 @@
         </tr>
       </tbody>
     </table>
-    <button type="button" class="w3-circle"><i class="fa fa-plus-circle" style="font-size:36px"></i></button>
+    <button type="button" class="w3-circle default-primary-color"><i class="fa fa-plus-circle"></i></button>
 
 
   </body>

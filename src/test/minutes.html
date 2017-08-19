@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>minute view</title>
+    <link rel="stylesheet" href="Palette.css">
     <style media="screen">
     table{
       font-family: arial,sans-serif;
@@ -17,12 +18,11 @@
       text-align: left;
       padding: 8px;
     }
-    th{
-      background-color: #006080;
-      color: #ffffff;
-    }
     tr:nth-child(even){
-      background-color: #eff9ff;
+      background-color: #C5CAE9;
+    }
+    tr:nth-child(odd){
+      background-color: #ffffff;
     }
     td{
       font-size: 80%
@@ -30,15 +30,15 @@
 
     </style>
   </head>
-  <body><br><br>
+  <body class="default-primary-color"><br><br>
     <table>
       <thead>
         <tr>
-          <th>Meeting No.</th>
-          <th>Date</th>
-          <th>Matters discussed</th>
-          <th>Attendace</th>
-          <th>State</th>
+          <th  class="accent-color text-primary-color">Meeting No.</th>
+          <th  class="accent-color text-primary-color">Date</th>
+          <th  class="accent-color text-primary-color">Matters discussed</th>
+          <th  class="accent-color text-primary-color">Attendace</th>
+          <th  class="accent-color text-primary-color">State</th>
         </tr>
       </thead>
       <tbody>
