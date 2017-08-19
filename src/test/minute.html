@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minute Creation</title>
+    <link rel="stylesheet" href="form.css">
+
+  </head>
+  <body>
+    <h3>Minute Creating form</h3>
+    <div class="container">
+      <form class="form1" action="index.html" method="post">
+        <label for="minute_id"><b>Meeting Number</b></label><br>
+        <input type="text" id="minute_id" name="minute_id" placeholder="Enter Meeting Number."><br>
+        <label for="date"><b>Date</b></label><br>
+        <input type="date" id="date" name="date" value="2017-08-19"><br><br>
+        <label for="preliminaries"><b>Preliminaries</b></label><br>
+        <textarea name="preliminaries" id="preliminaries" rows="4" cols="80" placeholder="Enter Preliminaries."></textarea><br>
+        <label for="p_minute"><b>Confirmation of Minutes</b></label><br>
+        <textarea name="p_minute" id="p_minute" rows="6" cols="80" placeholder="Enter details of previously confirmed minutes."></textarea><br>
+        <label for="tags"><b>Matters Arising from Minutes</b></label><br>
+        <br>
+        <label for="tags"><b>Any other Business I</b></label><br>
+        <br>
+        <label for="tags"><b>Any other Business II</b></label><br>
+        <br>
+        <input type="submit" name="submit" value="Save">
+        <input type="reset" name="reset" value="Cancel">
+
+      </form>
+
+    </div>
+  </body>
+
+</html>

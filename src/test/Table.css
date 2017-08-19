@@ -1,0 +1,33 @@
+table{
+  font-family: arial,sans-serif;
+  border: solid black 1px;
+  border-radius: 5px;
+  -moz-border-radius:6px;
+  border-collapse: seperate;
+  width: 100%;
+}
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){
+  background-color: #C5CAE9;
+}
+tr:nth-child(odd){
+  background-color: #ffffff;
+}
+td{
+  font-size: 80%
+}
+/*The button to go to the page creating minutes, matters*/
+.w3-circle{
+    position:fixed;
+    border: none;
+    top: 90%;
+    left: 95%;
+    z-index: 3000;
+}
+.w3-circle{
+  font-size: 36px;
+}
