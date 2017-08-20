@@ -1,0 +1,53 @@
+* {
+   box-sizing: border-box;
+}
+
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+[class*="col-"] {
+   float: left;
+   padding: 15px;
+
+}
+.col-1 {width: 33.33%;
+}
+.col-2 {width: 66.66%;
+}
+.number-side, .status-side{
+  width: 50%;
+  float: left;
+  padding:20px;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+[class*="card"] {
+   color: #ffffff;
+   height: 100%;
+}
+
+.card1{
+  background-color:  #99c2ff;
+}
+
+.card2{
+  background-color:  #ffc14d;
+
+}
+.card3{
+  background-color: #65e765;
+}
+
+.notification-card, .meeting-card{
+  background-color: #ffffff;
+}
+
+.header{
+  background-color: #e6e6e6;
+  color: #333333;
+}

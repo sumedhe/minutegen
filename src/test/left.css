@@ -9,13 +9,14 @@
 }
 
 body{
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
   }
+
 
 .vertical-menu {
    width: 100%;
    float: left;
-   }
+  }
 
 .vertical-menu a {
   color:  #4d4d4d;
@@ -25,7 +26,7 @@ body{
 }
 
 .vertical-menu a:hover {
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
 }
 
 .vertical-menu a.active {
