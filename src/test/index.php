@@ -5,8 +5,8 @@
     <title>framespage</title>
     <frameset rows="70,*" border="0">
 	  <frame name="top" src="top2.html" marginwidth="0" marginheight="0" scrolloing="no" frameborder="0" noresize="noresize">
-	  <frameset cols="200,*" border="0">
-	  <frame name="left" src="sidenav.html" marginwidth="0" marginheight="0" scrollong="auto" frameborder="0" noresize="noresize">
+	  <frameset cols="159,*" border="0">
+	  <frame name="left" src="left.html" marginwidth="0" marginheight="0" scrollong="auto" frameborder="0" noresize="noresize">
 	  <frame name="main" src="dashboardnew.html" marginwidth="0" marginheight="0"
 scrolling="auto" frameboder="0" noresize="noresize">
 	  </frameset>
