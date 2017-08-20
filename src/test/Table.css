@@ -24,6 +24,7 @@ td{
   font-size: 80%
 }
 #myInput {
+    background-image: url('search.png');
     background-color: #ccf2ff;
     background-position: 10px 12px; /* Position the search icon */
     background-repeat: no-repeat; /* Do not repeat the icon image */
