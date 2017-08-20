@@ -21,7 +21,7 @@ tr:nth-child(odd){
   background-color: #ffffff;
 }
 td{
-  font-size: 80%;
+  font-size: 80%
 }
 #myInput {
     background-image: url('search.png');
@@ -37,7 +37,7 @@ td{
 
 #myTable {
     border-collapse: collapse; /* Collapse borders */
-    width: 98%; /* Full-width */
+    width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
 }
