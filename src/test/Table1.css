@@ -10,12 +10,12 @@ table{
   width: 100%;
 }
 td, th{
-  border: 1px solid #000000;
+  border: 1px solid #dddddd;
   text-align: left;
   padding: 2%;
 }
 tr:nth-child(even){
-  background-color: #d8c7c7;
+  background-color: #C5CAE9;
 }
 tr:nth-child(odd){
   background-color: #ffffff;
@@ -53,16 +53,16 @@ td{
 }
 
 #myTable tr.header{
-    background-color: #2b3e74;
+    background-color: #f1f1f1;
 }
 
 #myTable tr:hover {
-    background-color: #a3c5a3;
+    background-color: #99e6ff;
 }
 
 /*The button to go to the page creating minutes, matters*/
 .w3-circle{
-  color: #2b3e74;
+  color: #b30000;
   position:fixed;
   border: none;
   top: 90%;
@@ -74,5 +74,5 @@ td{
   font-size: 36px;
 }
 .w3-circle :hover{
-  color: #a3c5a3;
+  color: #00ace6;
 }
