@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dashboard view </title>
+    <link rel="stylesheet" href="palette.css">
+    <style media="screen">
+
+
+      .flip-container{
+        -webkit-perspective:1000;
+        -moz-perspective:1000;
+        -o-perspective:1000;
+        perspective: 1000;
+
+        border: 0px solid #ccc;
+      }
+      .flip-container:hover .flipper, .flip-container.hover .flipper{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+      .flip-container, .front, .back{
+        width: 280px;
+        height: 350px;
+      }
+      .flipper{
+        -webkit-transition:0.6s;
+        -webkit-transform-style:preserve-3d;
+
+        -moz-transition:o.6s;
+        -moz-transform-style:preserve-3d;
+
+        -o-transition:0.6s;
+        -o-transform-style:preserve-3d;
+
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+        position: relative;
+      }
+      .front, .back{
+        -webkit-backface-visibility:hidden;
+        -moz-backface-visibility:hidden;
+        -o-backface-visibility:hidden;
+        backface-visibility:hidden;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .back{
+        -webkit-transform:rotateY(180deg);
+        -moz-transform:rotateY(180deg);
+        -o-transform:rotateY(180deg);
+      }
+
+      .name1, .name2, .name3{
+        position: absolute;
+        left: 90px;
+        bottom:30px;
+      }
+      .flip-container{
+        margin-left: 10px;
+        margin-right: 10px;
+        display:inline-block;
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+      .number1, .number2, .number3{
+
+	      position: absolute;
+	      top: 100px;
+        width: 90%;
+	      height: 300px;
+        font-size: 60px;
+        text-align: center;
+
+      }
+
+      .heading{
+        text-align: center;
+      }
+      .container {
+        padding: 2px 16px;
+      }
+
+    .card1, .card2 {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+      transition: 0.3s;
+      border-radius: 6px;
+      background-color: #ffffff;
+      display: inline-block;
+      margin-left: 40px;
+      margin-right: 30px;
+    }
+    .card1{
+      width: 50%;
+    }
+    .card2{
+      width: 30%;
+      height: auto;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    a:link{
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      text-decoration: underline;
+    }
+
+    </style>
+  </head>
+
+  <body class="light-primary-color ">
+    <div class="default-primary-color">
+      <br>
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front accent-color text-primary-color">
+            <div class="number1">23</div>
+            <div class="maaccent-color text-primary-colorin">
+              <h2 class="name1"><hr>AWAITING <hr></h2>
+
+            </div>
+
+
+          </div>
+          <div class="back light-primary-color">
+            <div class="header">
+              <h3 class="heading"><u>Minute 8</u></h3>
+
+            </div>
+            <div class="content">
+              <h4 class="text-center">Further information on minute</h4>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front accent-color text-primary-color">
+            <div class="number2">20</div>
+            <div class="main">
+              <h2 class="name2"><hr>HOLDING <hr></h2>
+
+            </div>
+
+
+          </div>
+          <div class="back light-primary-color">
+            <div class="header">
+              <h3 class="heading"><u>Minute 8</u></h3>
+
+            </div>
+            <div class="content">
+              <h4 class="text-center">Further information on minute</h4>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front accent-color text-primary-color">
+            <div class="number3">18</div>
+            <div class="main">
+              <h2 class="name2"> <hr>PENDING <hr></h2>
+
+            </div>
+
+
+          </div>
+          <div class="back light-primary-color">
+            <div class="header">
+              <h3 class="heading"><u>Minute </u></h3>
+
+            </div>
+            <div class="content">
+              <h4 class="text-center">Further information on minute</h4>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div><br><br>
+
+    </div>
+
+    <!--bottom section begins here-->
+    <div class="bottom"><br><br>
+
+      <div class="card1">
+        <div class="container primary-text-color ">
+          <h3>Next meeting</h3>
+          <hr class="border-color">
+          <ul>
+            <li>Date :</li>
+            <p>15.03.2017</p>
+            <li>Time :</li>
+            <p>At 2pm.</p>
+            <li>Matters to be discussed :</li>
+            <p>Student matters <br>Staff matters <br>Examination matters. <br></p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card2">
+        <div class="container primary-text-color ">
+          <h3>Notifications</h3>
+          <hr class="border-color">
+          <a href="#">Notification 1</a><br><hr>
+          <a href="#">Notification 2</a><br><hr>
+          <a href="#">Notification 3</a><br><hr>
+          <a href="#">Notification 4</a><br><hr>
+          <a href="#">Notification 5</a><br><hr>
+          <a href="#">Notification 6</a><br><hr>
+          <a href="#">Notification 7</a><br><hr>
+        </div>
+      </div><br><br>
+
+    </div>
+    <!--bottom section ends here-->
+
+  </body>
+</html>
