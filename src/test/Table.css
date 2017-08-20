@@ -62,6 +62,7 @@ td{
 
 /*The button to go to the page creating minutes, matters*/
 .w3-circle{
+  color: #b30000;
   position:fixed;
   border: none;
   top: 90%;

@@ -12,7 +12,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 15px;
 }
 
 .sidenav a {
@@ -25,20 +25,20 @@ body {
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #74344b;
 }
 
 .sidenav .closebtn {
-    position: absolute;
+    margin-bottom:20px;
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 130px;
 }
 
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 3px 8px;
 }
 
 @media screen and (max-height: 450px) {
