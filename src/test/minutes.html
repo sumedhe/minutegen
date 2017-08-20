@@ -4,44 +4,34 @@
     <meta charset="utf-8">
     <title>minute view</title>
     <link rel="stylesheet" href="Palette.css">
-    <style media="screen">
-    table{
-      font-family: arial,sans-serif;
-      border: solid black 1px;
-      border-radius: 5px;
-      -moz-border-radius:6px;
-      border-collapse: seperate;
-      width: 100%;
-    }
-    td, th{
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    tr:nth-child(even){
-      background-color: #C5CAE9;
-    }
-    tr:nth-child(odd){
-      background-color: #ffffff;
-    }
-    td{
-      font-size: 80%
-    }
+    <link rel="stylesheet" href="Table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </style>
   </head>
-  <body class="default-primary-color"><br><br>
-    <table>
-      <thead>
-        <tr>
-          <th  class="accent-color text-primary-color">Meeting No.</th>
-          <th  class="accent-color text-primary-color">Date</th>
-          <th  class="accent-color text-primary-color">Matters discussed</th>
-          <th  class="accent-color text-primary-color">Attendace</th>
-          <th  class="accent-color text-primary-color">State</th>
+  <body class="default-primary-color">
+
+  <h2 class="h-light-text-color">Minute List List</h2>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for minutes.." title="Type an ID">
+
+    <table id="myTable">
+        <tr class="header">
+          <th  style="width:10%;">Meeting No.</th>
+          <th  style="width:10%;">Date</th>
+          <th  style="width:40%;">Matters discussed</th>
+          <th  style="width:10%;">Attendace</th>
+          <th  style="width:30%;">State</th>
         </tr>
-      </thead>
-      <tbody>
+        <!--
+        <?php while( $row = $sql->fetch()) : ?>
+        <tr>
+            //Each table column is echoed in to a td cell
+            <td><?php echo $row['This']; ?></td>
+            <td><?php echo $row['That']; ?></td>
+            <td><?php echo $row['Other']; ?></td>
+        </tr>
+        <?php endwhile ?>
+        -->
         <tr>
           <td>129</td>
           <td>2017.05.18</td>
@@ -98,8 +88,29 @@
           <td></td>
           <td></td>
         </tr>
-      </tbody>
     </table>
 
+    <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    </script>
+    <form action="minute.html" method="get">
+      <button type="submit" class="w3-circle default-primary-color" formaction="minute.html"><i class="fa fa-plus-circle"></i></button>
+    </form>
   </body>
 </html>

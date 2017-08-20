@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Matter List</title>
+  <link rel="stylesheet" href="Palette.css">
+  <link rel="stylesheet" href="Table.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="default-primary-color">
+
+<h2 class="h-light-text-color">Matter List</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for matters.." title="Type an ID">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:10%;">Matter No.</th>
+    <th style="width:20%;">Matter Title</th>
+    <th style="width:50%;">Content</th>
+    <th style="width:20%;">Attachments</th>
+  </tr>
+  <tr>
+    <td>129.3.1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.3.2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.3.3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.3.4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.3.5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.3.6</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.3.7</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.4.1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.4.2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.4.3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.5.1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>129.5.2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<form action="matterlist.html" method="get">
+  <button type="submit" class="w3-circle default-primary-color" formaction="matterenter.html"><i class="fa fa-plus-circle"></i></button>
+</form>
+</body>
+</html>

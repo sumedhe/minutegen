@@ -3,64 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>matterform</title>
-    <style media="screen">
-body{
-  background-color: #006080;
-}
-h3{
-  color: #ffffff;
-}
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="palette.css">
 
-    input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #004080;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-float:right;
-}
-
-input[type=submit]:hover {
-  background-color: #00264d;
-}
-
-input[type=reset] {
-  background-color: #004d4d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-float:right;
-position: fixed;
-right: 150px;
-}
-
-input[type=reset]:hover {
-  background-color: #001a1a;
-}
-
-.container {
-  border-radius: 12px;
-  background-color: #f2f2f2;
-  padding: 50px;
-}
-    </style>
   </head>
-  <body>
-    <h3>New matters entering form</h3>
+  <body class="form-background-color">
+    <h3 class="h-light-text-color">New matters entering form</h3>
     <div class="container">
       <form class="form1" action="index.html" method="post">
         <label for="title"><b>Title</b></label><br>
