@@ -6,54 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Palette.css">
-    <style media="screen">
-    table{
-      font-family: arial,sans-serif;
-      border: solid black 1px;
-      border-radius: 5px;
-      -moz-border-radius:6px;
-      border-collapse: seperate;
-      width: 100%;
-    }
-    td, th{
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    tr:nth-child(even){
-      background-color: #C5CAE9;
-    }
+    <link rel="stylesheet" href="Table.css">
 
-    tr:nth-child(odd){
-      background-color: #ffffff;
-    }
-    .w3-circle{
-        position:fixed;
-        border: none;
-        top: 520px;
-        left: 1122px;
-        z-index: 3000;
-    }
-    td{
-      font-size: 80%
-    }
-    .w3-circle{
-      font-size: 36px;
-    }
-
-    </style>
   </head>
   <body class="default-primary-color">
-    <table>
-      <thead>
-        <tr>
-          <th class="accent-color text-primary-color">Name</th>
-          <th class="accent-color text-primary-color">Email</th>
-          <th class="accent-color text-primary-color">Registered on</th>
-          <th class="accent-color text-primary-color"></th>
+
+    <h2 class="h-light-text-color">Members List</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for members.." title="Type an ID">
+
+    <table id="myTable">
+        <tr class="header">
+          <th style="width:35%;">Name</th>
+          <th style="width:35%;">Email</th>
+          <th style="width:15%;">Registered on</th>
+          <th style="width:15%;"></th>
         </tr>
-      </thead>
-      <tbody><br><br>
         <tr>
           <td>Mr.M.S.M.Perera</td>
           <td>perera80@gmail.com</td>
@@ -82,8 +50,29 @@
         </tr>
       </tbody>
     </table>
-    <button type="button" class="w3-circle default-primary-color"><i class="fa fa-plus-circle"></i></button>
+    <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    </script>
 
+    <form action="members.html" method="get">
+      <button type="submit" class="w3-circle default-primary-color" formaction="member.html"><i class="fa fa-plus-circle"></i></button>
+    </form>
 
   </body>
 </html>
