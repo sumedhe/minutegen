@@ -116,7 +116,7 @@ input[type=text] {
     margin-left: 5%;
 }
 input[type=text]:focus {
-    width: 50%;
+    width: 57%;
 }
 
 #myInput {

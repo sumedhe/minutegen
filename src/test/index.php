@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>framespage</title>
+    <title>BOSIUD | Automated Minute Tracker</title>
     <frameset rows="70,*" border="0">
 	  <frame name="top" src="top2.html" marginwidth="0" marginheight="0" scrolloing="no" frameborder="0" noresize="noresize">
 	  <frameset cols="159,*" border="0">
