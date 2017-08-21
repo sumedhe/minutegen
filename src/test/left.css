@@ -28,8 +28,8 @@ body{
 }
 
 .vertical-menu a:hover {
-  background-color: #e6e6e6;
-  color: #74344b;
+  background-color: #404040;
+  color: #629d62;
 }
 
 .vertical-menu a.active {

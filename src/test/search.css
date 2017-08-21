@@ -1,0 +1,23 @@
+input#myInput{
+
+  background-color: #2b3e74;
+  font-size: 12pt;
+    color: #ffffff;
+    margin-left: 13px;
+    width: 98%;
+}
+
+h2.h-light-text-color{
+  color: #000000;
+
+  margin-left: 13px;
+}
+.default-primary-color{
+
+  background-color: #f2f2f2;
+}
+table{
+  margin-left: 13px;
+
+
+}
