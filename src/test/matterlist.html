@@ -5,12 +5,22 @@
   <title>Matter List</title>
   <link rel="stylesheet" href="Palette.css">
   <link rel="stylesheet" href="Table.css">
+    <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="btngroup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body class="default-primary-color">
 
-<h2 class="h-light-text-color">Matter List</h2>
+  <form class="btn-group" action="minuteaccordion.html" method="get">
+  <h2 class="h-light-text-color">Matter List
+
+    <button type="submit" class="cards default-primary-color" formaction="matterview1.html"><i class="material-icons">dashboard</i></button>
+    <button type="submit" class="cards default-primary-color" formaction="matterlist.html"><i class="material-icons">list</i></button>
+    <button type="submit" class="cards default-primary-color" formaction="matteraccordion.html"><i class="material-icons">view_stream</i></button>
+    </h2>
+  </form>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for matters.." title="Type an ID">
 

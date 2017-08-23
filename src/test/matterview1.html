@@ -4,49 +4,22 @@
     <title>matterview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Palette.css">
+    <link rel="stylesheet" href="btngroup.css">
+    <link rel="stylesheet" href="Table.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style media="screen">
-      body{
-        margin: 40px;
-      }
-      .wrapper{
-        display: grid;
-        grid-template-columns: 350px 350px 350px;
-        grid-gap: 15px;
-        color: #444;
-      }
-      .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 100%;
-      }
-      .header{
-        text-align: left;
-      }
-      .w3-circle{
-          position:fixed;
-          font-size:36px;
-          top: 520px;
-          left: 1122px;
-          z-index: 3000;
-      }
-
-      .button{
-        border-radius: 8px;
-        border-width:medium;
-      }
-      .ibutton{
-        font-size:15px;
-      }
-      .ibutton, .w3-circle{
-        border: none;
-        border-radius: 100%;
-      }
-
-    </style>
 
   </head>
   <body class="default-primary-color">
+    <form class="btn-group" action="minuteaccordion.html" method="get">
+    <h2 class="h-light-text-color">Matter List
+
+      <button type="submit" class="cards default-primary-color" formaction="matterview1.html"><i class="material-icons">dashboard</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matterlist.html"><i class="material-icons">list</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matteraccordion.html"><i class="material-icons">view_stream</i></button>
+      </h2>
+    </form>
     <div class="wrapper">
       <div class="box1 light-primary-color">
         <article class="article">
@@ -302,8 +275,9 @@
       </div>
 
     </div>
-    <button type="button" class="w3-circle default-primary-color"><i class="fa fa-plus-circle" ></i></button>
-
+    <form action="matterlist.html" method="get">
+      <button type="submit" class="w3-circle default-primary-color" formaction="matterenter.html"><i class="fa fa-plus-circle"></i></button>
+    </form>
 
   </body>
 </html>

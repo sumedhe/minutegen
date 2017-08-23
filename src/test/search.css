@@ -1,10 +1,16 @@
 input#myInput{
-
+  background-image: url('search.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
   background-color: #2b3e74;
   font-size: 12pt;
-    color: #ffffff;
-    margin-left: 13px;
-    width: 98%;
+  color: #ffffff;
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 98%;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
 }
 
 h2.h-light-text-color{
