@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="Table.css">
   <link rel="stylesheet" href="search.css">
   <link rel="stylesheet" href="btngroup.css">
+  <link rel="stylesheet" href="addbutton.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
   <body class="default-primary-color">
@@ -17,9 +17,9 @@
     <form class="btn-group" action="minuteaccordion.html" method="get">
     <h2 class="h-light-text-color">Matter List
 
-      <button type="submit" class="cards default-primary-color" formaction="matterview1.html"><i class="material-icons">dashboard</i></button>
-      <button type="submit" class="cards default-primary-color" formaction="matterlist.html"><i class="material-icons">list</i></button>
-      <button type="submit" class="cards default-primary-color" formaction="matteraccordion.html"><i class="material-icons">view_stream</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matterview1.html"><i class="material-icons md">dashboard</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matterlist.html"><i class="material-icons md">list</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matteraccordion.html"><i class="material-icons md">view_stream</i></button>
       </h2>
     </form>
 
@@ -182,6 +182,24 @@
     </div>
 
 <script>
+/*function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}*/
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -197,10 +215,9 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 
-
 </script>
 <form action="minuteaccordion.html" method="get">
-  <button type="submit" class="w3-circle default-primary-color" formaction="matterenter.html"><i class="fa fa-plus-circle"></i></button>
+  <button type="submit" class="w3-circle default-primary-color" formaction="matterenter.html"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 </body>
 </html>

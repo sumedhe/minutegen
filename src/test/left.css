@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #111;
+    background-color: #3C474D;
   }
 
 
@@ -19,7 +19,7 @@ body{
   }
 
 .vertical-menu a {
-  color:  #818181;
+  color:  #E8E2D6;
   display: block;
   padding: 20px;
   text-decoration: none;
@@ -28,8 +28,8 @@ body{
 }
 
 .vertical-menu a:hover {
-  background-color: #404040;
-  color: #4CAF50;
+  background-color: #14B37D;
+  color: #2357A9;
 }
 
 .vertical-menu a.active {

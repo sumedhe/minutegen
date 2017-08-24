@@ -2,8 +2,10 @@
    box-sizing: border-box;
  }
 
+ .material-icons.md { font-size: 28px; }
+
 .btn-group button {
-    color: #4CAF50; /* White text */
+    color: #14B37D; /* White text */
     margin-right: 1%;
     padding: 5px 5px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
@@ -22,5 +24,5 @@
 
 /* Add a background color on hover */
 .btn-group button:hover {
-    background-color: black;
+    background-color: #3C474D;
 }

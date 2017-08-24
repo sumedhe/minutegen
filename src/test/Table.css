@@ -49,20 +49,3 @@ td{
 #myTable tr:hover {
     background-color: #a3c5a3;
 }
-
-/*The button to go to the page creating minutes, matters*/
-.w3-circle{
-  color: #2b3e74;
-  position:fixed;
-  border: none;
-  top: 90%;
-  left: 95%;
-  z-index: 3000;
-  background-color: transparent;
-}
-.w3-circle{
-  font-size: 36px;
-}
-.w3-circle :hover{
-  color: #a3c5a3;
-}

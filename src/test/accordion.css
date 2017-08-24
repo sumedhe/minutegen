@@ -19,7 +19,7 @@ button.padding {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: #B8BCBE;
 }
 
 button.accordion:after {
