@@ -9,16 +9,21 @@ table{
   border-collapse: seperate;
   width: 100%;
 }
-td, th{
-  border: 1px solid #000000;
+td{
+  border: 1px solid #3C474D;
+  text-align: left;
+  padding: 2%;
+}
+th{
+  border: 1px solid #3C474D;
   text-align: left;
   padding: 2%;
 }
 tr:nth-child(even){
-  background-color: #d8c7c7;
+  background-color: #91A3B0;
 }
 tr:nth-child(odd){
-  background-color: #ffffff;
+  background-color: #E8E2D6;
 }
 td{
   font-size: 80%;
@@ -43,9 +48,10 @@ td{
 }
 
 #myTable tr.header{
-    background-color: #6699ff;
+    background-color: #14B37D;
+    color: #3C474D;
 }
 
 #myTable tr:hover {
-    background-color: #a3c5a3;
+    background-color: #D6C07E;
 }
