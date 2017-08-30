@@ -20,10 +20,10 @@ th{
   padding: 2%;
 }
 tr:nth-child(even){
-  background-color: #91A3B0;
+  background-color: #B7BABC;
 }
 tr:nth-child(odd){
-  background-color: #E8E2D6;
+  background-color: #D2D5D6;
 }
 td{
   font-size: 80%;

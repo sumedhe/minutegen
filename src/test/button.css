@@ -1,10 +1,10 @@
 button.transparent {
   border-color: transparent;
   background-color: transparent;
-  color:#3C474D;
+  color:#949A9D;
   cursor: pointer;
 }
 
 button.transparent.active, button.transparent:hover {
-    color: #23579a;
+    color: #3C474D;
 }
