@@ -7,6 +7,8 @@
   <head>
     <!-- Include main stylesheet -->
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!-- Include color pallette -->
+    <link rel="stylesheet" type="text/css" href="./css/colors.css">
   </head
 
   <?php
