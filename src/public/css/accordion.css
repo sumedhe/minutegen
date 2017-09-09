@@ -1,6 +1,4 @@
 button.accordion {
-    background-color: #e6e6e6;
-    color: #444;
     cursor: pointer;
     padding: 18px;
     width: 99%;
@@ -10,42 +8,26 @@ button.accordion {
     font-size: 15px;
     transition: 0.4s;
     margin: 5px;
-
 }
-
 button.padding {
   padding-left: 5px;
   padding-right:10px;
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: #B8BCBE;
-}
-
 button.accordion:after {
-
-    color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
-button.accordion.active:after {
-
-
-}
-
 div.panel {
     padding: 0 18px;
-    background-color: #F5F5F5;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
 div.accordion {
-    background-color: #e6e6e6;
-    color: #444;
     cursor: pointer;
     padding: 28px;
     width: 99%;
@@ -62,27 +44,14 @@ div.padding {
   padding-left: 5px;
   padding-right:10px;
 }
-
-div.accordion.active, div.accordion:hover {
-    background-color: #B8BCBE;
-}
-
 div.accordion:after {
-
-    color: #777;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
-div.accordion.active:after {
-
-
-}
-
 div.panel {
     padding: 0 18px;
-    background-color: #F5F5F5;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

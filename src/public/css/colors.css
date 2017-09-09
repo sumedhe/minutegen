@@ -9,3 +9,30 @@
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 .h-light-text-color    { color: #000000;}
+
+/* Table colors */
+#myTable tr.header{ background-color: #14B37D; color: #3C474D;}
+#myTable tr:hover { background-color: #D6C07E;}
+tr:nth-child(even){ background-color: #B7BABC;}
+tr:nth-child(odd){ background-color: #D2D5D6;}
+
+/* Accordion colors */
+button.accordion { background-color: #e6e6e6; color: #444;}
+button.accordion.active, button.accordion:hover { background-color: #B8BCBE;}
+div.panel { background-color: #F5F5F5;}
+div.accordion { background-color: #e6e6e6; color: #444;}
+div.accordion:after { color: #777;}
+button.accordion:after { color: #777;}
+
+/* Hidden buttons colors */
+button.transparent { border-color: transparent; background-color: transparent; color:#949A9D;}
+button.transparent.active, button.transparent:hover { color: #3C474D;}
+
+/* Search bar colors */
+input#myInput{ background-color: #7ED5B8; color: #3C474D; border: 1px solid #f2f2f2;}
+h2.h-light-text-color{ color: #3C474D;}
+
+/* Matter view buttons */
+.btn-group button { color: #14B37D;}
+/* Add a background color on hover */
+.btn-group button:hover { color: #3C474D;}

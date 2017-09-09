@@ -2,28 +2,17 @@ input#myInput{
   background-image: url('../images/search.png');
   background-repeat: no-repeat;
   background-position: 10px 10px;
-  background-color: #7ED5B8;
   font-size: 12pt;
-  color: #3C474D;
   margin-bottom: 12px; /* Add some space below the input */
   margin-left: 10px;
   margin-right: 10px;
   width: 98%;
   padding: 12px 20px 12px 40px;
-  border: 1px solid #f2f2f2;
 }
 
 h2.h-light-text-color{
-  color: #3C474D;
-
   margin-left: 13px;
-}
-.default-primary-color{
-
-  background-color: #f2f2f2;
 }
 table{
   margin-left: 13px;
-
-
 }
