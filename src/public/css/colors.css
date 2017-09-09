@@ -11,22 +11,21 @@
 .h-light-text-color    { color: #000000;}
 
 /* Table colors */
-#myTable tr.header{ background-color: #14B37D; color: #3C474D;}
-#myTable tr:hover { background-color: #D6C07E;}
-tr:nth-child(even){ background-color: #B7BABC;}
-tr:nth-child(odd){ background-color: #D2D5D6;}
+#myTable { border: 1px solid #ddd;} /* Add a grey border */
+#myTable tr.header{ background-color: #14B37D; color: #3C474D;}  /* Header color */
+#myTable tr { border-bottom: 1px solid #ddd;} /* Add a bottom border to all table rows */
+#myTable tr:hover { background-color: #D6C07E;} /* hovering table row color */
+tr:nth-child(even){ background-color: #B7BABC;} /* even table rows' color */
+tr:nth-child(odd){ background-color: #D2D5D6;} /* odd table rows' color */
 td{ border: 1px solid #3C474D;} /* Table data border */
 th{ border: 1px solid #3C474D;} /* Table head border */
-#myTable { border: 1px solid #ddd;} /* Add a grey border */
-#myTable tr { border-bottom: 1px solid #ddd;} /* Add a bottom border to all table rows */
 
 /* Accordion colors */
-button.accordion { background-color: #e6e6e6; color: #444;}
-button.accordion.active, button.accordion:hover { background-color: #B8BCBE;}
-div.panel { background-color: #F5F5F5;}
-div.accordion { background-color: #e6e6e6; color: #444;}
+div.accordion { background-color: #e6e6e6; color: #444;} /* Accordion color*/
+div.accordion.active, div.accordion:hover { background-color: #B8BCBE;} /* Accordion hover color*/
 div.accordion:after { color: #777;}
-button.accordion:after { color: #777;}
+/* Accordion panel color*/
+div.panel { background-color: #F5F5F5;}
 
 /* Hidden buttons colors */
 button.transparent { border-color: transparent; background-color: transparent; color:#949A9D;}
@@ -42,5 +41,9 @@ h2.h-light-text-color{ color: #3C474D;}
 .btn-group button:hover { color: #3C474D;}
 
 /* Add button colors */
-.w3-circle{ color: #E62020; background-color: transparent;}
-.w3-circle :hover{ color: #BD1B1B;}
+.circle{ color: #E62020; background-color: transparent;}
+.circle :hover{ color: #BD1B1B;}
+
+/* Delete, edit buttons colors*/
+.change{ background-color: transparent; color: #828487;}
+.change.active, .change:hover { color: #3C474D;}

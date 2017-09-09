@@ -1,7 +1,7 @@
 /*The button to go to the page creating minutes, matters*/
 .material-icons.md-48 { font-size: 48px; }
 
-.w3-circle{
+.circle{
   position:fixed;
   border: none;
   top: 88%;
@@ -11,6 +11,6 @@
   cursor: pointer;
   font-size: 200px;
 }
-.w3-circle{
+.circle{
   font-size: 36px;
 }
