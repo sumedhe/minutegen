@@ -15,6 +15,10 @@
 #myTable tr:hover { background-color: #D6C07E;}
 tr:nth-child(even){ background-color: #B7BABC;}
 tr:nth-child(odd){ background-color: #D2D5D6;}
+td{ border: 1px solid #3C474D;} /* Table data border */
+th{ border: 1px solid #3C474D;} /* Table head border */
+#myTable { border: 1px solid #ddd;} /* Add a grey border */
+#myTable tr { border-bottom: 1px solid #ddd;} /* Add a bottom border to all table rows */
 
 /* Accordion colors */
 button.accordion { background-color: #e6e6e6; color: #444;}
@@ -36,3 +40,7 @@ h2.h-light-text-color{ color: #3C474D;}
 .btn-group button { color: #14B37D;}
 /* Add a background color on hover */
 .btn-group button:hover { color: #3C474D;}
+
+/* Add button colors */
+.w3-circle{ color: #E62020; background-color: transparent;}
+.w3-circle :hover{ color: #BD1B1B;}

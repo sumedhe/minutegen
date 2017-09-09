@@ -10,12 +10,10 @@ table{
   width: 100%;
 }
 td{
-  border: 1px solid #3C474D;
   text-align: left;
   padding: 2%;
 }
 th{
-  border: 1px solid #3C474D;
   text-align: left;
   padding: 2%;
 }
@@ -28,16 +26,10 @@ td{
 #myTable {
     border-collapse: collapse; /* Collapse borders */
     width: 98%; /* Full-width */
-    border: 1px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
 }
 
 #myTable th, #myTable td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
-}
-
-#myTable tr {
-    /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd;
 }
