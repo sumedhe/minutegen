@@ -47,3 +47,9 @@ h2.h-light-text-color{ color: #3C474D;}
 /* Delete, edit buttons colors*/
 .change{ background-color: transparent; color: #828487;}
 .change.active, .change:hover { color: #3C474D;}
+
+/* Left bar colors */
+body.left{ background-color: #1B1E24;}
+.vertical-menu a { color:  #7F7C75;}
+.vertical-menu a:hover { background-color: #14B37D; color: #E8E2D6;}
+.vertical-menu a.active { color: #4d4d4d; background-color: #f2f2f2;}
