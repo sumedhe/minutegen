@@ -14,7 +14,11 @@
     <div class="top-nav">
       <div class="row">
         <div class="col-3">
-          <i class="material-icons">menu</i>
+          <div class="menu-bar">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+           </div>
 
         </div>
         <div class="col-1">
@@ -22,7 +26,7 @@
 
         </div>
         <div class="col-2">
-          <input type="text" id="myInput" name="search" placeholder="Search..">
+          <input type="text" id="searchInput" name="search" placeholder="Search..">
 
         </div>
         <div class="col-3">
