@@ -7,10 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/colors.css">
     <!-- Include table -->
     <link rel="stylesheet" type="text/css" href="../../../public/css/table.css">
-    <!-- Include creating members button -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/addbutton.css">
-    <!-- Include delete, edit members button -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/deleteEditButton.css">
+    <!-- Include delete, edit members button and creating members button -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/button.css">
     <!-- Include search bar -->
     <link rel="stylesheet" type="text/css" href="../../../public/css/search.css">
     <!-- Include google icons -->
@@ -62,27 +60,9 @@
         </td>
       </tr>
     </table>
-    <script>
-    // Search bar function
-    function myFunction() {
-      var input, filter, table, tr, td, i;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("myTable");
-      tr = table.getElementsByTagName("tr");
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        }
-      }
-    }
-    </script>
-<!-- Add button -->
+    <!-- Search bar function -->
+    <script src="../../../public/js/search.js"></script>
+    <!-- Add button -->
     <form action="member.html" method="get">
       <button type="submit" class="circle" formaction="addmember.html"><i class="material-icons md-48" >add_circle</i></button>
     </form>

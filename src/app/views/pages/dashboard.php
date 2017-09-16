@@ -5,11 +5,15 @@
   <head>
     <meta charset="utf-8">
     <title>Dashboard view</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <!-- Include color pallette -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/colors.css">
+    <!-- Include dashboard -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/dashboard.css">
+    <!-- Include google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
-  <body>
+  <body class="default-primary-color">
     <div class="container">
       <!--upper row containing 3 cards begins-->
       <div class="row">
