@@ -6,28 +6,22 @@
     <meta charset="utf-8">
     <title>Header view</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="TEST-header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Iconscss">
-
-    <style media="screen">
-      topnav{
-        color: white;
-        font-size: 35px;
-        font-style: bold;
-        background-color: #111;
-      }
-    </style>
-
   </head>
 
   <body>
     <div class="top-nav">
-      <div class="row" style="margin-left: 10px;">
-        <div class="col-1">
-          <i class="material-icons" style="font-size:30px;">menu</i>  BOSIUD
+      <div class="row">
+        <div class="col-3">
+          <i class="material-icons">menu</i>
 
         </div>
-        <div class="col2">
+        <div class="col-1">
+          BOSIUD
+
+        </div>
+        <div class="col-2">
           <input type="text" id="myInput" name="search" placeholder="Search..">
 
         </div>
@@ -46,11 +40,11 @@
 
       </div>
       <!--WHAT IS THIS???-->
-      <div class="menu-bar">
+    <!--<div class="menu-bar">
 	        <div class="bar1"></div>
 	        <div class="bar2"></div>
 	        <div class="bar3"></div>
-	    </div>
+	      </div> -->
 
     </div>
 
