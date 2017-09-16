@@ -1,3 +1,59 @@
+* {
+   box-sizing: border-box;
+ }
+
+/* Hiding buttons */
 button.transparent {
   cursor: pointer;
+}
+
+/*The button to go to the page creating minutes, matters*/
+.material-icons.md-48 { font-size: 48px; }
+
+.circle{
+  position:fixed;
+  border: none;
+  top: 88%;
+  left: 93%;
+  z-index: 3000;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 200px;
+}
+.circle{
+  font-size: 36px;
+}
+
+/* Accordion, list, cards link buttons*/
+ .material-icons.md { font-size: 28px; }
+
+.btn-group button {
+    margin-right: 1%;
+    padding: 5px 5px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: right; /* Float the buttons side by side */
+    transition: 0.3s;
+    border: none;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add, delete buttons */
+.material-icons.md { font-size: 28px; }
+
+.change{
+  margin-right: 1%;
+  padding: 5px 5px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: right; /* Float the buttons side by side */
+  border: none;
+}
+.change:after {
+    content: "";
+    clear: both;
+    display: table;
 }

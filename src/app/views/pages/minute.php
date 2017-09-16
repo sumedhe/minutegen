@@ -8,7 +8,7 @@
     <!-- Include table -->
     <link rel="stylesheet" type="text/css" href="../../../public/css/table.css">
     <!-- Include creating minutes button -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/addbutton.css">
+    <link rel="stylesheet" type="text/css" href="../../../public/css/button.css">
     <!-- Include search bar -->
     <link rel="stylesheet" type="text/css" href="../../../public/css/search.css">
     <!-- Include google icons -->
@@ -55,7 +55,7 @@
 <!-- Search bar function -->
 <script src="../../../public/js/search.js"></script>
 <!-- Add button -->
-<form action="matterlist.html" method="get">
+<form action="matterlist.php" method="get">
   <button type="submit" class="circle" formaction="addminute.html"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 </body>

@@ -7,13 +7,11 @@
   <link rel="stylesheet" type="text/css" href="../../../public/css/colors.css">
   <!-- Include table -->
   <link rel="stylesheet" type="text/css" href="../../../public/css/table.css">
-  <!-- Include creating matters button -->
-  <link rel="stylesheet" type="text/css" href="../../../public/css/addbutton.css">
+  <!-- Include group buttons and creating matters button -->
+  <link rel="stylesheet" type="text/css" href="../../../public/css/button.css">
   <!-- Include search bar -->
   <link rel="stylesheet" type="text/css" href="../../../public/css/search.css">
   <!-- Include button group of views -->
-  <link rel="stylesheet" type="text/css" href="../../../public/css/btngroup.css">
-  <!-- Include google icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
@@ -22,11 +20,11 @@
     <form class="btn-group" action="minuteaccordion.html" method="get">
     <h2 class="h-light-text-color">Matter List
       <!-- Matter cards button -->
-      <button type="submit" class="cards default-primary-color" formaction="matterview.html"><i class="material-icons md">dashboard</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matterview.php"><i class="material-icons md">dashboard</i></button>
       <!-- Matter list button -->
-      <button type="submit" class="cards default-primary-color" formaction="matterlist.html"><i class="material-icons md">list</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matterlist.php"><i class="material-icons md">list</i></button>
       <!-- Matter accordion button -->
-      <button type="submit" class="cards default-primary-color" formaction="matteraccordion.html"><i class="material-icons md">view_stream</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matteraccordion.php"><i class="material-icons md">view_stream</i></button>
       </h2>
     </form>
     <!-- Creating Search bar -->
@@ -58,8 +56,8 @@
 <!-- Search bar function -->
 <script src="../../../public/js/search.js"></script>
 <!-- Add button -->
-<form action="matterlist.html" method="get">
-  <button type="submit" class="circle" formaction="addmatter.html"><i class="material-icons md-48" >add_circle</i></button>
+<form action="matterlist.php" method="get">
+  <button type="submit" class="circle" formaction="addmatter.php"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 </body>
 </html>
