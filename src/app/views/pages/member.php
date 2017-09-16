@@ -7,10 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/colors.css">
     <!-- Include table -->
     <link rel="stylesheet" type="text/css" href="../../../public/css/table.css">
-    <!-- Include creating members button -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/addbutton.css">
-    <!-- Include delete, edit members button -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/deleteEditButton.css">
+    <!-- Include delete, edit members button and creating members button -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/button.css">
     <!-- Include search bar -->
     <link rel="stylesheet" type="text/css" href="../../../public/css/search.css">
     <!-- Include google icons -->
