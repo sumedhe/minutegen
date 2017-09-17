@@ -64,7 +64,7 @@
     <script src="../../../public/js/search.js"></script>
     <!-- Add button -->
     <form action="member.html" method="get">
-      <button type="submit" class="circle" formaction="addmember.html"><i class="material-icons md-48" >add_circle</i></button>
+      <button type="submit" class="circle" formaction="addmember.php"><i class="material-icons md-48" >add_circle</i></button>
     </form>
   </body>
 </html>
