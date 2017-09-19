@@ -1,1 +1,3 @@
-<!-- Menu bar -->
+<!--
+Menu bar
+ -->
