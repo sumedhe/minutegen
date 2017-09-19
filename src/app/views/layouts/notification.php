@@ -37,19 +37,6 @@
       position:relative;
   }
 
-  /* A CIRCLE LIKE BUTTON IN THE TOP MENU. */
-  #noti_Button {
-      width:20px;
-      height:20px;
-      line-height:20px;
-      border-radius:50%;
-      -moz-border-radius:50%;
-      -webkit-border-radius:50%;
-      background:#FFF;
-      margin:-3px 10px 0 10px;
-      cursor:pointer;
-  }
-
   /* THE POPULAR RED NOTIFICATIONS COUNTER. */
   #noti_Counter {
       display:block;
@@ -118,6 +105,52 @@
       color:#3b5998;
       text-decoration:underline;
   }
+	input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+	input[type=text]:focus {
+    width: 20%;
+}
+/* Style the navbar */
+#topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+
 </style>
 
 </head>
@@ -129,20 +162,19 @@
 
       <i class="material-icons" style="font-size:30px;">menu</i>  BOSIUD
       <input type="text" id="myInput" name="search" placeholder="Search..">
-
-        <li><a href="#" class="fa fa-cog"></a> </li>
-        <!--<li><a href="#" class="fa fa-bell-o"></a> </li>-->
+				<li><a href="#"><i class="fa fa-search"></i></a></li>
+        <li><a href="#"><i class="fa fa-cog"></i></a></li>
+        <li><a href="#"><i class="fa fa-bell-o"></i></a> </li>
         <li id="noti_Container">
             <div id="noti_Counter"></div>   <!--SHOW NOTIFICATIONS COUNT.-->
-            <div id="noti_Button"></div><!--A CIRCLE LIKE BUTTON TO DISPLAY NOTIFICATION DROPDOWN.-->
+            <div id="#fa fa-bell-o"></div><!--A BELL LIKE BUTTON TO DISPLAY NOTIFICATION DROPDOWN.-->
             <!--THE NOTIFICAIONS DROPDOWN BOX.-->
             <div id="notifications">
                 <h3>Notifications</h3>
                 <div style="height:300px;"></div>
                 <div class="seeAll"><a href="#">See All</a></div>
             </div>
-
-        <li><a href="#" class="fa fa-user"></a> </li>
+						<li><a href="#"><i class="fa fa-user"></i></a> </li>
 
 
 
@@ -167,14 +199,14 @@
                 .css({ top: '-10px' })
                 .animate({ top: '-2px', opacity: 1 }, 500);
 
-            $('#noti_Button').click(function () {
+            $('#fa fa-bell-o').click(function () {
 
                 // TOGGLE (SHOW OR HIDE) NOTIFICATION WINDOW.
                 $('#notifications').fadeToggle('fast', 'linear', function () {
                     if ($('#notifications').is(':hidden')) {
-                        $('#noti_Button').css('background-color', '#2E467C');
+                        $('fa fa-bell-o').css('background-color', '#2E467C');
                     }
-                    else $('#noti_Button').css('background-color', '#FFF');        // CHANGE BACKGROUND COLOR OF THE BUTTON.
+                    else $('fa fa-bell-o').css('background-color', '#FFF');        // CHANGE BACKGROUND COLOR OF THE BUTTON.
                 });
 
                 $('#noti_Counter').fadeOut('slow');                 // HIDE THE COUNTER.
@@ -189,7 +221,7 @@
                 // CHECK IF NOTIFICATION COUNTER IS HIDDEN.
                 if ($('#noti_Counter').is(':hidden')) {
                     // CHANGE BACKGROUND COLOR OF THE BUTTON.
-                    $('#noti_Button').css('background-color', '#2E467C');
+                    $('fa fa-bell-o').css('background-color', '#2E467C');
                 }
             });
 
