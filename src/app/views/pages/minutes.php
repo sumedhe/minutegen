@@ -1,1 +1,3 @@
-<!-- Minutes section -->
+<!--
+Minutes page
+-->

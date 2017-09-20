@@ -1,3 +1,3 @@
 <!--
-Dashboard
+Help page
  -->
