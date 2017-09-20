@@ -1,0 +1,18 @@
+input#myInput{
+  background-image: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  font-size: 12pt;
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 98%;
+  padding: 12px 20px 12px 40px;
+}
+
+h2.h-light-text-color{
+  margin-left: 13px;
+}
+table{
+  margin-left: 13px;
+}
