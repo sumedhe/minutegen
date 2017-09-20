@@ -6,9 +6,30 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <!-- Include color pallette -->
     <link rel="stylesheet" type="text/css" href="./css/colors.css">
-
+    <!-- Include accordion -->
+    <link rel="stylesheet" type="text/css" href="./css/accordion.css">
+    <!-- Include buttons -->
+    <link rel="stylesheet" type="text/css" href="./css/button.css">
+    <!-- Include side nav -->
+    <link rel="stylesheet" type="text/css" href="./css/left.css">
+    <!-- Include side nav -->
+    <link rel="stylesheet" type="text/css" href="./css/sidenav.css">
+    <!-- Include search -->
+    <link rel="stylesheet" type="text/css" href="./css/search.css">
+    <!-- Include tables -->
+    <link rel="stylesheet" type="text/css" href="./css/table.css">
+    <!-- Include google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script type="text/javascript" src="./js/main.js"></script>
+    <!-- Include accordion functions -->
+    <script type="text/javascript" src="./js/accordion.js"></script>
+    <!-- Include sidenav functions -->
+    <script type="text/javascript" src="./js/sidenav.js"></script>
+    <!-- Include button functions -->
+    <script type="text/javascript" src="./js/button.js"></script>
+    <!-- Include search functions -->
+    <script type="text/javascript" src="./js/search.js"></script>
   </head>
 
   <body class="default-primary-color">
