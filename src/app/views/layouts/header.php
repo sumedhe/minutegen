@@ -11,4 +11,4 @@
     <script type="text/javascript" src="./js/main.js"></script>
   </head>
 
-  <body>
+  <body class="default-primary-color">
