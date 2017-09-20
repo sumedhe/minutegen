@@ -10,8 +10,7 @@
       <button type="submit" class="cards default-primary-color" formaction="matteraccordion.php"><i class="material-icons md">view_stream</i></button>
       </h2>
     </form>
-     <!-- Creating Search bar -->
-     <!-- onkeyup="myFunction()" needs to be created -->
+    <!-- Creating Search bar -->
     <input type="text" id="myInput" placeholder="Search for matters.." title="Type an ID">
     <!-- Accordion creation with hiding buttons -->
     <!-- Needs to work on hiding buttons -->
@@ -43,7 +42,7 @@
 
     </div>
     <!-- Included data -->
-    <div class="panel">
+    <div class="panel light-primary-color">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 

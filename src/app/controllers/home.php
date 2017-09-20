@@ -12,7 +12,7 @@ class Home extends Controller
     $this->view('layouts/topBar');
     $this->view('layouts/searchBar');
     $this->view('layouts/pages');
-    $this->view('pages/matters');
+    $this->view('pages/minutes');
     $this->view('layouts/footer');
   }
 
