@@ -8,7 +8,7 @@ class Home extends Controller
   {
     // Generate view
     $this->view('layouts/header');
-    $this->view('pages/sidenav');
+    $this->view('pages/sideNav');
     $this->view('layouts/topBar');
     $this->view('layouts/searchBar');
     $this->view('layouts/pages');

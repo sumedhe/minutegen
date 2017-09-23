@@ -3,7 +3,7 @@
   <!-- Dashboard link -->
   <a href="dashboard.php" target="main"> <i class="material-icons">home</i>  Dashboard</a>
   <!-- Matters link -->
-  <a href="matteraccordion.php" target="main"> <i class="material-icons">note</i>  Matters</a>
+  <a href="matterAccordion.php" target="main"> <i class="material-icons">note</i>  Matters</a>
   <!-- Minutes link -->
   <a href="minute.php" target="main"> <i class="material-icons">pageview</i>  Minutes</a>
   <!-- Members link -->
@@ -14,4 +14,4 @@
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>
+  <span style="cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>

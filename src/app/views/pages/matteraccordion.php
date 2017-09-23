@@ -1,6 +1,6 @@
 <div>
 
-    <form class="btn-group" action="minuteaccordion.php" method="get">
+    <form class="btn-group" action="minuteAccordion.php" method="get">
     <h2 class="h-light-text-color">Matter Accordion
       <!-- Matter cards button -->
       <button type="submit" class="cards default-primary-color" formaction="mattercard.php"><i class="material-icons md">dashboard</i></button>
@@ -47,8 +47,8 @@
     </div>
 
 <!-- Add button -->
-<form action="matteraccordion.php" method="get">
-  <button type="submit" class="circle" formaction="addmatter.php"><i class="material-icons md-48" >add_circle</i></button>
+<form action="matterAccordion.php" method="get">
+  <button type="submit" class="circle" formaction="addMatter.php"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 
 </div>

@@ -13,7 +13,7 @@
     <!-- Include side nav -->
     <link rel="stylesheet" type="text/css" href="./css/left.css">
     <!-- Include side nav -->
-    <link rel="stylesheet" type="text/css" href="./css/sidenav.css">
+    <link rel="stylesheet" type="text/css" href="./css/sideNav.css">
     <!-- Include search -->
     <link rel="stylesheet" type="text/css" href="./css/search.css">
     <!-- Include tables -->
@@ -25,7 +25,7 @@
     <!-- Include accordion functions -->
     <script type="text/javascript" src="./js/accordion.js"></script>
     <!-- Include sidenav functions -->
-    <script type="text/javascript" src="./js/sidenav.js"></script>
+    <script type="text/javascript" src="./js/sideNav.js"></script>
     <!-- Include button functions -->
     <script type="text/javascript" src="./js/button.js"></script>
     <!-- Include search functions -->
