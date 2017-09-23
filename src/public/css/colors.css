@@ -14,9 +14,9 @@
 #myTable { border: 1px solid #ddd;} /* Add a grey border */
 #myTable tr.header{ background-color: #14B37D; color: #3C474D;}  /* Header color */
 #myTable tr { border-bottom: 1px solid #ddd;} /* Add a bottom border to all table rows */
-#myTable tr:hover { background-color: #D6C07E;} /* hovering table row color */
-tr:nth-child(even){ background-color: #B7BABC;} /* even table rows' color */
-tr:nth-child(odd){ background-color: #D2D5D6;} /* odd table rows' color */
+#myTable tr:hover { background-color: #da8550;} /* hovering table row color */
+tr:nth-child(even){ background-color: #86bbd8;} /* even table rows' color */
+tr:nth-child(odd){ background-color: #6399a6;} /* odd table rows' color */
 td{ border: 1px solid #3C474D;} /* Table data border */
 th{ border: 1px solid #3C474D;} /* Table head border */
 
@@ -30,7 +30,7 @@ button.transparent { border-color: transparent; background-color: transparent; c
 button.transparent.active, button.transparent:hover { color: #3C474D;}
 
 /* Search bar colors */
-input#myInput{ background-color: #7ED5B8; color: #3C474D; border: 1px solid #f2f2f2;}
+input#myInput{ background-color: #5f7e3a; color: #3C474D; border: 1px solid #f2f2f2;}
 
 /* Matter view buttons */
 .btn-group button { color: #14B37D;}

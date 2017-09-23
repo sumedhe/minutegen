@@ -41,3 +41,48 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+/* Hovering Side Navigation */
+.material-icons.md-26 { font-size: 28px; }
+
+#mySidenav a {
+    position: absolute;
+    left: -145px;
+    transition: 0.3s;
+    padding: 20px;
+    width: 200px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 28px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#dashboard {
+    top: 80px;
+    background-color: rgba(95, 126, 58, 0.9);
+}
+
+#matters {
+    top: 180px;
+    background-color: rgba(99, 153, 166, 0.9);
+}
+
+#minutes {
+    top: 280px;
+    background-color: rgba(218, 133, 80, 0.9);
+}
+
+#members {
+    top: 380px;
+    background-color: rgba(134, 187, 216, 0.9);
+}
+
+#help {
+    top: 480px;
+    background-color: rgba(51, 102, 153, 0.9);
+}
