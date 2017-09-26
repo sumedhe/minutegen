@@ -64,25 +64,25 @@
 
 #dashboard {
     top: 80px;
-    background-color: rgba(95, 126, 58, 0.9);
+    background-color: rgba(27, 30, 36, 0.9);
 }
 
 #matters {
-    top: 180px;
-    background-color: rgba(99, 153, 166, 0.9);
+    top: 155px;
+    background-color: rgba(27, 30, 36, 0.9);
 }
 
 #minutes {
-    top: 280px;
-    background-color: rgba(218, 133, 80, 0.9);
+    top: 230px;
+    background-color: rgba(27, 30, 36, 0.9);
 }
 
 #members {
-    top: 380px;
-    background-color: rgba(134, 187, 216, 0.9);
+    top: 305px;
+    background-color: rgba(27, 30, 36, 0.9);
 }
 
 #help {
-    top: 480px;
-    background-color: rgba(51, 102, 153, 0.9);
+    top: 380px;
+    background-color: rgba(27, 30, 36, 0.9);
 }
