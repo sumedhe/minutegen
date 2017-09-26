@@ -45,7 +45,7 @@
 /* Hovering Side Navigation */
 .material-icons.md-26 { font-size: 28px; }
 
-#mySideNav a {
+#hov-side-nav a {
     position: absolute;
     left: -145px;
     transition: 0.3s;
@@ -58,31 +58,31 @@
     border-radius: 0 5px 5px 0;
 }
 
-#mySideNav a:hover {
+#hov-side-nav a:hover {
     left: 0;
 }
 
-#dashboard {
+#hov-dashboard {
     top: 80px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
-#matters {
+#hov-matters {
     top: 155px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
-#minutes {
+#hov-minutes {
     top: 230px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
-#members {
+#hov-members {
     top: 305px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
-#help {
+#hov-help {
     top: 380px;
     background-color: rgba(27, 30, 36, 0.9);
 }
