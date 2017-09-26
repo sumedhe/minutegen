@@ -1,7 +1,7 @@
 <?php
   // Connection parameters
-  $server = "localhost";
-  $user = "root";
-  $pass = "";
+  $server = "54.191.139.81";
+  $user = "admin";
+  $pass = "admin@123";
   $db = "minutegen";
 ?>
