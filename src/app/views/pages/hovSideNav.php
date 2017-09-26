@@ -1,4 +1,4 @@
-<div id="mySidenav">
+<div id="mySideNav">
   <a href="dashboard.php" id="dashboard"> Dashboard <i class="material-icons md-26">home</i>  </a>
   <!-- Matters link -->
   <a href="matterAccordion.php" id="matters"> Matters <i class="material-icons md-26">note</i>  </a>

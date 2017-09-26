@@ -45,7 +45,7 @@
 /* Hovering Side Navigation */
 .material-icons.md-26 { font-size: 28px; }
 
-#mySidenav a {
+#mySideNav a {
     position: absolute;
     left: -145px;
     transition: 0.3s;
@@ -58,7 +58,7 @@
     border-radius: 0 5px 5px 0;
 }
 
-#mySidenav a:hover {
+#mySideNav a:hover {
     left: 0;
 }
 
