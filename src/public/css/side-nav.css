@@ -3,9 +3,9 @@
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 100px;
     left: 0;
-    background-color: #111;
+    background-color: rgba(27, 30, 36, 1);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -37,13 +37,13 @@
     padding: 10px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 400px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
 /* Hovering Side Navigation */
-.material-icons.md-26 { font-size: 28px; }
+.material-icons.md-28 { font-size: 28px; }
 
 #hov-side-nav a {
     position: absolute;
@@ -63,26 +63,26 @@
 }
 
 #hov-dashboard {
-    top: 80px;
+    top: 100px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
 #hov-matters {
-    top: 155px;
+    top: 175px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
 #hov-minutes {
-    top: 230px;
+    top: 250px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
 #hov-members {
-    top: 305px;
+    top: 325px;
     background-color: rgba(27, 30, 36, 0.9);
 }
 
 #hov-help {
-    top: 380px;
+    top: 400px;
     background-color: rgba(27, 30, 36, 0.9);
 }
