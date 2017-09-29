@@ -28,6 +28,10 @@
     <script type="text/javascript" src="./js/side-nav.js"></script>
     <!-- Include search functions -->
     <script type="text/javascript" src="./js/search.js"></script>
+
+    <!-- Load fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   </head>
 
   <body class="default-primary-color" style="margin-left:45px;">

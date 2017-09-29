@@ -1,21 +1,18 @@
 <?php
-// Set root path for inclusion
-define('INC_ROOT', dirname(__DIR__));
+// Load constants //
+require_once '../config/constants.php';
 
 // Set http root
-define('HTTP_ROOT', INC_ROOT . "/public");
+define('HTTP_ROOT', INC_ROOT . '/public');
 
 // Set root path for images
-define('IMG_ROOT', INC_ROOT . "/public/images");
+define('IMG_ROOT', INC_ROOT . '/public/images');
 
 // Set root path for configuration files
-define('CONF_ROOT', INC_ROOT . "/public/config");
+define('CONF_ROOT', INC_ROOT . '/public/config');
+
 
 // Require core files
 require_once INC_ROOT . '/app/core/App.php';
 require_once INC_ROOT . '/app/core/Controller.php';
 require_once INC_ROOT . '/app/core/View.php';
-
-
-
-?>
