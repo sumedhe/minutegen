@@ -19,7 +19,7 @@
     <!-- Include tables -->
     <link rel="stylesheet" type="text/css" href="./css/table.css">
     <!-- Include google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
     <script type="text/javascript" src="./js/main.js"></script>
     <!-- Include accordion functions -->
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="./js/search.js"></script>
 
     <!-- Load fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
 
   </head>
 

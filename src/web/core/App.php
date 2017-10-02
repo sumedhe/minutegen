@@ -14,7 +14,7 @@ class App
     $this->args = $url ? array_values($url) : [];
 
     // Require default controller
-    require_once INC_ROOT . '/app/controllers/' . $this->controller . '.php';
+    require_once INC_ROOT . '/web/controllers/' . $this->controller . '.php';
     // Call the default method of the default controller
     $this->controller = new $this->controller();
     call_user_func_array([$this->controller, $this->method], $this->args);

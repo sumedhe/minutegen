@@ -6,7 +6,7 @@ class Controller
   public function model($model)
   {
     // Create and return a model
-    require_once INC_ROOT . '/app/models/' . $model . ".php";
+    require_once INC_ROOT . '/web/models/' . $model . ".php";
     return new $model();
   }
 
