@@ -1,0 +1,84 @@
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+/* The Close Button */
+.matter-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.matter-close:hover,
+.matter-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.matter-container input[type=text], input[type=password], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #004080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:right;
+
+}
+input[type=submit]:hover {
+  background-color: #00264d;
+}
+input[type=reset] {
+  background-color: #004d4d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:right;
+  margin-right: 20px;
+
+}
+input[type=reset]:hover {
+  background-color: #001a1a;
+}
+.matter-container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 70px;
+}
+

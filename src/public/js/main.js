@@ -1,7 +1,9 @@
 // main.js
+
+// TEST //
 function run(){
   var xhr = new XMLHttpRequest();
-  var url = "test.php";
+  var url = "";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.onreadystatechange = function () {
@@ -15,8 +17,7 @@ function run(){
   xhr.send(data);
 }
 
-
-
+// TEST //
 function loadPage()
 {
   aside = document.getElementById("pages");

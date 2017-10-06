@@ -16,7 +16,7 @@ class View
   public function parseView()
   {
     // Include the view file
-    include INC_ROOT . '/web/views/' . $this->file . '.php';
+    include ROOT_PATH . '/web/views/' . $this->file . '.php';
   }
 
 }

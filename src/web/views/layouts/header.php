@@ -18,8 +18,10 @@
     <link rel="stylesheet" type="text/css" href="./css/search.css">
     <!-- Include tables -->
     <link rel="stylesheet" type="text/css" href="./css/table.css">
+    <!-- Include help -->
+    <link rel="stylesheet" type="text/css" href="./css/help.css">
     <!-- Include google icons -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script type="text/javascript" src="./js/main.js"></script>
     <!-- Include accordion functions -->
@@ -28,9 +30,10 @@
     <script type="text/javascript" src="./js/side-nav.js"></script>
     <!-- Include search functions -->
     <script type="text/javascript" src="./js/search.js"></script>
-
+    <!-- Include help.accordian function -->
+    <script type="text/javascript" src="./js/help.js"></script>
     <!-- Load fonts -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
   </head>
 
