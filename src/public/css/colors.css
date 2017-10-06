@@ -61,3 +61,25 @@ body.left{ background-color: #1B1E24;}
 .vertical-menu a { color: black;}
 .vertical-menu a:hover { background-color: #e6e6e6;}
 .vertical-menu a.active { background-color: #4CAF50; color: white;}
+
+/* Topbar colors */
+a.top, span.menu {color: white;}
+.logo{color: #f1f1f1;}
+i.top-buttons:hover, .menu:hover {color: #f1f1f1;background-color: #63686d;}
+#myInput {border: 2px solid #63686d;background-color: #b4bac1;}
+#myInput:focus {background-color: #fff;}
+#myInput:hover {background-color: #fff;}
+#topnav {background-color: #333;}
+#topnav a {color: #f2f2f2;}
+
+
+/* Notification */
+#noti_Button {background:#FFF;}
+#noti_Counter {background:#E1141E;color:#FFF;}
+#notifications {background:#FFF;border:solid 1px rgba(100, 100, 100, .20);-webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .20);}
+#notifications:before {border:10px solid #CCC;border-color:transparent transparent #FFF;}
+
+
+.seeAll {background:#F6F7F8; border-top:solid 1px rgba(100, 100, 100, .30);}
+.seeAll a {color:#3b5998;}
+.seeAll a:hover {background:#F6F7F8;color:#3b5998;}
