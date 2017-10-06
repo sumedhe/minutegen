@@ -11,13 +11,14 @@
     <!-- Include buttons -->
     <link rel="stylesheet" type="text/css" href="./css/button.css">
     <!-- Include side nav -->
-    <link rel="stylesheet" type="text/css" href="./css/left.css">
-    <!-- Include side nav -->
     <link rel="stylesheet" type="text/css" href="./css/side-nav.css">
+    <!-- Include topbar -->
+    <link rel="stylesheet" type="text/css" href="./css/top-bar.css">
+    <!-- Include dashboard -->
+    <link rel="stylesheet" type="text/css" href="./css/dash-board.css">
     <!-- Include search -->
     <link rel="stylesheet" type="text/css" href="./css/search.css">
-    <!-- Include tables -->
-    <link rel="stylesheet" type="text/css" href="./css/table.css">
+
     <!-- Include help -->
     <link rel="stylesheet" type="text/css" href="./css/help.css">
     <!-- Include google icons -->
@@ -37,4 +38,4 @@
 
   </head>
 
-  <body class="default-primary-color" style="margin-left:45px;">
+  <body class="default-primary-color">
