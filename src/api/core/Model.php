@@ -5,8 +5,7 @@ class Model
   protected $table;
   protected $fields;
 
-  public function __construct($table)
-  {
+  public function __construct($table) {
     $this->table = $table; // Set database table
 
     $this->db = new DB();

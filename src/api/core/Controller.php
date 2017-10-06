@@ -1,16 +1,13 @@
 <?php
 // The controller class for api
-class Controller
-{
+class Controller {
   // Load model
-  public function model($model)
-  {
+  public function model($model) {
     require_once ROOT . '/api/models/' . $model . '.php';     // Create new model
     return new $model;
   }
 
-  public function view($viewName, $data = [])
-  {
+  public function view($viewName, $data = []) {
     // Parse a new view
     $view = new View($viewName);
     $view->parseView();

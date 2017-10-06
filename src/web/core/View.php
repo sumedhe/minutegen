@@ -1,18 +1,15 @@
 <?php
 // The view clas
-class View
-{
+class View {
   private $file; // View file in /app/views
   private $data; // Data of the view
 
-  public function __construct($file, $data = null)
-  {
+  public function __construct($file, $data = null) {
     $this->file = $file;
     $this->data = $data;
   }
 
-  public function parseView()
-  {
+  public function parseView() {
     include $GLOBALS['path']['WEB_ROOT'] . '/views/' . $this->file . '.php';     // Include the view file
   }
 

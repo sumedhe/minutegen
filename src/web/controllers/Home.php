@@ -1,11 +1,9 @@
 <?php
 
 // Home controller
-class Home extends Controller
-{
+class Home extends Controller {
   // Default controller method
-  public function index()
-  {
+  public function index() {
     // Generate view
     $this->view('layouts/header');
     $this->view('layouts/top-bar');

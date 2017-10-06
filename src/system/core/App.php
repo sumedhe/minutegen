@@ -1,7 +1,6 @@
 <?php
 // Main class
-class App
-{
+class App {
   protected $config;
   protected $routes;
 
@@ -9,17 +8,14 @@ class App
   protected $method;
   protected $args = [];
 
-  public function __construct()
-  {
+  public function __construct() {
     // Load configurations
     $this->config = $GLOBALS['config'];
     $this->routes = $GLOBALS['routes'];
   }
 
-  public function setRoute()
-  {
-    if (isset($_GET['url']))
-    {
+  public function setRoute() {
+    if (isset($_GET['url'])) {
       // Sanitize URL
       $url = filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL);
 

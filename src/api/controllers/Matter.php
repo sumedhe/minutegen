@@ -1,8 +1,7 @@
 <?php
-class Matter extends Controller
-{
-  public function __construct()
-  {
+class Matter extends Controller {
+  
+  public function __construct() {
 
   }
 
