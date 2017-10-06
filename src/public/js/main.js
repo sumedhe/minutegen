@@ -3,7 +3,7 @@
 // TEST //
 function run(){
   var xhr = new XMLHttpRequest();
-  var url = "";
+  var url = "/minutegen/matter";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.onreadystatechange = function () {

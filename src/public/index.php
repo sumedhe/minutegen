@@ -1,6 +1,6 @@
 <?php
 // initialization
-require_once '../system/init.php';
+require_once '../init.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET')
 {

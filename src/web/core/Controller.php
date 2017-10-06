@@ -2,11 +2,10 @@
 // The controller class
 class Controller
 {
-  // Load a model
-  public function model($model)
+  public function model($model)   // Load a model
   {
-    // Create and return a model
-    require_once INC_ROOT . '/web/models/' . $model . ".php";
+    // Create new model
+    require_once ROOT . '/web/models/' . $model . ".php";
     return new $model();
   }
 
@@ -14,8 +13,7 @@ class Controller
   public function view($viewName, $data = [])
   {
     // Parse a new view
-    // viewName is the name of the view file in apps/views/
-    $view = new View($viewName);
+    $view = new View($viewName); // viewName is the name of the view file in apps/views/
     $view->parseView();
   }
 }

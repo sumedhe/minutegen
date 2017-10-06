@@ -1,4 +1,4 @@
 <?php
-return array(
-  // 'root_path' => dirname(__DIR__, 2),
+$config = array(
+  // 'ROOT' => dirname(__DIR__, 2),
 );

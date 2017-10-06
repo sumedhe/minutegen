@@ -1,4 +1,4 @@
 <?php
-return array(
+$routes = array(
   'default' => 'Home/index',
 );

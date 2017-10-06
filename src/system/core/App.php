@@ -2,20 +2,18 @@
 // Main class
 class App
 {
-  protected $config = array();
-  protected $db = array();
-  protected $routes = array();
+  protected $config;
+  protected $routes;
 
-  protected $path = '';
-  protected $controller = '';
-  protected $method = '';
+  protected $controller;
+  protected $method;
   protected $args = [];
 
   public function __construct()
   {
     // Load configurations
-    $this->config = include(ROOT_PATH . '/system/config/config.php');
-    $this->db = include(ROOT_PATH . '/system/database/db.php');
+    $this->config = $GLOBALS['config'];
+    $this->routes = $GLOBALS['routes'];
   }
 
   public function setRoute()
@@ -32,23 +30,20 @@ class App
       $route = $this->routes['default'];
     }
 
-    // Split contrller and method names
-    $route = explode('/', $route);
-
     // Set controller and method
+    $route = explode('/', $route);
     $this->controller = $route[0];
     $this->method = $route[1] ? $route[1] : 'index';
   }
 
   public function run(){
-    // Set route to run
-    $this->setRoute();
+    isset($this->controller) OR $this->setRoute();
 
-    // Require default controller
-    require_once $this->path . '/controllers/' . $this->controller . '.php';
-
-    // Call the default method of the default controller
+    // Import controller
+    require_once $GLOBALS['path']['app'] . '/controllers/' . $this->controller . '.php';
     $this->controller = new $this->controller();
+
+    // Method call of the controller
     call_user_func_array([$this->controller, $this->method], $this->args);
   }
 }
