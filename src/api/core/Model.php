@@ -9,5 +9,12 @@ class Model
     $this->table = $table; // Set database table
 
     $this->db = new DB();
+    return $this;
   }
+
+  public function selectAll() {
+    $sql = "select * from $this->table";
+    return $this->db->getAll($sql);
+  }
+
 }

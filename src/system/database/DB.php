@@ -26,4 +26,15 @@ class DB {
     }
     return $result;
   }
+
+  public function getAll($sql) {
+    echo 'a';
+    $this->ssql = $sql;
+    $result = $this->conn->query($sql);
+    $list = array();
+    while($row = $result->fetch_assoc()) {
+      $list[] = $row;
+    }
+    return $list;
+  }
 }

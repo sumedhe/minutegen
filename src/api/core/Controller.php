@@ -3,7 +3,7 @@
 class Controller {
   // Load model
   public function model($model) {
-    require_once ROOT . '/api/models/' . $model . '.php';     // Create new model
+    require_once $GLOBALS['path']['API_ROOT'] . '/models/' . $model . '.php';     // Create new model
     return new $model;
   }
 
