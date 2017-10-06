@@ -1,0 +1,45 @@
+a.top, span.menu {
+    color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #268CFF;
+  height: 65px;
+  color: white;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+.material-icons.top-buttons{
+  padding: 10px;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  margin:5px 5px;
+  float: right;
+  border-radius: 50%;
+}
+
+.material-icons.menu{
+  padding: 10px;
+  font-size: 28px;
+  text-align: center;
+  text-decoration: none;
+  margin:5px 5px;
+  float: left;
+  border-radius: 50%;
+}
+
+.logo{
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+i.top-buttons:hover, .menu:hover {
+    color: #f1f1f1;
+    background-color: #1C66BA;
+}

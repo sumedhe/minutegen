@@ -10,12 +10,10 @@
       <button type="submit" class="cards default-primary-color" formaction="matteraccordion.php"><i class="material-icons md">view_stream</i></button>
       </h2>
     </form>
-    <!-- Creating Search bar -->
-   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for matters.." title="Type an ID">
    <!-- Creating table -->
    <table id="myTable">
      <!-- Table header -->
-     <tr class="header">
+     <tr class="table-header-color">
        <th style="width:10%;">Matter No.</th>
        <th style="width:20%;">Matter Title</th>
        <th style="width:50%;">Content</th>
@@ -38,7 +36,7 @@
 </br>
 <!-- Add button -->
 <form action="matterlist.php" method="get">
-  <button type="submit" class="circle" formaction="addmatter.php"><i class="material-icons md-48" >add_circle</i></button>
+  <button type="submit" class="circle add-circle-color" formaction="addmatter.php"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 
 </div>

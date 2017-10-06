@@ -1,12 +1,10 @@
 <div>
 
     <h2 class="h-light-text-color">Members List</h2>
-    <!-- Creating Search bar -->
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for matters.." title="Type an ID">
   <!-- Creating table -->
   <table id="myTable">
     <!-- Table header -->
-      <tr class="header">
+      <tr class="table-header-color">
         <th style="width:35%;">Name</th>
         <th style="width:35%;">Email</th>
         <th style="width:15%;">Registered on</th>
@@ -46,7 +44,7 @@
     </table>
     <!-- Add button -->
     <form action="member.html" method="get">
-      <button type="submit" class="circle" formaction="addmember.php"><i class="material-icons md-48" >add_circle</i></button>
+      <button type="submit" class="circle add-circle-color" formaction="addmember.php"><i class="material-icons md-48" >add_circle</i></button>
     </form>
 
 </div>

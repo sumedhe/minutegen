@@ -1,14 +1,15 @@
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  min-width:1000px;
-}
-
 a.top, span.menu {
     color: white;
 }
 
-
+.topnav {
+  overflow: hidden;
+  background-color: #268CFF;
+  height: 65px;
+  color: white;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 
 .material-icons.top-buttons{
   padding: 10px;
@@ -103,7 +104,7 @@ i.top-buttons:hover, .menu:hover {
       cursor:pointer;
   }
 
-	
+
 
   .seeAll {
       background:#F6F7F8;

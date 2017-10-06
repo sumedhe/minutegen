@@ -1,77 +1,24 @@
 /* Color pallette */
 
-.dark-primary-color    { background: #303F9F; }
-.default-primary-color { background: #F2F2F2; }
-.light-primary-color   { background: #C5CAE9; }
-.text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #448AFF; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #757575; }
-.divider-color         { border-color: #BDBDBD; }
-.h-light-text-color    { color: #3C474D;}
+.dark-primary-color       { background: #303F9F; }
+.default-primary-color    { background: #F2F2F2; }
+.light-primary-color      { background: #C5CAE9; }
+.text-primary-color       { color: #FFFFFF; }
+.accent-color             { background: #448AFF; }
+.primary-text-color       { color: #212121; }
+.secondary-text-color     { color: #757575; }
+.divider-color            { border-color: #BDBDBD; }
+.h-light-text-color       { color: #3C474D;}
+.table-header-color       { background-color: #14B37D; color: #3C474D;}
+.add-circle-color         { color: #E62020; background-color: transparent;}
+.add-circle-color :hover  { color: #BD1B1B;}
 
-/* Table colors */
-#myTable { border: 1px solid #ddd;} /* Add a grey border */
-#myTable tr.header{ background-color: #14B37D; color: #3C474D;}  /* Header color */
-#myTable tr { border-bottom: 1px solid #ddd;} /* Add a bottom border to all table rows */
-#myTable tr:hover { background-color: #da8550;} /* hovering table row color */
-tr:nth-child(even){ background-color: #86bbd8;} /* even table rows' color */
-tr:nth-child(odd){ background-color: #6399a6;} /* odd table rows' color */
-td{ border: 1px solid #3C474D;} /* Table data border */
-th{ border: 1px solid #3C474D;} /* Table head border */
-
-/* Accordion colors */
-div.accordion { background-color: #e6e6e6; color: #444;} /* Accordion color*/
-div.accordion.active, div.accordion:hover { background-color: #B8BCBE;} /* Accordion hover color*/
-div.accordion:after { color: #777;}
-
-/* Hidden buttons colors */
-button.transparent { border-color: transparent; background-color: transparent; color:#949A9D;}
-button.transparent.active, button.transparent:hover { color: #3C474D;}
-
-/* Search bar colors */
-input#myInput{ background-color: #5f7e3a; color: #3C474D; border: 1px solid #f2f2f2;}
-
-/* Matter view buttons */
-.btn-group button { color: #14B37D;}
-/* Add a background color on hover */
-.btn-group button:hover { color: #3C474D;}
-
-/* Add button colors */
-.circle{ color: #E62020; background-color: transparent;}
-.circle :hover{ color: #BD1B1B;}
-
-/* Delete, edit buttons colors*/
-.change{ background-color: transparent; color: #828487;}
-.change.active, .change:hover { color: #3C474D;}
-
-/* Left bar colors */
-body.left{ background-color: #1B1E24;}
-.left-vertical-menu a { color:  #7F7C75;}
-.left-vertical-menu a:hover { background-color: #14B37D; color: #E8E2D6;}
-.left-vertical-menu a.active { color: #4d4d4d; background-color: #f2f2f2;}
-
-/* Dashboard colors */
-[class*="card"] { color: #ffffff;}
-.card1{ background-color:  #99c2ff;}
-.card2{ background-color:  #ffc14d;}
-.card3{ background-color: #65e765;}
-.notification-card, .meeting-card{ background-color: #ffffff; color: #000000;}
-.header{ background-color: #e6e6e6; color: #333333;}
-.vertical-menu a { color: black;}
-.vertical-menu a:hover { background-color: #e6e6e6;}
-.vertical-menu a.active { background-color: #4CAF50; color: white;}
 
 /* Topbar colors */
-a.top, span.menu {color: white;}
-.logo{color: #f1f1f1;}
-i.top-buttons:hover, .menu:hover {color: #f1f1f1;background-color: #63686d;}
-#myInput {border: 2px solid #63686d;background-color: #b4bac1;}
 #myInput:focus {background-color: #fff;}
 #myInput:hover {background-color: #fff;}
 #topnav {background-color: #333;}
 #topnav a {color: #f2f2f2;}
-
 
 /* Notification */
 #noti_Button {background:#FFF;}

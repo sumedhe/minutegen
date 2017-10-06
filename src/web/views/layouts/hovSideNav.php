@@ -9,3 +9,5 @@
     <!-- Help link -->
   <a href="help.php" id="hov-help"> Help <i class="material-icons md-28">help</i></a>
 </div>
+
+<div id="main">

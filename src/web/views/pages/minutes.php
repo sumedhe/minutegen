@@ -1,11 +1,9 @@
 <div>
   <h2 class="h-light-text-color">Minute List</h2>
-  <!-- Creating Search bar -->
-  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for matters.." title="Type an ID">
 <!-- Creating table -->
   <table id="myTable">
     <!-- Table header -->
-      <tr class="header">
+      <tr class="table-header-color">
         <th  style="width:10%;">Meeting No.</th>
         <th  style="width:10%;">Date</th>
         <th  style="width:40%;">Matters discussed</th>
@@ -38,6 +36,6 @@
 
 <!-- Add button -->
 <form action="minutes.php" method="get">
-  <button type="submit" class="circle" formaction="addminute.php"><i class="material-icons md-48" >add_circle</i></button>
+  <button type="submit" class="circle add-circle-color" formaction="addminute.php"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 </div>

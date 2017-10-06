@@ -12,6 +12,3 @@
   <a href="help.php" target="main"> <i class="material-icons">help</i>  Help</a>
 
 </div>
-
-<div id="main">
-  <span style="cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>
