@@ -14,11 +14,13 @@ td{
   padding: 2%;
 }
 th{
+  border: 1px solid #3C474D; /* Table head border */
   text-align: left;
   padding: 2%;
 }
 
 td{
+  border: 1px solid #3C474D; /* Table data border */
   font-size: 80%;
 }
 
@@ -26,8 +28,25 @@ td{
 #myTable {
     border-collapse: collapse; /* Collapse borders */
     width: 98%; /* Full-width */
+    margin-left: 13px;
     font-size: 18px; /* Increase font-size */
+    border: 1px solid #ddd; /* Add a grey border */
 }
+
+#myTable tr {
+  border-bottom: 1px solid #ddd; /* Add a bottom border to all table rows */
+}
+
+#myTable tr:hover {
+  background-color: #da8550; /* hovering table row color */
+}
+
+tr:nth-child(even){
+  background-color: #86bbd8; /* even table rows' color */
+  }
+tr:nth-child(odd){
+  background-color: #6399a6; /* odd table rows' color */
+  }
 
 #myTable th, #myTable td {
     text-align: left; /* Left-align text */

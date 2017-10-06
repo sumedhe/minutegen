@@ -1,12 +1,18 @@
-* {
+button {
    box-sizing: border-box;
  }
 
 /* Hiding buttons */
 button.transparent {
   cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+  color:#949A9D;
 }
 
+button.transparent.active, button.transparent:hover {
+  color: #3C474D;
+}
 /*The button to go to the page creating minutes, matters*/
 .material-icons.md-48 { font-size: 48px; }
 
@@ -25,9 +31,10 @@ button.transparent {
 }
 
 /* Accordion, list, cards link buttons*/
- .material-icons.md { font-size: 28px; }
+.material-icons.md { font-size: 28px; }
 
 .btn-group button {
+    color: rgba(27, 30, 36, 1);
     margin-right: 1%;
     padding: 5px 5px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
@@ -35,6 +42,11 @@ button.transparent {
     transition: 0.3s;
     border: none;
 }
+
+.btn-group button:hover {
+  color: rgba(27, 30, 36, 0.9);
+}
+
 /* Clear floats (clearfix hack) */
 .btn-group:after {
     content: "";
@@ -43,15 +55,20 @@ button.transparent {
 }
 
 /* Add, delete buttons */
-.material-icons.md { font-size: 28px; }
-
 .change{
+  background-color: transparent;
+  color: #828487;
   margin-right: 1%;
   padding: 5px 5px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: right; /* Float the buttons side by side */
   border: none;
 }
+
+.change.active, .change:hover {
+  color: #3C474D;
+}
+
 .change:after {
     content: "";
     clear: both;

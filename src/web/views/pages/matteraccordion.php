@@ -10,8 +10,6 @@
       <button type="submit" class="cards default-primary-color" formaction="matteraccordion.php"><i class="material-icons md">view_stream</i></button>
       </h2>
     </form>
-    <!-- Creating Search bar -->
-    <input type="text" id="myInput" placeholder="Search for matters.." title="Type an ID">
     <!-- Accordion creation with hiding buttons -->
     <!-- Needs to work on hiding buttons -->
     <div class="accordion buttons" class="material-icons" onmouseover="do_change(); return false;" onmouseout="do_hide(); return true;">129.3.1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -48,7 +46,7 @@
 
 <!-- Add button -->
 <form action="matterAccordion.php" method="get">
-  <button type="submit" class="circle" formaction="addMatter.php"><i class="material-icons md-48" >add_circle</i></button>
+  <button type="submit" class="circle add-circle-color" formaction="addMatter.php"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 
 </div>
