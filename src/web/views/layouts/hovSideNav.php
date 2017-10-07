@@ -1,3 +1,4 @@
+<div class="article">
 <div id="hov-side-nav">
   <a href="dashboard.php" id="hov-dashboard"> Dashboard <i class="material-icons md-28">home</i>  </a>
   <!-- Matters link -->

@@ -39,3 +39,4 @@
   </head>
 
   <body class="default-primary-color">
+    <div class="flex-container">

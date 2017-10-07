@@ -18,8 +18,10 @@
 
 #myInput:focus {
     background-color: #B0D5FF;
+    border: 2px solid #B0D5FF;
 }
 
 #myInput:hover {
     background-color: #B0D5FF;
+    border: 2px solid #B0D5FF;
 }
