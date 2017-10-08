@@ -60,6 +60,6 @@
 </div>
 <!-- Add button -->
 <form action="matterlist.php" method="get">
-  <button type="submit" class="circle add-circle-color" id="myBtn" formaction="addmatter.php"><i class="material-icons md-48" >add_circle</i></button>
+  <button type="submit" class="circle add-circle-color" id="myBtn" formaction="..\web\views\pages\addmatter.php"><i class="material-icons md-48" >add_circle</i></button>
 </form>
 </div>
