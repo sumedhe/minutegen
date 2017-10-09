@@ -1,0 +1,85 @@
+button.help {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 97%;
+    border: none;
+    
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    margin-left: 20px;
+    
+
+}
+
+div.container-1 {
+
+    height: 400px;
+    width: 100%;
+    background-color: #2b3e74;
+    padding-top: 40px;
+    
+    
+    
+}
+
+div.container-2 {
+
+    height: 400px;
+    width: 70%;
+    background-color: #aaaaaa;
+    padding-bottom: 70px;
+    margin-left: 200px;
+
+
+    
+}
+button.help.active, button.help:hover {
+    background-color: #ddd;
+}
+
+button.help:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 20px;
+}
+
+button.help.active:after {
+    content: "\2212";
+}
+
+div.help_panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-left: 40px;
+}
+
+
+h2.help{
+    color: black;
+    
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    
+
+}
+
+button.help{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    
+}
+
+button.help:hover {
+    background-color: #4CAF50; /* Green */
+    color: green;
+}
