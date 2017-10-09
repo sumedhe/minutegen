@@ -1,3 +1,4 @@
+//notification counter other functions
 $(document).ready(function () {
 
             // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.

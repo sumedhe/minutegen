@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="./css/dash-board.css">
     <!-- Include search -->
     <link rel="stylesheet" type="text/css" href="./css/search.css">
-
+    <!-- Include notification window -->
+    <link rel="stylesheet" type="text/css" href="./css/notification.css">
     <!-- Include help -->
     <link rel="stylesheet" type="text/css" href="./css/help.css">
     <!-- Include google icons -->
@@ -33,8 +34,18 @@
     <script type="text/javascript" src="./js/search.js"></script>
     <!-- Include help.accordian function -->
     <script type="text/javascript" src="./js/help.js"></script>
+
     <!-- Load fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="top.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include notification function -->
+    <script type="text/javascript" src="./js/notification.js"></script>
 
   </head>
 
