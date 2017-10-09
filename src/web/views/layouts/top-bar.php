@@ -11,7 +11,12 @@
   <!--<div> <a id ="noti_button" href="#" class="notification top"><i class="material-icons top-buttons">notifications</i></a></div>-->
   <div id="notifications">
       <h3>Notifications</h3>
-      <div style="height:300px;"></div>
+      <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <div style="height:200px;"></div>
       <div class="seeAll"><a href="#">See All</a></div>
   </div>
 </div>
