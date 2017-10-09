@@ -8,7 +8,6 @@
   <li id="noti_Container"></span>
   <div id="noti_Counter"></div>
   <div id="noti_Button"></div>
-  <!--<div> <a id ="noti_button" href="#" class="notification top"><i class="material-icons top-buttons">notifications</i></a></div>-->
   <div id="notifications">
       <h3>Notifications</h3>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>

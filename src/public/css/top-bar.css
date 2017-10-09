@@ -62,7 +62,7 @@ a.top, span.menu {
   text-decoration: none;
 }
 
-i.top-buttons:hover, .menu:hover {
+i.top-buttons:hover,.menu:hover{
     color: #f1f1f1;
     background-color: #1C66BA;
 }
