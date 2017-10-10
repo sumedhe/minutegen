@@ -14,9 +14,9 @@
 				  <p>
 				  	<ul>
 	  					<li>Holding card</li>
-	  						<ul> 
+	  						<ul>
 	  							<p>This shows the number of  matters that are not yet completed to a state where it could be added as a matter to a minute</p>
-	  							
+
 	  						</ul>
 	  					<li>Awaiting card</li>
 	  						<ol>
@@ -32,13 +32,13 @@
 				</div>
 
 
-				    
+
 				<button class="help">Search/Add/Edit/Delete Matters</button>
 				<div class="help_panel">
 				  <p>
 				  	<ul>
 	  					<li>Search Matters</li>
-	  						<ul> You can search matters by 
+	  						<ul> You can search matters by
 	  							<li>Matter index (Ex : 129.31.2)</li>
 	  							<li>Minute number (Ex : 129)</li>
 	  							<li>keywords ("accepted " / "rejected")</li>
@@ -68,7 +68,7 @@
 	  							<li>keywords </li>
 	  							<li>date</li>
 	  							<li>state<li>
-	  							
+
 	  						</ul>
 	  					<li>Add Minutes </li>
 	  						<ol>
@@ -92,8 +92,8 @@
 	  					<li>Search Members</li>
 	  						<ul> You can search members by
 	  							<li>Member name</li>
-	  							
-	  							
+
+
 	  						</ul>
 	  					<li>Add Members </li>
 	  						<ol>
@@ -110,11 +110,11 @@
 				  </p>
 				</div>
 
-	   
-	      
+
+
 	 	 </div>
-			</div> 
+			</div>
 
 	 </div>
-	</div> 
+	</div>
 </div>

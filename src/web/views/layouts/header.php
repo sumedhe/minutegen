@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>MinuteGen | Automated Minute Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Include main stylesheet -->
     <link rel="stylesheet" type="text/css" href="./css/main.css">
@@ -15,7 +16,9 @@
     <!-- Include topbar -->
     <link rel="stylesheet" type="text/css" href="./css/top-bar.css">
     <!-- Include dashboard -->
-    <link rel="stylesheet" type="text/css" href="./css/dash-board.css">
+    <link rel="stylesheet" type="text/css" href="./css/dashboard.css">
+    <!-- Include google icons for dashboard -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Include search -->
     <link rel="stylesheet" type="text/css" href="./css/search.css">
     <!-- Include notification window -->

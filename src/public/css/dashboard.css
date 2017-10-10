@@ -1,5 +1,11 @@
 * {
    box-sizing: border-box;
+   ;
+}
+
+.row1{
+  padding-top: 48px;
+  padding-right: 30px;
 }
 
 .row::after {
@@ -10,7 +16,8 @@
 
 [class*="col-"] {
    float: left;
-   padding: 15px;
+   padding:15px;
+
 }
 
 .col-1 {
@@ -21,38 +28,78 @@
   width: 66.66%;
 }
 
+.card1{
+  background-color: #00e600;
+}
+
+.card2{
+  background-color: #ffd11a;
+}
+
+.card3{
+  background-color: #3399ff;
+}
+
 .number-side, .status-side{
-  width: 50%;
+  width: 45%;
   float: left;
   padding:20px;
 }
 
-[class*="card"] {
-   height: 100%;
+.vl {
+
+    border-left: 1px solid white;
+    height: 180px;
+    position:fixed;
+    margin: 8.2%;
+    margin-left: 150px;
+    top: 0;
+    bottom: 200;
 }
 
-.notification-card, .meeting-card{
+
+.number{
+  margin: 50px;
+  margin-left: 40px;
+}
+
+.status{
+  margin: 50px;
+  margin-left: 10px;
+}
+
+.number, .status{
+  font-size: 15px;
+  font-family: roboto;
+  color: #ffffff;
+}
+
+[class*="card"] {
+   height: 30%;
+}
+
+.meeting-card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
   transition: 0.3s;
-  border-radius: 2px;
+  border-radius: 5px;
+  height: 45%;
+  background-color: #fff;
+  padding: 6px;
 }
 
-  .notification-card:hover, .meeting-card:hover{
+.meeting-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
-/*header in meeting details and notification cards*/
+/*header in meeting details cards*/
 .header{
   padding: 2px;
+  background-color:  #d0e1e1;
+  color:   #1e2f2f;
+  font-size: 13px;
 }
 
-/*vertical content of notification card*/
-.vertical-menu {
-    overflow-y: auto;
-}
-
-.vertical-menu a {
-    display: block;
+/*content of meeting details card*/
+.content{
     padding: 9px;
-    text-decoration: none;
 }

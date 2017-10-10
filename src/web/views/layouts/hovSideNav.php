@@ -1,6 +1,6 @@
 <div class="article">
 <div id="hov-side-nav">
-  <a href="..\web\views\pages\dash-board.php" id="hov-dashboard" target="main"> Dashboard <i class="material-icons md-28">home</i>  </a>
+  <a href="..\web\views\pages\dashboard.php" id="hov-dashboard" target="main"> Dashboard <i class="material-icons md-28">home</i>  </a>
   <!-- Matters link -->
   <a href="..\web\views\pages\matteraccordion.php" id="hov-matters" target="main"> Matters <i class="material-icons md-28">note</i>  </a>
   <!-- Minutes link -->
