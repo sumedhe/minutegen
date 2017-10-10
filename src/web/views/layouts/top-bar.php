@@ -10,12 +10,23 @@
   <div id="noti_Button"></div>
   <div id="notifications">
       <h3>Notifications</h3>
+
+      <h4>Notification</h4>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><c>5 minutes ago</c></P>
+      <h4>Notification</h4>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><c>5 minutes ago</c></P>
+      <h4>Notification</h4>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><c>5 minutes ago</c></P>
+      <h4>Notification</h4>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+      <p><c>5 minutes ago</c></P>
+      <h4>Notification</h4>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
-      <div style="height:200px;"></div>
+      <p><c>5 minutes ago</c></P>
+      <div style="height:0px;"></div>
       <div class="seeAll"><a href="#">See All</a></div>
   </div>
 </div>

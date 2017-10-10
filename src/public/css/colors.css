@@ -32,6 +32,9 @@
 .seeAll a:hover {background:#F6F7F8;color:#3b5998;}
 /*Header in notification container*/
 h3 {color:#333;background:#FFF;border-bottom:solid 1px rgba(100, 100, 100, .30);}
+h4 {color:#333;background:#FFF;}
+
 /*Content in Notification container*/
-p a{color:#333;background:#FFF;border-bottom:solid 1px rgba(100, 100, 100, .30);}
-p a :hover{background:#F6F7F8;color:#3b5998;}
+p{color:#333;background:#FFF;}
+p a{color:#333;background:#FFF;}
+p a:hover {background:#F6F7F8;color:#3b5998;}
