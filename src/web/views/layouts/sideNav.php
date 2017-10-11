@@ -1,5 +1,4 @@
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
   <!-- Dashboard link -->
   <a href="..\web\views\pages\dashboard.php" target="main"> <i class="material-icons">home</i>  Dashboard</a>
   <!-- Matters link -->
@@ -12,3 +11,5 @@
   <a href="help.php" target="main"> <i class="material-icons">help</i>  Help</a>
 
 </div>
+
+<div id="main" class="main">

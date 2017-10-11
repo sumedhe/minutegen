@@ -13,7 +13,7 @@
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 40px 8px 8px 40px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -44,46 +44,3 @@
 }
 /* Hovering Side Navigation */
 .material-icons.md-28 { font-size: 28px; }
-
-#hov-side-nav a {
-    position: fixed;
-    left: -185px;
-    transition: 0.3s;
-    padding: 20px;
-    width: 200px;
-    text-decoration: none;
-    text-align: right;
-    font-size: 28px;
-    color: white;
-}
-
-#hov-side-nav a:hover {
-    left: 0;
-}
-
-#hov-dashboard {
-    top: 100px;
-    background-color: rgba(27, 30, 36, 0.9);
-    border-radius: 0 5px 0 0;
-}
-
-#hov-matters {
-    top: 175px;
-    background-color: rgba(27, 30, 36, 0.9);
-}
-
-#hov-minutes {
-    top: 250px;
-    background-color: rgba(27, 30, 36, 0.9);
-}
-
-#hov-members {
-    top: 325px;
-    background-color: rgba(27, 30, 36, 0.9);
-}
-
-#hov-help {
-    top: 400px;
-    background-color: rgba(27, 30, 36, 0.9);
-    border-radius: 0 0 5px 0;
-}

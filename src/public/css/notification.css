@@ -38,7 +38,7 @@
   /* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
   #notifications {
       display:none;
-      height:370px;
+      height:380px;
       width:300px;
       position:absolute;
       top:100%;
@@ -97,6 +97,7 @@ p a:hover {
 }
 
 .seeAll {
+    margin-top:-5px;
     padding:8px;
     font-size:12px;
     font-weight:bold;

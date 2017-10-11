@@ -31,7 +31,7 @@ a.top, span.menu {
   font-size: 28px;
   text-align: center;
   text-decoration: none;
-  margin:5px 5px;
+  margin:8px 5px;
   float: left;
   border-radius: 50%;
 }
@@ -40,7 +40,8 @@ a.top, span.menu {
   color: #f1f1f1;
   font-size: 40px;
   float: left;
-  padding-top: 5px;
+  padding-top: 9px;
+  padding-left: 35px;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
