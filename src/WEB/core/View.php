@@ -10,7 +10,7 @@ class View {
   }
 
   public function parseView() {
-    include $GLOBALS['path']['WEB_ROOT'] . '/views/' . $this->file . '.php';     // Include the view file
+    include $GLOBALS['path']['app'] . '/views/' . $this->file . '.php';     // Include the view file
   }
 
 }

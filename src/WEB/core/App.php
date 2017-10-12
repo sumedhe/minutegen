@@ -10,7 +10,7 @@ class App {
 
   public function __construct() {
     // Load configurations
-    $this->config = $GLOBALS['config'];
+    $this->config = $GLOBALS[config];
     $this->routes = $GLOBALS['routes'];
 
     $this->setRoute();  // Set rout
@@ -27,7 +27,7 @@ class App {
       // Method call of the controller
       call_user_func_array([$this->controller, $this->method], $this->args);
   }
-  
+
   public function setRoute() {
     if (isset($_GET['url'])) {
       // Sanitize URL
