@@ -10,7 +10,7 @@ class App {
 
   public function __construct() {
     // Load configurations
-    $this->config = $GLOBALS[config];
+    $this->config = $GLOBALS['config'];
     $this->routes = $GLOBALS['routes'];
 
     $this->setRoute();  // Set rout

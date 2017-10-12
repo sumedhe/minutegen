@@ -7,8 +7,10 @@ class Matter extends Controller {
 
   public function getAll(){
     $model = $this->model('MatterModel');
-    $matters = $model->selectAll();
-    var_dump($matters);
+    // $matters = $model->selectAll();
+    $matters = $model->selectById(1);
+
+    $this->view('json', $matters);
   }
 
 

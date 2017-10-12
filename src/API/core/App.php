@@ -27,7 +27,7 @@ class App {
       // Method call of the controller
       call_user_func_array([$this->controller, $this->method], $this->args);
   }
-  
+
   public function setRoute() {
     if (isset($_GET['url'])) {
       // Sanitize URL
