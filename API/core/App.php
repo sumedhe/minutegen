@@ -12,6 +12,20 @@ class App {
     // Load configurations
     $this->config = $GLOBALS['config'];
     $this->routes = $GLOBALS['routes'];
+
+    $this->setRoute();  // Set rout
+    $this->run();  // Run the app
+  }
+
+  public function run(){
+      isset($this->controller) OR $this->setRoute();
+
+      // Import controller
+      require_once $GLOBALS['path']['app'] . '/controllers/' . $this->controller . '.php';
+      $this->controller = new $this->controller();
+
+      // Method call of the controller
+      call_user_func_array([$this->controller, $this->method], $this->args);
   }
 
   public function setRoute() {
@@ -32,14 +46,4 @@ class App {
     $this->method = $route[1] ? $route[1] : 'index';
   }
 
-  public function run(){
-    isset($this->controller) OR $this->setRoute();
-
-    // Import controller
-    require_once $GLOBALS['path']['app'] . '/controllers/' . $this->controller . '.php';
-    $this->controller = new $this->controller();
-
-    // Method call of the controller
-    call_user_func_array([$this->controller, $this->method], $this->args);
-  }
 }

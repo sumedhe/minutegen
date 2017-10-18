@@ -17,4 +17,9 @@ class Model
     return $this->db->getAll($sql);
   }
 
+  public function selectById($id){
+      $sql = "select * from $this->table where id = $id";
+      return $this->db->query($sql);
+  }
+
 }

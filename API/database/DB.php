@@ -14,21 +14,21 @@ class DB {
       $this->database['db']) or
       die('Database connection error' . mysqli_connect_error());
 
-    echo 'Conneted successfully';
+    // echo 'Conneted successfully';
   }
 
   public function query($sql) {
     $this->sql = $sql;
     $result = $this->conn->query($sql);
+    $item = $result->fetch_assoc();
 
     if ($result->num_rows > 0) {
-
+        
     }
-    return $result;
+    return $item;
   }
 
   public function getAll($sql) {
-    echo 'a';
     $this->ssql = $sql;
     $result = $this->conn->query($sql);
     $list = array();
