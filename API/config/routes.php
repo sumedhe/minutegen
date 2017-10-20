@@ -1,5 +1,6 @@
 <?php
 $routes = array(
-  'default' => 'Exception/error',
-  'matter' => 'Matter/getAll',
+  'default' => 'Handler/error',
+  'invalid' => 'Handler/invalid',
+  'matters' => 'Matters',
 );

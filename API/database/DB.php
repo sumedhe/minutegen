@@ -1,40 +1,62 @@
 <?php
 class DB {
-  protected $database;
-  protected $conn;
-  protected $sql;
+    protected $database;
+    protected $conn;
+    protected $stmt;
 
-  public function __construct() {
-    $this->database = $GLOBALS['database'];
+    public function __construct() {
+        $this->database = $GLOBALS['database'];
 
-    $this->conn = mysqli_connect(
-      $this->database['host'],
-      $this->database['user'],
-      $this->database['pass'],
-      $this->database['db']) or
-      die('Database connection error' . mysqli_connect_error());
-
-    // echo 'Conneted successfully';
-  }
-
-  public function query($sql) {
-    $this->sql = $sql;
-    $result = $this->conn->query($sql);
-    $item = $result->fetch_assoc();
-
-    if ($result->num_rows > 0) {
-        
+        $this->conn = new mysqli(
+          $this->database['host'],
+          $this->database['user'],
+          $this->database['pass'],
+          $this->database['db']);
+          if ($this->conn->connect_error) die("Connection failed: " . $this->conn->connect_error);
+          echo 'Conneted successfully';
     }
-    return $item;
-  }
 
-  public function getAll($sql) {
-    $this->ssql = $sql;
-    $result = $this->conn->query($sql);
-    $list = array();
-    while($row = $result->fetch_assoc()) {
-      $list[] = $row;
+    public function setStmt($sql, $params){
+        $this->stmt = $this->conn->prepare($sql) or die(returnError('Error in query'));
+        // var_dump($this->stmt);
+
+        $types = '';
+        foreach ($params as $val){
+          if (is_int($val)){
+              $types .= 'i';
+          } else {
+              $types .= 's';
+          }
+        }
+        if (count($params) > 0){
+            try{
+                echo $types;
+                $this->stmt->bind_param($types, ...$params);
+            } catch (Exception $e) {
+                die("Invalid options");
+            }
+        }
     }
-    return $list;
-  }
+
+    public function execute($sql, $params) {
+        try {
+            $this->setStmt($sql, $params);
+            $this->stmt->execute();// or trigger_error("ss", E_USER_ERROR);
+            $result = $this->stmt->get_result();// or trigger_error($this->stmt->error, E_USER_ERROR);
+            $list = array();
+            while ($item = $result->fetch_assoc()){
+                array_push($list, $item);
+            }
+            return $list;
+
+        } catch (Exception $e) {
+                echo 'xxx';
+        }
+
+    }
+
+    public function __destruct(){
+        if ($this->stmt) $this->stmt->close();
+        if ($this->conn) $this->conn->close();
+    }
 }

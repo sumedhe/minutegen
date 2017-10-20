@@ -3,8 +3,8 @@
 // TEST //
 function run(){
   var xhr = new XMLHttpRequest();
-  var url = "/minutegen/matter";
-  xhr.open("POST", url, true);
+  var url = "/minutegen/api/matters";
+  xhr.open("GET", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
@@ -13,7 +13,7 @@ function run(){
           // alert(json.email + ", " + json.password);
       }
   };
-  var data = JSON.stringify({"email": "hey@mail.com", "password": "101010"});
+  var data = JSON.stringify({"email": "hey@mail.com", "password": "101010", "id" : "1"});
   xhr.send(data);
 }
 
