@@ -6,6 +6,7 @@ $path = array(
     'models' => BASEPATH . '/models',
     'views' => BASEPATH . '/views',
     'config' => BASEPATH . '/config',
+    'helpers' => BASEPATH . '/helpers',
     'log' => BASEPATH . '/log',
     'database' => BASEPATH . '/database',
 );

@@ -6,7 +6,7 @@ class Matters extends Controller {
     }
 
     public function main(){
-        
+
         $this->setModel('Matter');
         // CHECK FOR OVERRIDES //
         $this->default();

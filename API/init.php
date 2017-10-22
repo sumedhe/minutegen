@@ -8,11 +8,14 @@ require_once $path['config'] . '/constants.php';
 require_once $path['config'] . '/database.php';
 require_once $path['config'] . '/routes.php';
 
+// Load helpers
+require_once $path['helpers'] . '/responds.php';
+require_once $path['helpers'] . '/extra.php';
+
 // Load core files
 require_once $path['core'] . '/Api.php';
 require_once $path['core'] . '/Controller.php';
 require_once $path['core'] . '/Model.php';
-require_once $path['core'] . '/tools.php';
 
 // Load other files
 require_once $path['database'] . '/DB.php';

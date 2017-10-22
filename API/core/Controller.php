@@ -38,22 +38,22 @@ abstract class Controller {
         } else {
             $this->data = $this->model->select();
         }
-        $this->view('json');
+        $this->view('result');
     }
 
     public function post(){
         $this->data = $this->model->insert();
-        $this->view('json');
+        $this->view('result');
     }
 
     public function put(){
         $this->data = $this->model->update();
-        $this->view('json');
+        $this->view('result');
     }
 
     public function delete(){
         $this->data = $this->model->delete();
-        $this->view('json');
+        $this->view('result');
     }
 
 

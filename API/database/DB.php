@@ -7,56 +7,34 @@ class DB {
     public function __construct() {
         $this->database = $GLOBALS['database'];
 
-        $this->conn = new mysqli(
-          $this->database['host'],
-          $this->database['user'],
-          $this->database['pass'],
-          $this->database['db']);
-          if ($this->conn->connect_error) die("Connection failed: " . $this->conn->connect_error);
-          echo 'Conneted successfully';
-    }
-
-    public function setStmt($sql, $params){
-        $this->stmt = $this->conn->prepare($sql) or die(returnError('Error in query'));
-        // var_dump($this->stmt);
-
-        $types = '';
-        foreach ($params as $val){
-          if (is_int($val)){
-              $types .= 'i';
-          } else {
-              $types .= 's';
-          }
-        }
-        if (count($params) > 0){
-            try{
-                echo $types;
-                $this->stmt->bind_param($types, ...$params);
-            } catch (Exception $e) {
-                die("Invalid options");
-            }
-        }
-    }
-
-    public function execute($sql, $params) {
         try {
-            $this->setStmt($sql, $params);
-            $this->stmt->execute();// or trigger_error("ss", E_USER_ERROR);
-            $result = $this->stmt->get_result();// or trigger_error($this->stmt->error, E_USER_ERROR);
-            $list = array();
-            while ($item = $result->fetch_assoc()){
-                array_push($list, $item);
-            }
-            return $list;
-
-        } catch (Exception $e) {
-                echo 'xxx';
+            $this->conn = new PDO('mysql:host=' . $this->database['host'] . ';dbname=' . $this->database['db'], $this->database['user'], $this->database['pass']);
+            // set the PDO error mode to exception
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch(PDOException $e) {
+            respondError('Connection failed', $e->getMessage());
         }
+    }
 
+    public function setStmt($sql, $sql_params){
+        $this->stmt = $this->conn->prepare($sql);
+        foreach ($sql_params as $key => &$value){
+            $this->stmt->bindParam($key, $value);
+        }
+    }
+
+    public function execute($sql, $sql_params) {
+        $this->setStmt($sql, $sql_params);
+        try {
+            $this->stmt->execute();
+            return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch(PDOException $e) {
+            respondError('Input Error', $e->getMessage());
+        }
     }
 
     public function __destruct(){
-        if ($this->stmt) $this->stmt->close();
-        if ($this->conn) $this->conn->close();
+        $this->stmt = null;
+        $this->conn = null;
     }
 }
