@@ -32,12 +32,16 @@
 .seeAll a:hover {background:#F6F7F8;color:#3b5998;}
 /*Header in notification container*/
 h3 {color:#333;background:#FFF;border-bottom:solid 1px rgba(100, 100, 100, .30);}
-h4 {color:#333;background:#FFF;}
-h4:hover p{color:#6d6c6c;background:#dddddd;}
+
+/*h4:hover{color:#6d6c6c;background:#dddddd;}*/
 /*Content in Notification container*/
-p{color:#333;background:#FFF;}
-p a{color:#333;background:#dddddd;}
+
+
+#notification{color:#000;background:#dddddd;}
+#notification:hover{color:#6d6c6c;background:#dddddd;}
+#notification:visited {color:#808481;background:#FFF;}
+
+/*p a{color:#333;background:#dddddd;}
 p a:visited {color:#808481;background:#FFF;}
-p a:hover {color:#6d6c6c;background:#dddddd;}
+/*p a:hover{background:#dddddd}
 p a:active {color:#6d6c6c;background: #FFF;}
-p c{background:#FFF;}
