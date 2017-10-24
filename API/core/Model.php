@@ -73,7 +73,7 @@ abstract class Model {
 
 
     public function executeQuery(){
-        $this->dbTools->printQuery();
+        // $this->dbTools->printQuery();
 
         $sql = $this->dbTools->getSql();
         $sql_params = $this->dbTools->getSqlParams();

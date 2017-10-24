@@ -25,6 +25,8 @@
     <link rel="stylesheet" type="text/css" href="./css/notification.css">
     <!-- Include help -->
     <link rel="stylesheet" type="text/css" href="./css/help.css">
+    <!-- Include Matters List styles -->
+    <link rel="stylesheet" type="text/css" href="./css/matterslist.css">
     <!-- Include google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -37,6 +39,8 @@
     <script type="text/javascript" src="./js/search.js"></script>
     <!-- Include help.accordian function -->
     <script type="text/javascript" src="./js/help.js"></script>
+    <!-- Include matters list scripts  -->
+    <script type="text/javascript" src="./js/matterslist.js"></script>
 
     <!-- Load fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
