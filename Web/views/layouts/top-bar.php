@@ -8,7 +8,7 @@
   <li id="noti_Container"></span>
   <div id="noti_Counter"></div>
   <div id="noti_Button"></div>
-  <div id="notifications">
+  <div id="notifications" class ="scroll">
       <h3>Notifications</h3>
       <div id = "notification">
       <h4>Notification</h4>
