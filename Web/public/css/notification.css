@@ -116,8 +116,8 @@ p a:hover{
 }
 
 div.scroll {
-    background-color: #00FFFF;
-    width: 100px;
-    height: 100px;
+    
+    width: 300px;
+    height: 355px;
     overflow: scroll;
 }

@@ -8,8 +8,10 @@
   <li id="noti_Container"></span>
   <div id="noti_Counter"></div>
   <div id="noti_Button"></div>
-  <div id="notifications" class ="scroll">
+  <div id="notifications">
+
       <h3>Notifications</h3>
+      <div class ="scroll">
       <div id = "notification">
       <h4>Notification</h4>
       <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
@@ -34,6 +36,7 @@
       <h4>Notification</h4>
       <p><a href="http://htmlcolorcodes.com/">Visit our HTML on colors</a></p>
       <p><c>5 minutes ago</c></p>
+      </div>
       </div>
       <div style="height:0px;"></div>
       <div class="seeAll"><a href="#">See All</a></div>
