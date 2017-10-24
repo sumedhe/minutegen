@@ -11,6 +11,8 @@ require_once $path['config'] . '/routes.php';
 // Load helpers
 require_once $path['helpers'] . '/responds.php';
 require_once $path['helpers'] . '/extra.php';
+require_once $path['helpers'] . '/database.php';
+require_once $path['helpers'] . '/log.php';
 
 // Load core files
 require_once $path['core'] . '/Api.php';

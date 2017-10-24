@@ -4,7 +4,7 @@
 function run(){
   var xhr = new XMLHttpRequest();
   var url = "/minutegen/api/matters";
-  xhr.open("GET", url, true);
+  xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
@@ -13,7 +13,12 @@ function run(){
           // alert(json.email + ", " + json.password);
       }
   };
-  var data = JSON.stringify({"email": "hey@mail.com", "password": "101010", "id" : "1"});
+  var data = JSON.stringify({
+  "id": "1",
+  "matter_id": "1",
+  "log_message": "created",
+  "datetime": "2017.01.01 23:59:00"
+});
   xhr.send(data);
 }
 

@@ -12,26 +12,36 @@ class DB {
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
-            respondError('Connection failed', $e->getMessage());
+            respond_error('Connection failed', $e->getMessage());
         }
     }
 
     public function setStmt($sql, $sql_params){
         $this->stmt = $this->conn->prepare($sql);
         foreach ($sql_params as $key => &$value){
-            $this->stmt->bindParam($key, $value);
+            if (is_int($value)){
+                $this->stmt->bindParam($key, $value, PDO::PARAM_INT);
+            } else {
+                $this->stmt->bindParam($key, $value, PDO::PARAM_STR);
+            }
         }
     }
 
-    public function execute($sql, $sql_params) {
+    public function execute($sql, $sql_params = [], $state_only = false) {
         $this->setStmt($sql, $sql_params);
         try {
             $this->stmt->execute();
-            return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+            if ($state_only){
+                return array('message' => 'Successfully added');
+            } else {
+                return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+            }
         } catch(PDOException $e) {
-            respondError('Input Error', $e->getMessage());
+            respond_error('Input Error', $e->getMessage());
         }
     }
+
+
 
     public function __destruct(){
         $this->stmt = null;

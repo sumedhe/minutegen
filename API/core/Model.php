@@ -5,16 +5,22 @@ abstract class Model {
     protected $request;
 
     protected $table;
+    protected $columns;
     protected $selectQuery;
-    protected $searchFields;
+    protected $columnsToSearch;
+    protected $columnOverrides;
 
     public function __construct($table, $request) {
-        $this->db = new DB();
         $this->table = $table;
-        $this->selectQuery = "SELECT * FROM $table";
         $this->request = $request;
-        $this->formatRequestFields();
-        $this->dbTools = new DBTools($table);
+    }
+
+    public function prepare(){
+        if (!isset($this->selectQuery)) $this->selectQuery = "SELECT * FROM $this->table";
+        $this->setColumnTypes();
+        $this->overrideColumns();
+        $this->db = new DB();
+        $this->dbTools = new DBTools($this->table, $this->columns);
     }
 
 
@@ -28,7 +34,7 @@ abstract class Model {
     }
 
     public function insert(){
-        $this->dbTools->setSql("INSERT INTO $this->table VALUES");
+        $this->dbTools->setSql("INSERT INTO $this->table");
         $this->dbTools->appendSqlInsert($this->request['data']);
 
         return $this->executeQuery();
@@ -51,7 +57,7 @@ abstract class Model {
 
     public function search(){
         $this->dbTools->setSql($this->selectQuery);
-        $this->dbTools->appendSqlSearch($this->request['opts']['search'], $this->searchFields);
+        $this->dbTools->appendSqlSearch($this->request['opts']['search'], $this->columnsToSearch);
         $this->dbTools->appendSort($this->request['opts']);
         $this->dbTools->appendLimit($this->request['opts']);
 
@@ -71,23 +77,38 @@ abstract class Model {
 
         $sql = $this->dbTools->getSql();
         $sql_params = $this->dbTools->getSqlParams();
-        return $this->db->execute($sql, $sql_params);
+        return $this->db->execute($sql, $sql_params, $this->request['method'] != 'GET');
     }
 
 
-    public function formatRequestFields(){
-        foreach ($this->request['conditions'] as $key => $value){
-            if (isset($this->fieldTypes[$key])){
-                if ($this->fieldTypes[$key] == 'i') $this->request['conditions'][$key] = intval($value);
-            }
-        }
 
+    public function setColumnTypes(){
         foreach ($this->request['data'] as $key => $value){
-            if (isset($this->fieldTypes[$key])){
-                if ($this->fieldTypes[$key] == 'i') $this->request['data'][$key] = intval($value);
+            if (array_key_exists($key, $this->columns)){
+                if ($this->columns[$key] == 'int'){
+                    $this->request['data'][$key] = intval($this->request['data'][$key]);
+                }
+            }
+        }
+
+        foreach ($this->request['conditions'] as $key => $value){
+            if (array_key_exists($key, $this->columns)){
+                if ($this->columns[$key] == 'int'){
+                    $this->request['conditions'][$key] = intval($this->request['conditions'][$key]);
+                }
             }
         }
     }
+
+    public function overrideColumns(){
+        foreach ($this->request['conditions'] as $key => $value){
+            if (array_key_exists($key, $this->columnOverrides)){
+                $this->request['conditions'][$this->columnOverrides[$key]] = $value;
+                unset($this->request['conditions'][$key]);
+            }
+        }
+    }
+
 
 
 

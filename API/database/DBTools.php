@@ -1,12 +1,14 @@
 <?php
 class DBTools{
     protected $table;
+    protected $columns;
 
     protected $sql;
     protected $sqlParams;
 
-    public function __construct($table){
+    public function __construct($table, $columns){
         $this->table = $table;
+        $this->columns = $columns;
         $this->reset();
     }
 
@@ -32,12 +34,14 @@ class DBTools{
         if (count($conditions) > 0){
             $this->sql .= ' WHERE';
             foreach ($conditions as $key => $value) {
+                // if (!$this->validColumn($key)) continue;
+                $label = $this->toLabel($key);
                 if (is_string($value)){
-                    $this->sql = $this->sql . " $key like :$key AND";
+                    $this->sql = $this->sql . " $key like $label AND";
                 } else {
-                    $this->sql = $this->sql . " $key = :$key AND";
+                    $this->sql = $this->sql . " $key = $label AND";
                 }
-                $this->sqlParams[":$key"] = $value;
+                $this->sqlParams["$label"] = $value;
             }
             $this->sql = substr($this->sql, 0, -4);
         }
@@ -47,6 +51,7 @@ class DBTools{
         if (count($data) > 0){
             $this->sql .= ' SET';
             foreach ($data as $key => $value) {
+                if (!$this->validColumn($key)) continue;
                 $this->sql = $this->sql . " $key = :$key,";
                 $this->sqlParams[":$key"] = $value;
             }
@@ -56,10 +61,10 @@ class DBTools{
 
     public function appendSqlInsert($data){
         if (count($data) > 0){
-            $fields = array_keys($arr);
-
+            $fields = array_keys($data);
             $this->sql .= '(' . join(', ', $fields) . ') VALUES(';
             foreach ($data as $key => $value){
+                // if (!$this->validColumn($key)) continue;
                 $this->sql .= ":$key, ";
                 $this->sqlParams[":$key"] = $value;
             }
@@ -67,12 +72,12 @@ class DBTools{
         }
     }
 
-    public function appendSqlSearch($words, $search_fields){
+    public function appendSqlSearch($words, $columns_to_search){
         if (strlen($words) > 0){
             $this->sql .= ' WHERE';
             $words = explode(' ', $words);
             for ($i=0; $i < count($words); $i++) {
-                $this->sql .= " CONCAT_WS(' ', $search_fields) LIKE :search_word_$i AND";
+                $this->sql .= " CONCAT_WS(' ', $columns_to_search) LIKE :search_word_$i AND";
                 $this->sqlParams[":search_word_$i"] = "%$words[$i]%";
             }
             $this->sql = substr($this->sql, 0, -4);
@@ -85,6 +90,7 @@ class DBTools{
             if (strpos($field, ' ')) return;
             $direction = $field[0] == '-' ? 'DESC' : 'ASC';
             if ($field[0] == '+' || $field[0] == '-') $field = substr($field, 1);
+            // if (!$this->validColumn($field)) return;
             $this->sql .= " ORDER BY $field $direction";
         }
     }
@@ -98,9 +104,23 @@ class DBTools{
     }
 
 
+
+
     public function reset(){
         $this->sql = '';
         $this->sqlParams = array();
+    }
+
+    public function validColumn($column){
+        if (!in_array($column, $this->columns)){
+            log_warning('Column not found', "column name = '$column'");
+            return false;
+        }
+        return true;
+    }
+
+    public function toLabel($column){
+        return ':'.str_replace('.', '_', $column);
     }
 
     public function printQuery(){
