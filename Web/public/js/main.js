@@ -23,6 +23,11 @@ function getFromAPI(url, func){
 // Add matters to the matters page
 function addMatters(data){
     var section = document.getElementById('matterlist');
+    section.innerHTML = ""; // tmp
+    if (data.length === 0){
+        section.innerHTML = "<center>No matters</center>";
+        return;
+    }
     for (var key in data){
         if (data.hasOwnProperty(key)){
             // Add new matter item
@@ -70,6 +75,16 @@ function updateAccordion(){
 // Load and view matters from the server
 function loadMatters(){
     var data = getFromAPI('/minutegen/api/matters', addMatters);
+}
+
+// Search matters
+function searchMatters(e){
+    if (e.keyCode === 13){
+        var section = document.getElementById('matterlist');
+        section.innerHTML = "<center>Loading...</center>";
+        var text = document.getElementById('myInput').value;
+        var data = getFromAPI('/minutegen/api/matters?search='.concat(text), addMatters);
+    }
 }
 
 // TEST //
