@@ -2,7 +2,7 @@
 
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -23,4 +23,4 @@ window.onload = function(){
     loadMatters();
 }
 
-</script>
+</script> -->

@@ -40,7 +40,7 @@
     <!-- Include help.accordian function -->
     <script type="text/javascript" src="./js/help.js"></script>
     <!-- Include matters list scripts  -->
-    <script type="text/javascript" src="./js/matterslist.js"></script>
+    <script type="text/javascript" src="./js/matterlist.js"></script>
 
     <!-- Load fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
