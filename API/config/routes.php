@@ -9,5 +9,6 @@ $routes = array(
   'notifications' => 'DefaultController',
   'matterslog' => 'DefaultController',
   'matterstate' => 'DefaultController',
+  'sections' => 'DefaultController',
   '_test' => '_Test',
 );

@@ -13,6 +13,7 @@ class DefaultController extends Controller {
             'matterslog' => 'MatterLog',
             'notifications' => 'Notification',
             'matterstate' => 'MatterState',
+            'sections' => 'Section',
         );
     }
 
