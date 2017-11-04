@@ -4,6 +4,6 @@ $database = array(
   'host' => 'localhost',
   'user' => 'mgadmin',
   'pass' => 'mgadmin@123',
-  'db' => 'minutegen',
+  'db'   => 'minutegen',
   'port' => '3306',
 );

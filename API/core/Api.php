@@ -86,11 +86,11 @@ class Api {
 
     public function packRequest(){
         $request = array(
-            'method' => $_SERVER['REQUEST_METHOD'],
-            'opts' => $this->opts,
-            'data' => $this->data,
+            'method'     => $_SERVER['REQUEST_METHOD'],
+            'opts'       => $this->opts,
+            'data'       => $this->data,
             'conditions' => $this->conditions,
-            'url' => $this->url
+            'url'        => $this->url
         );
         return $request;
 
