@@ -6,14 +6,15 @@ class DefaultController extends Controller {
     public function __construct($request) {
         parent::__construct($request);
         $this->models = array(
-            'matters' => 'Matter',
-            'minutes' => 'Minute',
-            'members' => 'Member',
-            'attendances' => 'Attendance',
-            'matterslog' => 'MatterLog',
-            'notifications' => 'Notification',
-            'matterstate' => 'MatterState',
-            'sections' => 'Section',
+            'matters'           => 'Matter',
+            'minutes'           => 'Minute',
+            'members'           => 'Member',
+            'attendances'       => 'Attendance',
+            'matterlogs'        => 'MatterLog',
+            'notifications'     => 'Notification',
+            'matterstates'      => 'MatterState',
+            'sections'          => 'Section',
+            'sectionprivileges' => 'SectionPrivilege',
         );
     }
 
