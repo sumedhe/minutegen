@@ -2,11 +2,11 @@
 $routes = array(
   'default' => 'Handler/error',
   'invalid' => 'Handler/invalid',
-  'matters' => 'Matters',
-  'minutes' => 'Minutes',
-  'members' => 'Members',
-  'attendance' => 'Attendances',
-  'notifications' => 'Notifications',
-  'matters_log' => '_Test',
+  'matters' => 'DefaultController',
+  'minutes' => 'DefaultController',
+  'members' => 'DefaultController',
+  'attendance' => 'DefaultController',
+  'notifications' => 'DefaultController',
+  'matterslog' => 'DefaultController',
   '_test' => '_Test',
 );

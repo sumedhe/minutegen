@@ -12,7 +12,6 @@ abstract class Controller {
     public function __construct($request){
         $this->request = $request;
         $this->userType = 'admin'; // $_SESSION['user_type'];
-
     }
 
     public function default(){
