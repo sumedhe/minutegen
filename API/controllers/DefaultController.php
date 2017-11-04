@@ -15,6 +15,7 @@ class DefaultController extends Controller {
             'matterstates'      => 'MatterState',
             'sections'          => 'Section',
             'sectionprivileges' => 'SectionPrivilege',
+            'membertypes'       => 'MemberType',
             'memos' => 'Memo',
         );
     }
