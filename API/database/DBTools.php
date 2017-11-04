@@ -112,10 +112,10 @@ class DBTools{
     }
 
     public function validColumn($column){
-        if (!in_array($column, $this->columns)){
-            log_warning('Column not found', "column name = '$column'");
-            return false;
-        }
+        // if (!in_array($column, $this->columns)){
+        //     log_warning('Column not found', "column name = '$column'");
+        //     return false;
+        // }
         return true;
     }
 

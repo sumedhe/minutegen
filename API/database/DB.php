@@ -32,7 +32,7 @@ class DB {
         try {
             $this->stmt->execute();
             if ($state_only){
-                return array('message' => 'Successfully added');
+                return array('message' => 'Successfully executed');
             } else {
                 return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
             }

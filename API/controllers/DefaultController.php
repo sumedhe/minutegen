@@ -16,7 +16,7 @@ class DefaultController extends Controller {
             'sections'          => 'Section',
             'sectionprivileges' => 'SectionPrivilege',
             'membertypes'       => 'MemberType',
-            'memos' => 'Memo',
+            'memos'             => 'Memo',
         );
     }
 
