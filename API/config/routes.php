@@ -8,5 +8,6 @@ $routes = array(
   'attendance' => 'DefaultController',
   'notifications' => 'DefaultController',
   'matterslog' => 'DefaultController',
+  'matterstate' => 'DefaultController',
   '_test' => '_Test',
 );

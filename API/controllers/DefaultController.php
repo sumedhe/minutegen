@@ -11,7 +11,8 @@ class DefaultController extends Controller {
             'members' => 'Member',
             'attendances' => 'Attendance',
             'matterslog' => 'MatterLog',
-            'notifications' => 'Notification'
+            'notifications' => 'Notification',
+            'matterstate' => 'MatterState',
         );
     }
 
