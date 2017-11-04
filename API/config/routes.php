@@ -11,5 +11,6 @@ $routes = array(
   'matterstates'      => 'DefaultController',
   'sections'          => 'DefaultController',
   'sectionprivileges' => 'DefaultController',
+  'memos' => 'DefaultController',
   '_test'             => '_Test',
 );
