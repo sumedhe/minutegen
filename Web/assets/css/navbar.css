@@ -1,0 +1,49 @@
+/*Navbar base*/
+.navbar {
+    width        : 100%;
+    margin       : 0px;
+    overflow     : hidden;
+    position     : sticky;
+    top          : 0;
+    height       : 56px;
+    padding      : 10px;
+    padding-right: 15px;
+    box-shadow   : 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.navbar > *  { margin-left: 10px; margin-right: 10px; }
+.navbar a    { font-size: 22px; }
+.navbar a, .navbar i{ margin-top: 2px; }
+
+.navbar .button {
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+/* Search Bar */
+#searchbar {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-left: 80px;
+}
+
+#searchbar input{
+    width: 100%;
+    border: 0px;
+    border-radius: 3px;
+    background-color: rgba(200, 200, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    font-style: bold;
+    background-image: url('../material/image/search.png');
+    background-position: 24px 6px;
+    background-repeat: no-repeat;
+    padding: 9px 20px 9px 70px;
+}
+
+#searchbar input:hover{ background-color: rgba(220, 220, 255, 0.3); }
+#searchbar input::-webkit-input-placeholder { color: white; }
+.navbar .dropdown-content { margin-right: 25px; margin-top: 46px;}

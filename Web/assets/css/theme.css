@@ -1,0 +1,30 @@
+/* Colors */
+.bg-primary-dark    { background: #0288D1; }
+.bg-primary         { background: #4288FF; }
+.bg-primary-light   { background: #B3E5FC; }
+
+.bg-accent          { background: #FF5722; }
+.color-text-primary    { color: #FFFFFF; }
+.color-primary-text    { color: #212121; }
+.color-secondary-text  { color: #757575; }
+.color-divider         { border-color: #BDBDBD; }
+
+.color-dark            { color: rgba(0, 0, 0, 0.54); }
+.color-dark.inactive   { color: rgba(0, 0, 0, 0.26); }
+
+.color-light           { color: rgba(255, 255, 255, 1); }
+.color-light.inactive  { color: rgba(255, 255, 255, 0.3); }
+
+.bg-active-primary-dark:active { background: #1010DD; }
+
+.button:active { background: #1010DD; }
+
+.fit-width { width: 100%; }
+
+/* Sizes */
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }

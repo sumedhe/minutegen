@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: Roboto; background-color: #f2f2f2; }
+
+/*Buttons*/
+.button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button:hover { color: white; }
+
+a.button{ display: block; padding: 4px; }
+i.button{ border-radius: 50%; padding: 4px; }
+img.button:active { opacity: 0.9; }
+
+/*Floating*/
+.float-left{ float: left; }
+.float-right{ float: right; }
+
+/*Profile*/
+img.avatar { border-radius: 50%; }
+
+.pane {
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+/*Text styles*/
+.text-large{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding: 2px;
+}
+
+.text-small{
+    font-size: 13px;
+    color: #777;
+    padding: 2px;
+}
+
+div.title {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    padding: 5px;
+}
+
+div.bigtitle {
+    font-size: 18px;
+    text-align: center;
+    color: #aaa;
+    padding: 7px;
+}
