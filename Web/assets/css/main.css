@@ -61,6 +61,25 @@ div.bigtitle {
     padding: 7px;
 }
 
+#addbutton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 12px;
+    background-color: #D72A16;
+    color: #eee;
+    opacity: 1;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    font-weight: lighter;
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+#addbutton:hover {
+    box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.3);
+}
 
 /*Tool Tips*/
 /*.tt {

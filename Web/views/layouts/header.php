@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href=<?= stylesheet('global')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('main')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('layouts')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('navbar')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('sidebar')?>>

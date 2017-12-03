@@ -1,18 +1,16 @@
 <!-- Navbar -->
-<div class="navbar bg-primary">
+<div id='navbar' class="navbar bg-primary">
   <!-- Menu button -->
   <span id="menu-button" class="float-left" onclick="toggleSidebar()" >
       <i class="material button size-18">menu</i>
   </span>
 
   <!-- Logo -->
-  <a id='logo' class="button float-left color-light" href="#home">MinuteGen</a>
+  <a id='logo' class="button float-left color-light" href="">MinuteGen</a>
 
   <!-- Search bar -->
   <div id='searchbar' class='search-bar'>
-      <form action="/action_page.php">
-        <input type="text" class="" name="search" placeholder="Search..">
-      </form>
+      <input id='searchfield' type="text" onkeypress="searchMatters(event)" placeholder="Search..">
   </div>
 
   <!-- Profile -->

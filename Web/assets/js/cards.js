@@ -1,20 +1,18 @@
+var cards = {
+    grid:null,
+    refresh: function (){
+        grid = new Minigrid({
+          container: '.cards',
+          item: '.card',
+          gutter: 12
+        });
+        grid.mount();
+    },
 
-(function(){
-  var grid;
-  function init() {
-    grid = new Minigrid({
-      container: '.cards',
-      item: '.card',
-      gutter: 12
-    });
-    grid.mount();
-  }
+    update: function () {
+      grid.mount();
+    }
+}
 
-  // mount
-  function update() {
-    grid.mount();
-  }
-
-  document.addEventListener('DOMContentLoaded', init);
-  window.addEventListener('resize', update);
-})();
+document.addEventListener('DOMContentLoaded', cards.refresh);
+window.addEventListener('resize', cards.update);

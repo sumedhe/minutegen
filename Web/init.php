@@ -8,6 +8,7 @@ $LOCATION = array(
     'css'         =>  '/assets/css',
     'js'          =>  '/assets/js',
     'images'      =>  '/assets/images',
+    'client'      =>  '/client',
 );
 
 function path($dirname, $file = Null){
@@ -23,7 +24,6 @@ function url($path){
 }
 
 function stylesheet($name){ return url('css') . '/' . $name . '.css'; }
-
 function script($name){ return url('js') . '/' . $name . '.js'; }
-
+function client($name){ return url('client') . '/' . $name . '.js'; }
 function images($name){ return url('images') . '/' . $name; }

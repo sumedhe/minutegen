@@ -1,7 +1,7 @@
 /* Colors */
-.bg-primary-dark    { background: #0288D1; }
 .bg-primary         { background: #4288FF; }
-.bg-primary-light   { background: #B3E5FC; }
+.bg-secondary       { background: #F36B3A; }
+.bg-ternary         { background: #43AC59; }
 
 .bg-accent          { background: #FF5722; }
 .color-text-primary    { color: #FFFFFF; }
