@@ -6,7 +6,7 @@
   </span>
 
   <!-- Logo -->
-  <a class="button float-left color-light" href="#home">MinuteGen</a>
+  <a id='logo' class="button float-left color-light" href="#home">MinuteGen</a>
 
   <!-- Search bar -->
   <div id='searchbar' class='search-bar'>
@@ -23,7 +23,7 @@
           <img class="avatar float-left" src=<?= images('avatar.png') ?> alt="Avatar" >
           <div class="info float-right">
               <div class='text-large'> Sumedhe Dissanayake </div>
-              <div class='text-small'> sumedhe5dms@gmail.com </div>
+              <div class='text-small'> Minutegen, Automated Minute Tracker </div>
               <div class='text-small'> Last login: 2017.12.02 </div>
           </div>
       </div>
@@ -44,19 +44,19 @@
 
       <div class="notification-item" href="#home">
           <div class='notification-item-title'> Sumedhe Dissanayake</div>
-          <div class='text-small'> sumedhe5dms@gmail.com </div>
+          <div class='text-small'> Minutegen, Automated Minute Tracker </div>
           <div class='text-small'> 23:59 2017.12.02 </div>
           <i class="material notification-item-close">close</i>
       </div>
       <div class="notification-item" href="#home">
           <div class='notification-item-title'> Sumedhe Dissanayake</div>
-          <div class='text-small'> sumedhe5dms@gmail.com </div>
+          <div class='text-small'> Minutegen, Automated Minute Tracker </div>
           <div class='text-small'> 23:59 2017.12.02 </div>
           <i class="material notification-item-close">close</i>
       </div>
       <div class="notification-item" href="#home">
           <div class='notification-item-title'> Sumedhe Dissanayake</div>
-          <div class='text-small'> sumedhe5dms@gmail.com </div>
+          <div class='text-small'> Minutegen, Automated Minute Tracker </div>
           <div class='text-small'> 23:59 2017.12.02 </div>
           <i class="material notification-item-close">close</i>
       </div>

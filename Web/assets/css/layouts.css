@@ -11,13 +11,13 @@
     flex: 1 100%;
 }
 
-.article {
+.content {
     text-align: left;
-    width: 960px;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     background-color: white;
-    padding: 10px;
+    padding: 5px;
 }
 
 #page {

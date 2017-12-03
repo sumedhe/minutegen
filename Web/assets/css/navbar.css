@@ -1,3 +1,5 @@
+#logo { opacity: 1; }
+
 /*Navbar base*/
 .navbar {
     width        : 100%;
@@ -9,18 +11,14 @@
     padding      : 10px;
     padding-right: 15px;
     box-shadow   : 0 4px 8px 0 rgba(0,0,0,0.3);
+    z-index      : 5;
+    color: white;
 }
 
 .navbar > *  { margin-left: 10px; margin-right: 10px; }
 .navbar a    { font-size: 22px; }
 .navbar a, .navbar i{ margin-top: 2px; }
 
-.navbar .button {
-    color: #eee;
-    text-align: center;
-    text-decoration: none;
-    height: 100%;
-}
 
 /* Search Bar */
 #searchbar {
