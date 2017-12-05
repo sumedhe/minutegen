@@ -8,6 +8,7 @@ class Home extends Controller {
         $this->loadView('layouts/navbar');
         $this->loadView('layouts/sidebar');
         $this->loadView('layouts/content');
+        $this->loadView('layouts/matter-editor');
         $this->loadView('layouts/footer');
     }
 }

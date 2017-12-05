@@ -17,6 +17,8 @@ class DefaultController extends Controller {
             'sectionprivileges' => 'SectionPrivilege',
             'membertypes'       => 'MemberType',
             'memos'             => 'Memo',
+            'systemlogs'        => 'SystemLog',
+            'searchhistory'     => 'SearchHistory',
         );
     }
 

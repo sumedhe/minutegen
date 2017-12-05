@@ -1,11 +1,11 @@
-.cards {
+.matter-cards {
     width: 90%;
     padding: 0;
     background-color: transparent;
 }
 
 
-.card {
+.matter-card {
     position: relative;
     width: 400px;
     padding: 15px;
@@ -19,21 +19,22 @@
     /*height: 250px; // TMP*/
 }
 
-.card:hover { box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.4); }
+.matter-card:hover { box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.4); }
 
-.card-title {
+.matter-card-title {
     font-size: 15px;
     font-weight: bold;
 }
 
-.card-content {
+.matter-card-content {
     margin-top: 10px;
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 150%;
+    color: #111;
 }
 
-.card-index {
+.matter-card-index {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -41,22 +42,32 @@
     color: #777;
 }
 
-.card-buttons {
+.matter-card-buttons {
     position: absolute;
     bottom: 8px;
     right: 8px;
 }
 
-.card-button {
+.matter-card-button {
     float: right;
     opacity: 0.6;
 }
 
 
-.card-hover-effect {
+.matter-card-hover-effect {
     opacity: 0;
     -webkit-transition: opacity 0.4s; /* For Safari 3.1 to 6.0 */
     transition: opacity 0.4s;
 }
 
-.card:hover .card-hover-effect { opacity: 1; }
+.matter-card:hover .matter-card-hover-effect { opacity: 1; }
+
+.matter-memo {
+    background-color: #CED6DC;
+}
+
+/*Card colors*/
+.matter-default { background-color: #fafafa; }
+.matter-approved { background-color: #B6FF8A; }
+.matter-rejected { background-color: #FF8076; }
+.matter-hold { background-color: #F3FF82; }

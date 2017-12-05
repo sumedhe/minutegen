@@ -13,5 +13,7 @@ $routes = array(
   'sectionprivileges' => 'DefaultController',
   'memos'             => 'DefaultController',
   'membertypes'       => 'DefaultController',
+  'systemlogs'        => 'DefaultController',
+  'searchhistory'     => 'DefaultController',
   '_test'             => '_Test',
 );

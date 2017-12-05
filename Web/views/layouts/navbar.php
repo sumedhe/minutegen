@@ -9,8 +9,8 @@
   <a id='logo' class="button float-left color-light" href="">MinuteGen</a>
 
   <!-- Search bar -->
-  <div id='searchbar' class='search-bar'>
-      <input id='searchfield' type="text" onkeypress="searchMatters(event)" placeholder="Search..">
+  <div id='search-bar' class='search-bar'>
+      <input id='search-field' type="text" placeholder="Search..">
   </div>
 
   <!-- Profile -->

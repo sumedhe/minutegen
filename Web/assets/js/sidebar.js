@@ -1,6 +1,6 @@
 function toggleSidebar() {
     var sidebar = document.getElementById('sidebar');
-    var searchbar = document.getElementById('searchbar');
+    var searchbar = document.getElementById('search-bar');
     var page = document.getElementById('page');
     if (getComputedStyle(sidebar).visibility == 'hidden'){
         sidebar.style.width = '230px';

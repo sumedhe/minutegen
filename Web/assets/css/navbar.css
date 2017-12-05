@@ -21,14 +21,14 @@
 
 
 /* Search Bar */
-#searchbar {
+#search-bar {
     width: 50%;
     height: 100%;
     float: left;
     margin-left: 80px;
 }
 
-#searchbar input{
+#search-bar input{
     width: 100%;
     border: 0px;
     border-radius: 3px;
@@ -42,6 +42,6 @@
     padding: 9px 20px 9px 70px;
 }
 
-#searchbar input:hover{ background-color: rgba(220, 220, 255, 0.3); }
-#searchbar input::-webkit-input-placeholder { color: white; }
+#search-bar input:hover{ background-color: rgba(220, 220, 255, 0.3); }
+#search-bar input::-webkit-input-placeholder { color: white; }
 .navbar .dropdown-content { margin-right: 25px; margin-top: 46px;}

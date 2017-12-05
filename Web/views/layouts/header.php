@@ -8,7 +8,8 @@
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('sidebar')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('dropdown')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('notification')?>>
-        <link rel="stylesheet" type="text/css" href=<?= stylesheet('cards')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('matter-cards')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('modal')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('theme')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('material')?>>
         <title></title>

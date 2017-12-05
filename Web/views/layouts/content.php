@@ -1,8 +1,8 @@
 <div id='page'>
-    <div id='contentarea' class="content cards">
+    <div id='contentarea' class="content matter-cards">
 
 
     </div>
 </div>
 
-<i id='addbutton' class="material button">add</i>
+<i id='add-button' class="material button">add</i>
