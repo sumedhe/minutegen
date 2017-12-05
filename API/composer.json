@@ -1,0 +1,9 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+
+    "require" : {
+        "setasign/fpdf": "1.8.1"
+    }
+}
