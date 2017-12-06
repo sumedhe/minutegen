@@ -52,7 +52,7 @@ class Api {
         if (isset($routes[$this->url[0]])){
             $route = $routes[$this->url[0]];
         } else {
-            respond_error('Invalid Request', 'Re-check the request url', 404);
+            respond('NOT_FOUND', null, 'Re-check the request url');
         }
 
         // Set controller and method

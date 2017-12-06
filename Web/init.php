@@ -1,6 +1,7 @@
 <?php
 define('BASEURL', 'http://localhost/minutegen');
 
+// Generate paths
 $LOCATION = array(
     'core'        =>  '/core',
     'controllers' =>  '/controllers',
@@ -19,11 +20,12 @@ function path($dirname, $file = Null){
     }
 }
 
+// Generate urls
 function url($path){
-    return BASEURL . $GLOBALS['LOCATION'][$path];
+    return BASEURL . $path;
 }
 
-function stylesheet($name){ return url('css') . '/' . $name . '.css'; }
-function script($name){ return url('js') . '/' . $name . '.js'; }
-function client($name){ return url('client') . '/' . $name . '.js'; }
-function images($name){ return url('images') . '/' . $name; }
+function stylesheet($name){ return url('/assets/css') . '/' . $name . '.css'; }
+function script($name){ return url('/assets/js') . '/' . $name . '.js'; }
+function client($name){ return url('/client') . '/' . $name . '.js'; }
+function images($name){ return url('/assets/images') . '/' . $name; }

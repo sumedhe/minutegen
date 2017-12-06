@@ -12,7 +12,7 @@ class DB {
             // set the PDO error mode to exception
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
-            respond_error('Connection failed', $e->getMessage());
+            respond('INTERNAL SERVER ERROR', null, 'Connection failed', e.getMessage());
         }
     }
 
@@ -32,16 +32,14 @@ class DB {
         try {
             $this->stmt->execute();
             if ($state_only){
-                return array('message' => 'Successfully executed');
+                respond('ACCEPTED', null, 'Success!');
             } else {
                 return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
             }
         } catch(PDOException $e) {
-            respond_error('Input Error', $e->getMessage());
+            respond('INTERNAL_SERVER_ERROR', null, 'Internal Server Error!', $e->getMessage());
         }
     }
-
-
 
     public function __destruct(){
         $this->stmt = null;
