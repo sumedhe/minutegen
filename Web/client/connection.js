@@ -1,7 +1,7 @@
 // Get data from the API using the given url
 // After the API respond call func();
 var server = {
-    basepath: '/minutegen/api',
+    basepath: '/minutegen/web/api',
 
     get: function (url, func){
         server.request(url, {}, 'GET', func);

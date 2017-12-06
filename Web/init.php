@@ -1,5 +1,5 @@
 <?php
-define('BASEURL', 'http://localhost/minutegen');
+define('BASEURL', 'http://localhost/minutegen/web');
 
 // Generate paths
 $LOCATION = array(

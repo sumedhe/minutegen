@@ -6,10 +6,27 @@ var domTools = {
         return div;
     },
 
-    createIcon: function (classNames, iconName){
-        var i = document.createElement('i');
+    createSpan: function (classNames, innerHTML = ''){
+        var span = document.createElement('span');
+        span.className = classNames;
+        span.innerHTML = innerHTML;
+        return span;
+    },
+
+    createTable: function (classNames){
+        var i = document.createElement('table');
         i.className = classNames;
-        i.innerHTML = iconName;
+        return i;
+    },
+
+    createTr: function (){
+        var i = document.createElement('tr');
+        return i;
+    },
+
+    createTd: function (tableTd){
+        var i = document.createElement('td');
+        i.innerHTML = tableTd;
         return i;
     },
 
@@ -19,6 +36,21 @@ var domTools = {
             var icon = document.createElement('i');
             icon.className = classNames;
             icon.innerHTML = i;
+            list.push(icon)
+        })
+        return list;
+    },
+
+    createTable: function (classNames, tableRows){
+        var table = [];
+        tableRows.forEach(function(i){
+            var table = document.createElement('tr');
+            var td = document.createElement('td');
+            table.innerHTML = 'Date';
+            table.innerHTML = i;
+            table.innerHTML = 'Date';
+            table.innerHTML = 'Date';
+
             list.push(icon)
         })
         return list;

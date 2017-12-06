@@ -2,7 +2,7 @@
 defined('BASEPATH') OR define('BASEPATH', dirname(__FILE__));
 
 // Load dependencies
-require_once dirname(__FILE__, 1) . '/vendor/autoload.php';
+// require_once dirname(__FILE__, 1) . '/vendor/autoload.php';
 
 // Load configurations
 require_once BASEPATH . '/config/paths.php';
