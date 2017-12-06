@@ -1,11 +1,11 @@
 <?php
 class DefaultController extends Controller {
 
-    protected $models = array();
+    protected $modelNames = array();
 
     public function __construct($request) {
         parent::__construct($request);
-        $this->models = array(
+        $this->modelNames = array(
             'matters'           => 'Matter',
             'minutes'           => 'Minute',
             'members'           => 'Member',
@@ -24,7 +24,7 @@ class DefaultController extends Controller {
 
     public function main(){
         $controllerName = $this->request['url'][0];
-        $this->setModel($this->models[$controllerName]);
+        $this->setModel($this->modelNames[$controllerName]);
         $this->default();
     }
 }

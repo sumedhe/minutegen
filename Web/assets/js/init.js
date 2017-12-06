@@ -7,3 +7,8 @@ window.onload = function(){
 function getDOM(id){
     return document.getElementById(id);
 }
+
+// Show message
+function showMessage($message){
+    console.log($message); //TMP
+}

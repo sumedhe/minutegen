@@ -1,6 +1,8 @@
 // Get data from the API using the given url
 // After the API respond call func();
 var server = {
+    basepath: '/minutegen/api',
+
     get: function (url, func){
         server.request(url, {}, 'GET', func);
     },
@@ -22,13 +24,19 @@ var server = {
         xhr.open(method, url, true);
         xhr.setRequestHeader("Content-type", "application/json");
         xhr.onreadystatechange = function () {
+            var jsonString = xhr.responseText;
+            console.log('Response: ' + jsonString + '\n Status:' + xhr.status); // TMP
             if (xhr.readyState === 4 && xhr.status === 200) {
-                var jsonString = xhr.responseText;
                 data = JSON.parse(jsonString);
-                func(data);
+                func(data['data']);
             }
         };
         var json = JSON.stringify(data);
         xhr.send(json);
     }
+}
+
+// Generate api path
+function api($path){
+    return server.basepath + '/' + $path;
 }

@@ -5,13 +5,13 @@ abstract class Controller {
     protected $request;
     protected $userType;
     protected $model;
-    protected $data;
+    protected $data; // TMP
 
     abstract function main();
 
     public function __construct($request){
         $this->request = $request;
-        $this->userType = 'admin'; // $_SESSION['user_type'];
+        $this->userType = 'admin'; // TMP $_SESSION['user_type'];
     }
 
     public function default(){
@@ -37,22 +37,25 @@ abstract class Controller {
         } else {
             $this->data = $this->model->select();
         }
-        $this->view('result');
+        respond('OK', $this->data);
     }
 
     public function post(){
         $this->data = $this->model->insert();
         $this->view('result');
+        respond('OK', $this->data);
     }
 
     public function put(){
         $this->data = $this->model->update();
         $this->view('result');
+        respond('OK', $this->data);
     }
 
     public function delete(){
         $this->data = $this->model->delete();
         $this->view('result');
+        respond('OK', $this->data);
     }
 
 
