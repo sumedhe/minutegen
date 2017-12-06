@@ -14,6 +14,11 @@ var minutesDOM = {
     // Clear the DOM content
     clear: function (){ minutesDOM.getDOM().innerHTML = ""},
 
+    setStateColor: function (dom, state){
+        if (dom.classList){
+            dom.classList.add(state);
+        }
+    },
     // Add new minute item
     addItems: function (data){
       var section = minutesDOM.getDOM();
@@ -68,6 +73,7 @@ var minutesDOM = {
         tr.appendChild(td_4_a);
         tr.appendChild(td_4_b);
 
+        minutesDOM.setStateColor(accordion, dataItem[''].toLowerCase());
         return div;
 
         // x document.createElement('tr');
