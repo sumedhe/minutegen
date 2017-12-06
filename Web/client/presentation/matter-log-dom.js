@@ -1,7 +1,7 @@
-// Add matterLog to the matterLog list
+// Matter Log
 var matterLogDOM = {
     // Get DOM Element
-    getDOM: function () { return document.getElementById('matter-log'); },
+    getDOM: function () { return getDOM('matter-log'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

@@ -12,6 +12,13 @@ body { margin: 0; font-family: Roboto; background-color: #e7e7e7; }
     height: 100%;
     -webkit-transition: opacity 0.2s; /* For Safari 3.1 to 6.0 */
     transition: opacity 0.2s;
+
+    /*Disable select*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .button:hover { opacity: 1 }
@@ -61,24 +68,8 @@ div.bigtitle {
     padding: 7px;
 }
 
-#add-button {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    padding: 12px;
-    background-color: #D72A16;
-    color: #eee;
-    opacity: 1;
-    width: 55px;
-    height: 55px;
-    font-size: 30px;
-    font-weight: lighter;
-    box-shadow: 2px 4px 4px 0px rgba(0,0,0,0.2);
-    z-index: 2;
-}
-
-#add-button:hover {
-    box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.3);
+.hidden {
+    visibility: hidden !important;
 }
 
 /*Tool Tips*/

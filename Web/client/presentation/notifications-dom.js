@@ -1,7 +1,7 @@
-// Add notification to the notifications list
+// Notification DOM
 var notificationsDOM = {
     // Get DOM Element
-    getDOM: function () { return document.getElementById('notifications'); },
+    getDOM: function () { return getDOM('notifications'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

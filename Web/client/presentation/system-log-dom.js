@@ -1,7 +1,7 @@
-// Add systemLog to the systemLog list
+// System Log DOM
 var systemLogDOM = {
     // Get DOM Element
-    getDOM: function () { return document.getElementById('system-log'); },
+    getDOM: function () { return getDOM('system-log'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

@@ -53,6 +53,27 @@
     opacity: 0.6;
 }
 
+.matter-card-state {
+    background-color: rgba(200, 200, 200, 0.4);
+    border: none;
+    color: #111;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    float: right;
+    margin-top: 3px;
+    margin-bottom: auto;
+    border-radius: 2px;
+    width: 90px;
+}
+
+.matter-card-section {
+    position: absolute;
+    visibility: hidden;
+}
+
 
 .matter-card-hover-effect {
     opacity: 0;
@@ -67,7 +88,7 @@
 }
 
 /*Card colors*/
-.matter-default { background-color: #fafafa; }
+.matter-onhold { background-color: #fafafa; }
 .matter-approved { background-color: #B6FF8A; }
 .matter-rejected { background-color: #FF8076; }
 .matter-hold { background-color: #F3FF82; }

@@ -1,0 +1,63 @@
+/*Add button*/
+#add-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 12px;
+    background-color: #D72A16;
+    color: #eee;
+    opacity: 1;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    font-weight: lighter;
+    box-shadow: 2px 4px 4px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+#add-button:hover {
+    box-shadow: 1px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+/*Snackbar*/
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

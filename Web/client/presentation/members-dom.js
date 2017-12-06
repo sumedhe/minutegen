@@ -1,7 +1,7 @@
-// Add member to the members list
+// Members DOM
 var membersDOM = {
     // Get DOM Element
-    getDOM: function () { return document.getElementById('members'); },
+    getDOM: function () { return getDOM('members'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

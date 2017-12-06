@@ -42,20 +42,17 @@ abstract class Controller {
 
     public function post(){
         $this->data = $this->model->insert();
-        $this->view('result');
-        respond('OK', $this->data);
+        respond('ACCEPTED', $this->data, 'Successfully added!');
     }
 
     public function put(){
         $this->data = $this->model->update();
-        $this->view('result');
-        respond('OK', $this->data);
+        respond('ACCEPTED', $this->data, 'Succesfully updated!');
     }
 
     public function delete(){
         $this->data = $this->model->delete();
-        $this->view('result');
-        respond('OK', $this->data);
+        respond('ACCEPTED', $this->data, 'Succesfully deleted!');
     }
 
 

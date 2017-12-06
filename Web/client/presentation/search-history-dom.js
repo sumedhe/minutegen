@@ -1,7 +1,7 @@
-// Add search-history to the search-historys list
+// Search History DOM
 var searchHistoryDOM = {
     // Get DOM Element
-    getDOM: function () { return document.getElementById('search-history'); },
+    getDOM: function () { return getDOM('search-history'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

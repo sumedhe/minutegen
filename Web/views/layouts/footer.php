@@ -8,12 +8,12 @@
         <script src=<?= script('minigrid.min');?>></script>
         <script src=<?= script('sidebar');?>></script>
 
-        <!-- Load scripts for data access -->
+        <!-- Client: Load scripts for data access -->
         <script src=<?= client('connection');?>></script>
         <script src=<?= client('session');?>></script>
         <script src=<?= client('helper');?>></script>
 
-        <!-- Load controllers of client -->
+        <!-- Client: Load controllers of client -->
         <script src=<?= client('controllers/matters');?>></script>
         <script src=<?= client('controllers/matter-logs');?>></script>
         <script src=<?= client('controllers/members');?>></script>
@@ -23,9 +23,16 @@
         <script src=<?= client('controllers/search-history');?>></script>
         <script src=<?= client('controllers/system-log');?>></script>
 
-        <!-- Load presentation layer of client -->
+        <!-- Client: Load presentation layer of client -->
         <script src=<?= client('presentation/actions');?>></script>
+        <script src=<?= client('presentation/matter-editor-dom');?>></script>
+        <script src=<?= client('presentation/matter-log-dom');?>></script>
         <script src=<?= client('presentation/matters-dom');?>></script>
+        <script src=<?= client('presentation/members-dom');?>></script>
+        <script src=<?= client('presentation/minutes-dom');?>></script>
+        <script src=<?= client('presentation/notifications-dom');?>></script>
+        <script src=<?= client('presentation/search-history-dom');?>></script>
+        <script src=<?= client('presentation/system-log-dom');?>></script>
 
     </body>
 </html>

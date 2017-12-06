@@ -32,7 +32,8 @@ class DB {
         try {
             $this->stmt->execute();
             if ($state_only){
-                respond('ACCEPTED', null, 'Success!');
+                return [];
+                // respond('ACCEPTED', null, 'Success!');
             } else {
                 return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
             }

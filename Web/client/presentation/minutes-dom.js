@@ -1,7 +1,7 @@
-// Add minute to the minutes list
+// Minutes DOM
 var minutesDOM = {
     // Get DOM Element
-    getDOM: function () { return document.getElementById('minutes'); },
+    getDOM: function () { return getDOM('minutes'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

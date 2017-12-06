@@ -19,16 +19,29 @@ var server = {
         server.request(url, data, 'DELETE', func);
     },
 
-    request: function (url, data, method, func){
+    request: function (url, data, method, successFunction = null, errorFunction = null){
         var xhr = new XMLHttpRequest();
         xhr.open(method, url, true);
         xhr.setRequestHeader("Content-type", "application/json");
         xhr.onreadystatechange = function () {
-            var jsonString = xhr.responseText;
-            console.log('Response: ' + jsonString + '\n Status:' + xhr.status); // TMP
-            if (xhr.readyState === 4 && xhr.status === 200) {
+            // Request is complete & Valid response
+            if (xhr.readyState == 4 && [200,202,400,401,404,500].indexOf(xhr.status) != -1){
+                var jsonString = xhr.responseText;
+                console.log('Response: ' + jsonString + '\n Status:' + xhr.status); // TMP
                 data = JSON.parse(jsonString);
-                func(data['data']);
+
+                // If success
+                if ([200, 202].indexOf(xhr.status) != -1){
+                    if (successFunction != null) { successFunction(data['data']); }
+                } else { // If error
+                    if (errorFunction != null) { errorFuntion(data['data']); }
+                }
+
+                // Show message
+                if (xhr.status != 200) {
+                    showMessage(data['message']);
+                }
+
             }
         };
         var json = JSON.stringify(data);

@@ -3,12 +3,12 @@ window.onload = function(){
     matters.load();
 }
 
-// Get element by id
-function getDOM(id){
-    return document.getElementById(id);
-}
-
 // Show message
-function showMessage($message){
-    console.log($message); //TMP
+function showMessage(message){
+    var snackbar = document.getElementById("snackbar");
+    snackbar.innerHTML = message;
+    snackbar.className = "show";
+    setTimeout(function(){
+        snackbar.className = snackbar.className.replace("show", "");
+    }, 3000);
 }
