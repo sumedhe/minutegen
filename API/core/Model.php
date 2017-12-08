@@ -5,10 +5,10 @@ abstract class Model {
     protected $request;
 
     protected $table;
+    protected $view;
     protected $columns;
-    protected $selectQuery;
     protected $columnsToSearch;
-    protected $columnOverrides;
+    // protected $columnOverrides;
 
     public function __construct($table, $request) {
         $this->table = $table;
@@ -16,16 +16,16 @@ abstract class Model {
     }
 
     public function prepare(){
-        if (!isset($this->selectQuery)) $this->selectQuery = "SELECT * FROM $this->table";
+        if (!isset($this->viewName)) $this->viewName = $this->table;
         $this->setColumnTypes();
-        $this->overrideColumns();
+        // $this->overrideColumns();
         $this->db = new DB();
         $this->dbTools = new DBTools($this->table, $this->columns);
     }
 
 
     public function select(){
-        $this->dbTools->setSql($this->selectQuery);
+        $this->dbTools->setSql("SELECT * FROM $this->view");
         $this->dbTools->appendSqlWhere($this->request['conditions']);
         $this->dbTools->appendSort($this->request['opts']);
         $this->dbTools->appendLimit($this->request['opts']);
@@ -56,7 +56,7 @@ abstract class Model {
     }
 
     public function search(){
-        $this->dbTools->setSql($this->selectQuery);
+        $this->dbTools->setSql("SELECT * FROM $this->view");
         $this->dbTools->appendSqlSearch($this->request['opts']['search'], $this->columnsToSearch);
         $this->dbTools->appendSort($this->request['opts']);
         $this->dbTools->appendLimit($this->request['opts']);
@@ -73,10 +73,9 @@ abstract class Model {
 
 
     public function executeQuery(){
-        // $this->dbTools->printQuery();
-
         $sql = $this->dbTools->getSql();
         $sql_params = $this->dbTools->getSqlParams();
+        // Execute and return if GET
         return $this->db->execute($sql, $sql_params, $this->request['method'] != 'GET');
     }
 
@@ -101,6 +100,9 @@ abstract class Model {
     }
 
     public function overrideColumns(){
+        if (!isset($this->columnOverrides)){
+            return;
+        }
         foreach ($this->request['conditions'] as $key => $value){
             if (array_key_exists($key, $this->columnOverrides)){
                 $this->request['conditions'][$this->columnOverrides[$key]] = $value;
@@ -110,7 +112,11 @@ abstract class Model {
     }
 
 
-
+    public static function getModel($model, $request){
+        // Return model
+        require_once $GLOBALS['path']['models'] . '/' . $model . '.php';     // Create new model
+        return new $model($request);
+    }
 
 
 }

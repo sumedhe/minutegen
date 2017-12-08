@@ -1,4 +1,4 @@
 <?php
 $config = array(
-  // 'ROOT' => dirname(__DIR__, 2),
+    'board_name' => 'Board of Study for Internal Undergraduate Degrees',
 );

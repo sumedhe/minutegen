@@ -25,3 +25,7 @@ require_once $path['core'] . '/Model.php';
 // Load other files
 require_once $path['database'] . '/DB.php';
 require_once $path['database'] . '/DBTools.php';
+
+// Load utilities
+require_once $path['utils'] . '/PDF.php';
+require_once $path['utils'] . '/XMLMinute.php';

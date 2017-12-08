@@ -11,4 +11,8 @@ class Home extends Controller {
         $this->loadView('layouts/matter-editor');
         $this->loadView('layouts/footer');
     }
+
+    public function pageNotFound(){
+        echo 'Page Not Found!';
+    }
 }

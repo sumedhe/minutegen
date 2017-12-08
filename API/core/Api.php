@@ -5,7 +5,9 @@ class Api {
 
     protected $controller;
     protected $method;
+    protected $parameters;
     protected $url;
+    protected $urls;
     protected $gets;
 
     protected $opts;
@@ -21,6 +23,7 @@ class Api {
         $this->run();  // Run the app
     }
 
+    // Initialize
     public function run(){
         isset($this->controller) OR $this->setRoute();
 
@@ -32,35 +35,41 @@ class Api {
         call_user_func_array([$this->controller, $this->method], []);
     }
 
+    // Sanitize and Parse url
     public function parseUrl(){
-        // Sanitize URL
-        if (isset($_GET['url'])){
-            $this->url = explode('/', filter_var(rtrim($_GET['url'], '/'), FILTER_SANITIZE_URL));
-        } else {
-            $this->url = [];
-        }
-
         // Store get data
         $this->gets = $_GET;
-        if (isset($this->gets['url'])) unset($this->gets['url']);
+
+        // Sanitize URL
+        if (isset($this->gets['url'])){
+            $this->url = filter_var(rtrim($this->gets['url'], '/'), FILTER_SANITIZE_URL);
+            $this->urls = explode('/', $this->url);
+            unset($this->gets['url']);
+        }
     }
 
-
+    // Set routes to controller and method
     public function setRoute() {
         // Get route
         $routes = $GLOBALS['routes'];
-        if (isset($routes[$this->url[0]])){
-            $route = $routes[$this->url[0]];
+        if (isset($routes[$this->url])){
+            $route = $routes[$this->url];
         } else {
-            respond('NOT_FOUND', null, 'Failed! Re-check the request url');
+            if (isset($routes[$this->urls[0]])){
+                $route = $routes[$this->urls[0]];
+            } else {
+                respond('NOT_FOUND', null, 'Failed! Re-check the request url');
+            }
         }
 
         // Set controller and method
         $route = explode('/', $route);
         $this->controller = $route[0];
+        // var_dump($route);
         $this->method = isset($route[1]) ? $route[1] : 'main';
     }
 
+    // Set options for filtering
     public function setOpts(){
         $this->opts = array();
         $optList = array('url', 'sort', 'search', 'offset', 'limit');
@@ -72,25 +81,28 @@ class Api {
         }
     }
 
+    // Set conditions from GET data & url id
     public function setConditions(){
         $this->conditions = $this->gets;
-        if (isset($this->url[1])){
-            $this->conditions['id'] = intval($this->url[1]);
+        if (isset($this->urls[1]) && intval($this->urls[1]) > 0){
+            $this->conditions['id'] = intval($this->urls[1]);
         }
     }
 
+    // Load json data from the request
     public function setData() {
         $this->data = json_decode(file_get_contents("php://input"), true);
         if (!$this->data) $this->data = array();
     }
 
+    // Create array of request information
     public function packRequest(){
         $request = array(
             'method'     => $_SERVER['REQUEST_METHOD'],
             'opts'       => $this->opts,
             'data'       => $this->data,
             'conditions' => $this->conditions,
-            'url'        => $this->url
+            'url'        => $this->urls,
         );
         return $request;
 

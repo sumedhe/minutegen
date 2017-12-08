@@ -2,19 +2,15 @@
 var mattersDOM = {
     // Button sets to show
     buttonList: {
-        'MEMO' : ['edit', 'add_to_photos', 'delete'], // MEMO
-        'ONGOING' : ['notifications_off', 'content_copy', 'pause', 'edit', 'delete', 'assignment_turned_in', 'assignment_late', 'assignment'], // ONGOING
-        'APPROVED' : ['notifications_off', 'content_copy'], // APPROVED
-        'REJECTED' : ['notifications_off'], // REJECTED
-        'HOLD' : ['notifications_off'], // HOLD
+        'MEMO'       : ['B_EDIT', 'B_CREATE_MATTER', 'B_DELETE'], // MEMO
+        'ONGOING'    : ['B_NOTIFICATION_OFF', 'B_DUPLICATE', 'B_EDIT', 'B_DELETE'], // ONGOING
+        'APPROVED'   : [], // APPROVED
+        'REJECTED'   : [], // REJECTED
+        'HOLD'       : ['B_DELETE'], // HOLD
+        'SENT'       : ['B_NOTIFICATION_OFF'], // SENT
+        'RECOMMEND'  : ['B_NOTIFICATION_OFF'], // SENT
+        'FAST_TRACK' : ['B_NOTIFICATION_OFF'], // SENT
     },
-
-
-    //
-    // buttons: {
-    //     'EDIT' : 'edit',
-    //     'NOTIFICATIONS':
-    // },
 
     // Get DOM Element
     getDOM: function () { return getDOM('contentarea'); },
@@ -23,8 +19,10 @@ var mattersDOM = {
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},
 
     setState: function (dom, state){
+        dom.dataset.state = state;
         var stateButton = getDOMClass('matter-card-state', getDOMClass('matter-card-buttons', dom));
         stateButton.innerHTML = state;
+        // Update color
         removeClasses(dom, ['matter-onhold', 'matter-approved', 'matter-rejected', 'matter-hold']);
         dom.classList.add('matter-' + state.toLowerCase());
     },
@@ -35,6 +33,8 @@ var mattersDOM = {
             'title': getDOMClass('matter-card-title', div).innerHTML,
             'content': getDOMClass('matter-card-content', div).innerHTML,
             'section_id': div.dataset.sectionId,
+            'fast_track': div.dataset.fastTrack,
+            'state': div.dataset.state,
         };
         return values;
     },
@@ -75,26 +75,43 @@ var mattersDOM = {
 
     // Json item to Matter DOM
     parseItem: function (item){
+        // Create card elements
         var div = createDiv('matter-card');
         var title = createDiv('matter-card-title', item['title']);
         var content = createDiv('matter-card-content', item['content']);
         var buttons = createDiv('matter-card-buttons matter-card-hover-effect');
         var index = createDiv('matter-card-index', item['matter_index']);
         var stateButton = createDiv('matter-card-state button', item['state']);
-        div.dataset.sectionId = parseInt(item['section_id']);
-        div.dataset.id = parseInt(item['id']);
-        div.dataset.minuteId = parseInt(item['minute_id']);
 
+        // Add elements to card
         div.appendChild(title);
         div.appendChild(content);
         div.appendChild(buttons);
         div.appendChild(index);
+
+        // Create bottom button set
         createIconList('material button card-button', mattersDOM.buttonList[item['state']]).forEach(function (i){
             buttons.appendChild(i);
         })
         buttons.appendChild(stateButton);
-        div.id = item['id'];
+
+        // If matter is sent
+        if (parseInt(item['is_sent']) == 1){
+            stateButton.className += ' disable';
+        }
+
+        // Add data to dataset
+        div.dataset.id = parseInt(item['id']);
+        div.dataset.sectionId =  parseInt(item['section_id']);
+        div.dataset.minuteId = parseInt(item['minute_id']);
+        div.dataset.state = parseInt(item['state']);
+        div.dataset.isFastTrack = parseInt(item['is_fast_track']);
+        div.dataset.isInMinute = parseInt(item['is_in_minute']);
+        div.dataset.isSent = parseInt(item['is_sent']);
+
+        // Set state of the card (color)
         mattersDOM.setState(div, item['state']);
+        div.id = item['id'];
         return div;
     },
 

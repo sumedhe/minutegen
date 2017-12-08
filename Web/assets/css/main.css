@@ -72,6 +72,11 @@ div.bigtitle {
     visibility: hidden !important;
 }
 
+.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
 /*Tool Tips*/
 /*.tt {
     position: relative;

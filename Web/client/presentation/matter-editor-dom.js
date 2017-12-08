@@ -31,12 +31,14 @@ var matterEditorDOM = {
     // Show new window
     showNew: function (){
         matterEditorDOM.clear();
-        getDOM('matter-editor-submit').vallue = 'Add';
+        getDOM('matter-editor-form').dataset.formType = 'NEW';
+        getDOM('matter-editor-submit').value = 'Add';
         this.show();
     },
 
     // Show edit window
     showEdit: function (data){
+        getDOM('matter-editor-form').dataset.formType = 'EDIT';
         matterEditorDOM.setValues(data);
         this.show();
     },

@@ -12,7 +12,7 @@ getDOM('add-button').onclick = function () {
 
 // On click matter save button
 getDOM('matter-editor-submit').onclick = function (){
-    if (getDOM('matter-editor-submit').value == 'Add'){
+    if (getDOM('matter-editor-form').dataset.formType == 'NEW'){
         matters.insert();
     } else {
         matters.update();
@@ -26,7 +26,8 @@ getDOM('contentarea').onclick = function(e){
     var target = e.originalTarget || e.srcElement;
     if(target.classList.contains('matter-card-state')){
         // Change the matter state to next state
-        mattersDOM.setState(target.parentNode.parentNode, nextItem(matters.states, target.innerHTML));
+        var card = target.parentNode.parentNode;
+        mattersDOM.setState(card, nextItem(matters.states[card.dataset.isInMinute.toString()], card.dataset.state));
     } else if (target.innerHTML == 'edit') {
         matterEditorDOM.showEdit(mattersDOM.getValues(target.parentNode.parentNode)); // Show edit matter
     } else if (target.innerHTML == 'delete'){

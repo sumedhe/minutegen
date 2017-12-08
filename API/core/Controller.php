@@ -57,10 +57,10 @@ abstract class Controller {
 
 
 
-    // Load model
+    // Load main model
     public function setModel($model) {
         require_once $GLOBALS['path']['models'] . '/' . $model . '.php';     // Create new model
-        $this->model = new $model($this->request);
+        $this->model = Model::getModel($model, $this->request);
     }
 
     public function view($view = 'json') {

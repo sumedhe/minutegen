@@ -10,10 +10,5 @@ class Matters extends Controller {
         $this->default();
     }
 
-    // Override post
-    // public function post(){
-    //     echo $this->request['data'];
-    // }
-
 
 }

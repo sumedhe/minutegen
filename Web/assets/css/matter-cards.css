@@ -66,7 +66,7 @@
     margin-top: 3px;
     margin-bottom: auto;
     border-radius: 2px;
-    width: 90px;
+    width: 100px;
 }
 
 .matter-card-section {
@@ -88,7 +88,8 @@
 }
 
 /*Card colors*/
-.matter-onhold { background-color: #fafafa; }
+.matter-ongoing { background-color: #F3FF82; }
 .matter-approved { background-color: #B6FF8A; }
 .matter-rejected { background-color: #FF8076; }
-.matter-hold { background-color: #F3FF82; }
+.matter-hold { background-color: #f0f0f0; }
+.matter-sent { background-color: #fafafa; }

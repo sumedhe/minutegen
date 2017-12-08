@@ -1,6 +1,9 @@
 var matters = {
     // Matter states
-    states: ['ONGOING', 'APPROVED', 'REJECTED', 'HOLD'],
+    states: {
+        '0' :  ['FAST_TRACK', 'RECOMMEND', 'HOLD'], // Not in minute
+        '1' :  ['APPROVED', 'REJECTED', 'HOLD'], // In minute
+    },
 
     // Load matters
     load: function (){

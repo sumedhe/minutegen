@@ -9,4 +9,5 @@ $path = array(
     'helpers'     => BASEPATH . '/helpers',
     'log'         => BASEPATH . '/log',
     'database'    => BASEPATH . '/database',
+    'utils'       => BASEPATH . '/utils',
 );

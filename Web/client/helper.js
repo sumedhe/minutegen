@@ -1,3 +1,13 @@
+// Button list
+buttonIcons = {
+    'B_EDIT'            : 'edit',
+    'B_CREATE_MATTER'   : 'add_to_photos',
+    'B_DUPLICATE'       : 'content_copy',
+    'B_DELETE'          : 'delete',
+    'B_NOTIFICATION_ON' : 'notifications',
+    'B_NOTIFICATION_OFF': 'notifications_off',
+};
+
 // Get element by id
 function getDOM(id, parent = document){
     return parent.getElementById(id);
@@ -34,12 +44,19 @@ function createIcon(classNames, iconName){
 function createIconList(classNames, iconNames){
     var list = [];
     iconNames.forEach(function(i){
-        var icon = document.createElement('i');
-        icon.className = classNames;
-        icon.innerHTML = i;
-        list.push(icon)
+        var item = createButton(i);
+        item.className = classNames;
+        list.push(item);
     })
     return list;
+}
+
+// Create get button
+function createButton(name){
+    var i = document.createElement('i');
+    i.innerHTML = buttonIcons[name];
+    i.name = name;
+    return i;
 }
 
 // Remove classes from dom
@@ -53,8 +70,12 @@ function removeClasses(dom, classList){
 
 // Get next item from a list (round-robin)
 function nextItem(list, current){
+    console.log(list);
+    console.log(current);
+
     return list[(list.indexOf(current) + 1) % list.length];
 }
+
 
 // Get Child element by it's class name
 // function getChildByClass(parent, className){

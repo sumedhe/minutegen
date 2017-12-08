@@ -1,5 +1,5 @@
 <?php
-class DefaultController extends Controller {
+class Main extends Controller {
 
     protected $modelNames = array();
 
