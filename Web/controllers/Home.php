@@ -13,6 +13,12 @@ class Home extends Controller {
         $this->loadView('layouts/footer');
     }
 
+    public function test(){
+        $this->loadView('layouts/header');
+        $this->loadView('minutes');
+        $this->loadView('layouts/footer');
+    }
+
     // Page not found
     public function pageNotFound(){
         echo 'Page Not Found!';

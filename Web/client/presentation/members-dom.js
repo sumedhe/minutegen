@@ -1,7 +1,7 @@
 // Members DOM
 var membersDOM = {
     // Get DOM Element
-    getDOM: function () { return getDOM('members'); },
+    getDOM: function () { return getDOM('contentarea'); },
 
     // Clear the DOM content
     clear: function (){ mattersDOM.getDOM().innerHTML = ""},

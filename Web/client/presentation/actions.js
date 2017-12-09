@@ -34,3 +34,16 @@ getDOM('contentarea').onclick = function(e){
         matters.delete(target.parentNode.parentNode.dataset.id);
     }
 };
+
+
+// SIDE BAR
+
+// On click matters button
+getDOM('matters-button').onclick = function () {
+    matters.load();
+};
+
+// On click minutes button
+getDOM('minutes-button').onclick = function () {
+    minutes.load();
+};

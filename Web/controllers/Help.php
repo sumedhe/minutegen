@@ -6,4 +6,5 @@ class Help extends Controller {
         // Generate Help page
 
     }
+
 }

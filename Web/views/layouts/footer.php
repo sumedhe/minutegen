@@ -7,6 +7,7 @@
         <script src=<?= script('matter-editor');?>></script>
         <script src=<?= script('minigrid.min');?>></script>
         <script src=<?= script('sidebar');?>></script>
+        <script src=<?= script('minutes');?>></script>
 
         <!-- Client: Load scripts for data access -->
         <script src=<?= client('connection');?>></script>

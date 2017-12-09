@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('modal')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('theme')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('material')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('minutes')?>>
         <title></title>
     </head>
     <body>

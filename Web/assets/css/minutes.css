@@ -1,0 +1,120 @@
+#minutes {
+    margin-top: 48px;
+}
+
+.minute-accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 14px;
+    padding-left: 5%;
+    border: 1px;
+    border-color: #eee;
+    border-style: ridge;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.minute-title {
+  background-color: white;
+  padding: 18px;
+  padding-left: 5%;
+  border: 1px;
+  Border-color: #eee;
+  border-style: ridge;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.minute-title-text {
+  font-size: 24px;
+  margin-left: 5%;
+}
+.minute-accordion:hover {
+    background-color: #F5F5F5;
+}
+
+.minute-panel {
+    padding: 0 24px;
+    background-color: #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.minute-item {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.minute-transparent {
+  border-color: transparent;
+  background-color: transparent;
+  color:#949A9D;
+  cursor: pointer;
+  float: right;
+}
+
+.minute-noti-icon {
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  float: left;
+}
+
+.noti-icon-cancel {
+  color:#F44336;
+}
+
+.noti-icon-cancel.active, .noti-icon-cancel:hover {
+    color: #F44336;
+}
+.noti-icon-hold {
+  color:#FF9800;
+}
+
+.noti-icon-hold.active, .noti-icon-hold:hover {
+    color: #FF9800;
+}
+.noti-icon-done {
+  color:#4CAF50;
+}
+
+.noti-icon-done.active, .noti-icon-done:hover {
+    color: #4CAF50;
+}
+
+.minute-accordion-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 16px;
+}
+
+.minute-accordion-table td {
+  text-align: left;
+  padding: 12px;
+}
+
+.minute-accordion-table tr {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.minute-name {
+  font-size: 20px;
+  margin-left: 5%;
+}
+.minute-raw {
+  border: none;
+  color: white;
+  padding: 10px 28px;
+  margin: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  background-color: #2196F3;
+  opacity: 0.9;
+}
+.minute-raw:hover{
+  opacity: 1;
+}
