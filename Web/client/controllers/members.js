@@ -1,7 +1,8 @@
 var members = {
     // Load members
     load: function (){
-
+        membersDOM.clear();
+        server.get(api('members'), membersDOM.addItems);
     },
 
     // Search members

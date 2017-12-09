@@ -10,13 +10,19 @@ class Home extends Controller {
         $this->loadView('layouts/sidebar');
         $this->loadView('layouts/content');
         $this->loadView('layouts/matter-editor');
+        $this->loadView('layouts/popup');
         $this->loadView('layouts/footer');
     }
 
     public function test(){
         $this->loadView('layouts/header');
-        $this->loadView('minutes');
+        $this->loadView('members');
         $this->loadView('layouts/footer');
+    }
+
+    // Login page
+    public function login(){
+        $this->loadView('login');
     }
 
     // Page not found

@@ -14,6 +14,9 @@
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('theme')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('material')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('minutes')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('members')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('matter-log')?>>
+        <link rel="stylesheet" type="text/css" href=<?= stylesheet('popup')?>>
         <title></title>
     </head>
     <body>

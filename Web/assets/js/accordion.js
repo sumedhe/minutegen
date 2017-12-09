@@ -8,9 +8,13 @@ function refreshAccordions(){
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight){
                 panel.style.maxHeight = null;
+                panel.style.marginBottom = null;
             } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.marginBottom = "10px";
             }
         }
     }
 }
+
+refreshAccordions();

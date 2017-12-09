@@ -4,16 +4,18 @@
 
 .minute-accordion {
     background-color: white;
+    color: #444;
     cursor: pointer;
     padding: 14px;
     padding-left: 5%;
     border: 1px;
-    border-color: #eee;
+    border-color: #dedede;
     border-style: ridge;
     text-align: left;
     outline: none;
     font-size: 18px;
     transition: 0.4s;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
 }
 
 .minute-title {
@@ -27,18 +29,20 @@
   outline: none;
   font-size: 18px;
   transition: 0.4s;
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
 }
 .minute-title-text {
-  font-size: 24px;
+  font-size: 18px;
   margin-left: 5%;
 }
+
 .minute-accordion:hover {
     background-color: #F5F5F5;
 }
 
 .minute-panel {
     padding: 0 24px;
-    background-color: #ccc;
+    background-color: #f1f1f1;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

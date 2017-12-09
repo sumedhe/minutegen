@@ -7,7 +7,9 @@ getDOM('search-field').onkeypress = function (e) {
 
 // On click add button
 getDOM('add-button').onclick = function () {
-    matterEditorDOM.showNew();
+    // matterEditorDOM.showNew();
+    matterLog.load(1);
+    // popupDOM.show();
 };
 
 // On click matter save button
@@ -46,4 +48,9 @@ getDOM('matters-button').onclick = function () {
 // On click minutes button
 getDOM('minutes-button').onclick = function () {
     minutes.load();
+};
+
+// On click members button
+getDOM('members-button').onclick = function () {
+    members.load();
 };

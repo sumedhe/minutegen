@@ -2,7 +2,7 @@ var minutes = {
     // Load minutes
     load: function (){
         minutesDOM.clear();
-        server.get(api('minutes'), minutesDOM.addItems);
+        server.get(api('minutes?sort=-id'), minutesDOM.addItems);
     },
 
     // Update minutes

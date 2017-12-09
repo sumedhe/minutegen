@@ -20,9 +20,3 @@ function closeDropdowns(){
         }
     }
 }
-
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown')) {
-        closeDropdowns();
-    }
-}

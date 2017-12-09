@@ -1,0 +1,104 @@
+.matter-log-item {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.matter-log-accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 14px;
+    padding-left: 5%;
+    border: 1px;
+    border-style: ridge;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.matter-log-accordion:hover {
+  background-color: #F5F5F5;
+}
+.matter-log-box {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 14px;
+    padding-left: 5%;
+    border: 1px;
+    border-style: ridge;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.matter-log-box:hover {
+  background-color: #F5F5F5;
+}
+.matter-log-title {
+    background-color: #ffffff;
+    color: #444;
+    padding: 18px;
+    padding-left: 5%;
+    border: 1px;
+    border-style: ridge;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+
+.matter-log-panel {
+    padding: 0 24px;
+    background-color: #EEEEEE;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.matter-log-date {
+  font-size: 16px;
+}
+
+.matter-log-hearing {
+  font-size: 16px;
+}
+
+.matter-log-board {
+  font-size: 16px;
+  /*float: right;*/
+  right: 10px;
+}
+.matter-log-title-name {
+  font-size: 16px;
+  margin-left: 5%;
+}
+.matter-log-content {
+  font-size: 16px;
+  margin-left: 5%;
+}
+.matter-log-title-text {
+  font-size: 16px;
+  margin-left: 5%;
+}
+
+.matter-log-id {
+  font-size: 16px;
+  margin-left: 5%;
+}
+.matter-log-accordion:after {
+    content: '\203A';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+}
+
+.matter-log-accordion.active:after {
+    content: "\2039";
+}

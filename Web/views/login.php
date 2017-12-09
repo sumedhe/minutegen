@@ -18,7 +18,6 @@ body{
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  /*height : 50%;*/
 }
 .login-container-2 {
   background-color: white;
