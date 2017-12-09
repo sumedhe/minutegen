@@ -37,5 +37,10 @@
         <script src=<?= client('presentation/system-log-dom');?>></script>
         <script src=<?= client('presentation/popup-dom');?>></script>
 
+        <!-- Autoload -->
+        <script type="text/javascript">
+            var BASEURL = '<?= BASEURL ?>';
+        </script>
+
     </body>
 </html>

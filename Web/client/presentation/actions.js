@@ -54,3 +54,8 @@ getDOM('minutes-button').onclick = function () {
 getDOM('members-button').onclick = function () {
     members.load();
 };
+
+// On click members button
+getDOM('help-button').onclick = function () {
+    window.location.href = BASEURL + '/help';
+};

@@ -3,13 +3,13 @@ var mattersDOM = {
     // Button sets to show
     buttonList: {
         'MEMO'       : ['B_EDIT', 'B_CREATE_MATTER', 'B_DELETE'], // MEMO
-        'ONGOING'    : ['B_NOTIFICATION_OFF', 'B_DUPLICATE', 'B_EDIT', 'B_DELETE'], // ONGOING
-        'APPROVED'   : [], // APPROVED
-        'REJECTED'   : [], // REJECTED
-        'HOLD'       : ['B_DELETE'], // HOLD
-        'SENT'       : ['B_NOTIFICATION_OFF'], // SENT
-        'RECOMMEND'  : ['B_NOTIFICATION_OFF'], // SENT
-        'FAST_TRACK' : ['B_NOTIFICATION_OFF'], // SENT
+        'ONGOING'    : ['B_NOTIFICATION_OFF', 'B_DUPLICATE', 'B_EDIT', 'B_DELETE', 'B_LOG'], // ONGOING
+        'APPROVED'   : ['B_LOG'], // APPROVED
+        'REJECTED'   : ['B_LOG'], // REJECTED
+        'HOLD'       : ['B_DELETE', 'B_LOG'], // HOLD
+        'SENT'       : ['B_NOTIFICATION_OFF', 'B_LOG'], // SENT
+        'RECOMMEND'  : ['B_NOTIFICATION_OFF', 'B_LOG'], // SENT
+        'FAST_TRACK' : ['B_NOTIFICATION_OFF', 'B_LOG'], // SENT
     },
 
     // Get DOM Element

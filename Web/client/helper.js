@@ -6,6 +6,7 @@ buttonIcons = {
     'B_DELETE'          : 'delete',
     'B_NOTIFICATION_ON' : 'notifications',
     'B_NOTIFICATION_OFF': 'notifications_off',
+    'B_LOG'             : 'info',
 };
 
 // Get element by id
