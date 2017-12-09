@@ -2,6 +2,7 @@
 defined('BASEURL') OR exit('Direct script access is not allowed');
 
 class Home extends Controller {
+    // Home page
     public function index(){
         // Generate Home page
         $this->loadView('layouts/header');
@@ -12,6 +13,7 @@ class Home extends Controller {
         $this->loadView('layouts/footer');
     }
 
+    // Page not found
     public function pageNotFound(){
         echo 'Page Not Found!';
     }

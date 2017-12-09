@@ -16,6 +16,7 @@ if (isset($urls[0]) && $urls[0] == 'api'){
     $routes = array(
         'home' => 'Home',
         'help' => 'Help',
+        'login'=> 'Login',
     );
 
     // Set controller

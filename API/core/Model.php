@@ -16,7 +16,7 @@ abstract class Model {
     }
 
     public function prepare(){
-        if (!isset($this->viewName)) $this->viewName = $this->table;
+        if (!isset($this->view)) $this->view = $this->table;
         $this->setColumnTypes();
         // $this->overrideColumns();
         $this->db = new DB();

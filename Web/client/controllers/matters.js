@@ -2,7 +2,7 @@ var matters = {
     // Matter states
     states: {
         '0' :  ['FAST_TRACK', 'RECOMMEND', 'HOLD'], // Not in minute
-        '1' :  ['APPROVED', 'REJECTED', 'HOLD'], // In minute
+        '1' :  ['ONGOING', 'APPROVED', 'REJECTED', 'HOLD'], // In minute
     },
 
     // Load matters
