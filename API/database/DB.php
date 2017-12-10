@@ -38,8 +38,21 @@ class DB {
                 return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
             }
         } catch(PDOException $e) {
-            respond('INTERNAL_SERVER_ERROR', null, 'Internal Server Error!', $e->getMessage() . ' q: ' . $sql);
+            respond('INTERNAL_SERVER_ERROR', null, 'Internal Server Error!x', $e->getMessage() . ' q: ' . $sql);
         }
+    }
+
+    public function simpleExecute($sql){
+        $conn = new mysqli($this->database['host'], $this->database['user'], $this->database['pass'], $this->database['db']);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        if ($conn->query($sql) === FALSE) {
+            respond('INTERNAL_SERVER_ERROR', null, 'Internal Server Error in update info', $conn->error . ' q: ' . $sql);
+        }
+
+        $conn->close();
     }
 
     public function __destruct(){

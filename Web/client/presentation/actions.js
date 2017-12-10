@@ -7,8 +7,8 @@ getDOM('search-field').onkeypress = function (e) {
 
 // On click add button
 getDOM('add-button').onclick = function () {
-    // matterEditorDOM.showNew();
-    matterLog.load(1);
+    matterEditorDOM.showNew();
+    // matterLog.load(1);
     // popupDOM.show();
 };
 
@@ -58,4 +58,9 @@ getDOM('members-button').onclick = function () {
 // On click members button
 getDOM('help-button').onclick = function () {
     window.location.href = BASEURL + '/help';
+};
+
+// On click members button
+getDOM('logout-button').onclick = function () {
+    window.location.href = BASEURL + '/api/logout';
 };

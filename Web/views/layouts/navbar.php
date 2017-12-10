@@ -14,21 +14,21 @@
   </div>
 
   <!-- Profile -->
-  <img class="avatar button dropdown float-right" onclick="toggleDropdown('profile')" src=<?= images('avatar.png') ?> alt="Avatar" >
+  <img class="avatar button dropdown float-right" onclick="toggleDropdown('profile')" src=<?= $_SESSION['data']['profile_url']; ?> alt="Avatar" >
 
   <div id="profile" class="dropdown-content" >
       <div class="pane">
-          <img class="avatar float-left" src=<?= images('avatar.png') ?> alt="Avatar" >
+          <img class="avatar float-left" src=<?= $_SESSION['data']['profile_url']; ?> alt="Avatar" >
           <div class="info float-right">
-              <div class='text-large'> Sumedhe Dissanayake </div>
-              <div class='text-small'> Minutegen, Automated Minute Tracker </div>
-              <div class='text-small'> Last login: 2017.12.02 </div>
+              <div class='text-large'> <?= $_SESSION['data']['full_name']; ?> </div>
+              <div class='text-small'> <?= $_SESSION['user']; ?> </div>
+              <div class='text-small'> <?= $_SESSION['member_type_name']; ?> </div>
           </div>
       </div>
 
       <div class="fit-width">
           <a class="float-left" href="#home">Settings</a>
-          <a class="float-right" href="#about">Logout</a>
+          <a id='logout-button' class="float-right">Logout</a>
       </div>
   </div>
 

@@ -77,6 +77,10 @@ div.bigtitle {
     cursor: default;
 }
 
+#logout-button {
+    cursor: pointer;
+}
+
 /*Tool Tips*/
 /*.tt {
     position: relative;

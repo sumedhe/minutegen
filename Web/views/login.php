@@ -63,16 +63,52 @@ body{
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
 
+
+
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
+
+
+        // reuest
+        var data = {
+            'email': profile.getEmail(),
+            'full_name': profile.getName(),
+            'first_name': profile.getGivenName(),
+            'last_name': profile.getFamilyName(),
+            'profile_url': profile.getImageUrl(),
+            'client_id': profile.getId(),
+            'token': id_token,
+        };
+        // console.log('<?= BASEURL ?>');
+        request('<?= BASEURL ?>/api/login', data);
       }
+
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
           console.log('User signed out.');
         });
       }
+
+
+      function request(url, data){
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', url, true);
+          xhr.setRequestHeader("Content-type", "application/json");
+          xhr.onreadystatechange = function () {
+              // Request is complete & Valid response
+              if (xhr.readyState == 4 && xhr.status == 200){
+                  var jsonString = xhr.responseText;
+                  console.log(jsonString);
+                  window.location.href = "<?= BASEURL ?>";
+              }
+              console.log(xhr.responseText);
+          };
+          var json = JSON.stringify(data);
+          xhr.send(json);
+      }
+
     </script>
 
 </body>

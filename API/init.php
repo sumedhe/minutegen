@@ -17,14 +17,16 @@ require_once $path['helpers'] . '/extra.php';
 require_once $path['helpers'] . '/database.php';
 require_once $path['helpers'] . '/log.php';
 
+// Load other files
+require_once $path['database'] . '/DB.php';
+require_once $path['database'] . '/DBTools.php';
+
 // Load core files
 require_once $path['core'] . '/Api.php';
 require_once $path['core'] . '/Controller.php';
 require_once $path['core'] . '/Model.php';
+require_once $path['core'] . '/Auth.php';
 
-// Load other files
-require_once $path['database'] . '/DB.php';
-require_once $path['database'] . '/DBTools.php';
 
 // Load utilities
 require_once $path['utils'] . '/PDF.php';
