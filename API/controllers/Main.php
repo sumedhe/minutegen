@@ -30,7 +30,8 @@ class Main extends Controller {
     }
 
     public function login(){
-        session_unset();
+        // session_unset();
+        echo 'login...';
         login();
         if (authorize()){
             respond('OK', 'LOGIN SUCCESS!');
