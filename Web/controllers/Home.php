@@ -7,7 +7,7 @@ class Home extends Controller {
         session_start();
         // Generate Home page
         // echo $_SESSION['user'];
-        if (isset($_SESSION['user'])){
+        // if (isset($_SESSION['user'])){
             $this->loadView('layouts/header');
             $this->loadView('layouts/navbar');
             $this->loadView('layouts/sidebar');
@@ -15,9 +15,9 @@ class Home extends Controller {
             $this->loadView('layouts/matter-editor');
             $this->loadView('layouts/popup');
             $this->loadView('layouts/footer');
-        } else {
-            $this->login();
-        }
+        // } else {
+        //     $this->login();
+        // }
     }
 
     public function test(){
