@@ -24,6 +24,7 @@
 .matter-card-title {
     font-size: 15px;
     font-weight: bold;
+    margin-right: 50px;
 }
 
 .matter-card-content {
@@ -92,4 +93,4 @@
 .matter-approved { background-color: #B6FF8A; }
 .matter-rejected { background-color: #FF8076; }
 .matter-hold { background-color: #f0f0f0; }
-.matter-sent { background-color: #fafafa; }
+.matter-sent { background-color: #81CFFF; }

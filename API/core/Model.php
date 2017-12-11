@@ -1,8 +1,8 @@
 <?php
 abstract class Model {
+    public $request;
     protected $db;
     protected $dbTools;
-    protected $request;
 
     protected $table;
     protected $view;

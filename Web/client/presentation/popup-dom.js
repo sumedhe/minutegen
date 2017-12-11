@@ -14,7 +14,7 @@ var popupDOM = {
     // Show the window
     show: function (){ getDOM('popup').style.display='block'; }, // Show popup
 
-    hide: function (){ getDOM('popup').style.display = "none"; },
+    hide: function (){ getDOM('popup').style.display = "none"; matters.refresh(); alert();},
 
 
 }

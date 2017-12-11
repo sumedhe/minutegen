@@ -16,5 +16,10 @@ $routes = array(
   'membertypes'       => 'Main',
   'systemlogs'        => 'Main',
   'searchhistory'     => 'Main',
+  'bypass'     => 'Main/bypass',
   '_test'             => '_Test',
+
+  'matters/setstate'     => 'Matters/setState',
+  'minutes/generate'     => 'Minutes/generate',
+  'minutes/finalize'     => 'Minutes/finalize',
 );

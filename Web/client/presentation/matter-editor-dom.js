@@ -8,6 +8,7 @@ var matterEditorDOM = {
     clear: function (){
         getDOM('matter-editor-title').value   = '';
         getDOM('matter-editor-content').value = '';
+        getDOM('matter-editor-amend').value = '';
     },
 
     // Get Values
@@ -16,6 +17,7 @@ var matterEditorDOM = {
             'title'     : getDOM('matter-editor-title').value,
             'content'   : getDOM('matter-editor-content').value,
             'section_id': getDOM('matter-editor-section').value,
+            'amend'     : getDOM('matter-editor-amend').value,
         };
         return values;
     },
@@ -46,5 +48,5 @@ var matterEditorDOM = {
     // Show the window
     show: function (){ getDOM('modal').style.display='block'; }, // Show matter editor popup
 
-    hide: function (){ getDOM('modal').style.display = "none"; },
+    hide: function (){ getDOM('modal').style.display = "none"; matters.refresh();},
 }

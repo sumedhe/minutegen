@@ -2,6 +2,7 @@
     <div id='matter-editor-form' class='modal-content modal-animate'>
         <input type='text' id='matter-editor-title' placeholder='Title of the matter..' required>
         <textarea id='matter-editor-content' placeholder='Content of the matter..' style='height:200px' required></textarea>
+        <textarea id='matter-editor-amend' placeholder='Amend message..' style='height:75px'></textarea>
         <select id='matter-editor-section'>
             <!-- <option value='3'>Student Requests</option> -->
             <option value='4'>Any other Business I</option>

@@ -38,7 +38,7 @@ class DB {
                 return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
             }
         } catch(PDOException $e) {
-            respond('INTERNAL_SERVER_ERROR', null, 'Internal Server Error!x', $e->getMessage() . ' q: ' . $sql);
+            respond('INTERNAL_SERVER_ERROR', null, 'Internal Server Error!', $e->getMessage() . ' q: ' . $sql);
         }
     }
 

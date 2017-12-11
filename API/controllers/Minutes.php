@@ -12,6 +12,18 @@ class Minutes extends Controller {
         $this->default();
     }
 
+    public function generate(){
+        $this->setModel('Minute');
+        $this->model->query("CALL generateMinute();", array());
+        respond('ACCEPTED', $this->data, 'Successfully generated!');
+    }
+
+    public function finalize(){
+        $this->setModel('Minute');
+        $this->model->query("CALL finalizeMinute();", array());
+        respond('ACCEPTED', $this->data, 'Successfully finalized!');
+    }
+
     // Download minute as pdf
     public function download(){
         // Load minute

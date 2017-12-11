@@ -10,5 +10,9 @@ class Matters extends Controller {
         $this->default();
     }
 
+    public function setState(){
+        $this->setModel('Matter');
+        $this->model->query("CALL modifyMatterState(:id, :state);", $this->request['data']);
+    }
 
 }

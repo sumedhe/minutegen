@@ -10,6 +10,7 @@ getDOM('add-button').onclick = function () {
     matterEditorDOM.showNew();
     // matterLog.load(1);
     // popupDOM.show();
+    // matters.refresh();
 };
 
 // On click matter save button
@@ -19,6 +20,10 @@ getDOM('matter-editor-submit').onclick = function (){
     } else {
         matters.update();
     }
+    setTimeout(function(){
+        matters.refresh();
+    }, 400);
+
     return false;
 };
 
@@ -30,10 +35,17 @@ getDOM('contentarea').onclick = function(e){
         // Change the matter state to next state
         var card = target.parentNode.parentNode;
         mattersDOM.setState(card, nextItem(matters.states[card.dataset.isInMinute.toString()], card.dataset.state));
+        var data = {
+            'id' : card.dataset.id,
+            'state' : target.innerHTML,
+        }
+        server.post(api('matters/setstate'), data);
     } else if (target.innerHTML == 'edit') {
         matterEditorDOM.showEdit(mattersDOM.getValues(target.parentNode.parentNode)); // Show edit matter
     } else if (target.innerHTML == 'delete'){
         matters.delete(target.parentNode.parentNode.dataset.id);
+    } else if (target.innerHTML == 'info'){
+        matterLog.load(target.parentNode.parentNode.dataset.id);
     }
 };
 
@@ -64,3 +76,14 @@ getDOM('help-button').onclick = function () {
 getDOM('logout-button').onclick = function () {
     window.location.href = BASEURL + '/api/logout';
 };
+
+// Generate Minute
+function generateMinute(){
+    server.get(api('minutes/generate'), minutes.load);
+}
+
+
+// Generate Minute
+function finalizeMinute(){
+    server.get(api('minutes/finalize'), minutes.load);
+}

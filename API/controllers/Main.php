@@ -27,4 +27,16 @@ class Main extends Controller {
         $this->setModel($this->modelNames[$controllerName]);
         $this->default();
     }
+
+    public function bypass(){
+        // $model = new Model();
+        // $model->bypass("CALL modifyMatterState(3,'SENT');");
+        // die();
+        $s = $this->request['url'][1];
+        $sql = 'CALL ' . str_replace('`', '\'', $s) . ';';
+        echo $sql;
+        $db = new DB();
+        $data = $db->execute("CALL modifyMatterState(3,'SENT');", array());
+        respond('OK', $data);
+    }
 }

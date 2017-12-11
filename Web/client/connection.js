@@ -29,7 +29,6 @@ var server = {
                 var jsonString = xhr.responseText;
                 console.log('Response: ' + jsonString + '\n Status:' + xhr.status); // TMP
                 data = JSON.parse(jsonString);
-
                 // If success
                 if ([200, 202].indexOf(xhr.status) != -1){
                     if (successFunction != null) { successFunction(data['data']); }

@@ -26,12 +26,14 @@ window.onclick = function(event) {
     var popup = document.getElementById('popup');
     if (event.target == popup) {
         popup.style.display = "none";
+        matters.refresh();
     }
 
     // When the user clicks anywhere outside of the modal, close it
     var modal = document.getElementById('modal');
     if (event.target == modal) {
         modal.style.display = "none";
+        matter.refresh();
     }
 
 }

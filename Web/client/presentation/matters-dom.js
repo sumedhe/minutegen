@@ -3,13 +3,13 @@ var mattersDOM = {
     // Button sets to show
     buttonList: {
         'MEMO'       : ['B_EDIT', 'B_CREATE_MATTER', 'B_DELETE'], // MEMO
-        'ONGOING'    : ['B_NOTIFICATION_OFF', 'B_DUPLICATE', 'B_EDIT', 'B_DELETE', 'B_LOG'], // ONGOING
+        'ONGOING'    : ['B_EDIT', 'B_DELETE', 'B_LOG'], // ONGOING
         'APPROVED'   : ['B_LOG'], // APPROVED
         'REJECTED'   : ['B_LOG'], // REJECTED
         'HOLD'       : ['B_DELETE', 'B_LOG'], // HOLD
-        'SENT'       : ['B_NOTIFICATION_OFF', 'B_LOG'], // SENT
-        'RECOMMEND'  : ['B_NOTIFICATION_OFF', 'B_LOG'], // SENT
-        'FAST_TRACK' : ['B_NOTIFICATION_OFF', 'B_LOG'], // SENT
+        'SENT'       : ['B_LOG'], // SENT
+        'RECOMMEND'  : ['B_LOG'], // SENT
+        'FAST_TRACK' : ['B_LOG'], // SENT
     },
 
     // Get DOM Element
@@ -105,6 +105,7 @@ var mattersDOM = {
         div.dataset.sectionId =  parseInt(item['section_id']);
         div.dataset.minuteId = parseInt(item['minute_id']);
         div.dataset.state = parseInt(item['state']);
+        div.dataset.stateId = parseInt(item['state_id']);
         div.dataset.isFastTrack = parseInt(item['is_fast_track']);
         div.dataset.isInMinute = parseInt(item['is_in_minute']);
         div.dataset.isSent = parseInt(item['is_sent']);

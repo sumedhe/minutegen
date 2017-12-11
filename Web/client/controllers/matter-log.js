@@ -10,7 +10,13 @@ var matterLog = {
     },
 
     addItems: function (data){
-        matterLog.getDOM().innerHTML = "<div class='matter-log-item'><div class='matter-log-title'><span class='matter-log-id'> MATTER LOG</span><span class='matter-log-title-text'>" + data[0]['matter_index'] + "</span></div></div>";
+        var index = '';
+        if (data.length > 0){
+            index = data[0]['matter_index'];
+        } else {
+            index = '(No Enty)';
+        }
+        matterLog.getDOM().innerHTML = "<div class='matter-log-item'><div class='matter-log-title'><span class='matter-log-id'> MATTER LOG</span><span class='matter-log-title-text'>" + index + "</span></div></div>";
         data.forEach(function(i){
             matterLog.getDOM().innerHTML += matterLog.parseItem(i);
         });
