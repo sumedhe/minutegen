@@ -17,6 +17,9 @@ $routes = array(
   'systemlogs'        => 'Main',
   'searchhistory'     => 'Main',
   'bypass'     => 'Main/bypass',
+  'bypass'     => 'Main/bypass',
+  'login'      => 'Main/login',
+  'logout'      => 'Main/logout',
   '_test'             => '_Test',
 
   'matters/setstate'     => 'Matters/setState',

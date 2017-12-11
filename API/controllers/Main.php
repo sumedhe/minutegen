@@ -23,10 +23,27 @@ class Main extends Controller {
     }
 
     public function main(){
+        authorize();
         $controllerName = $this->request['url'][0];
         $this->setModel($this->modelNames[$controllerName]);
         $this->default();
     }
+
+    public function login(){
+        session_unset();
+        login();
+        if (authorize()){
+            respond('OK', 'LOGIN SUCCESS!');
+            die();
+        }
+    }
+
+    public function logout(){
+        session_unset();
+        header("Location: https://accounts.google.com/logout");
+        die();
+    }
+
 
     public function bypass(){
         // $model = new Model();

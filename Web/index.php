@@ -40,7 +40,7 @@ if (isset($urls[0]) && $urls[0] == 'api'){
             // Show 404 Page
             require_once path('controllers', 'Home');
             $app = new Home();
-            $app->pageNotFound();
+            $app->index();
         }
     } else {
         // Call index method
