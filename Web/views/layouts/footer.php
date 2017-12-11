@@ -4,7 +4,6 @@
         <script src=<?= script('navbar');?>></script>
         <script src=<?= script('dropdown');?>></script>
         <script src=<?= script('matter-cards');?>></script>
-        <script src=<?= script('matter-editor');?>></script>
         <script src=<?= script('minigrid.min');?>></script>
         <script src=<?= script('sidebar');?>></script>
         <script src=<?= script('accordion');?>></script>
@@ -16,7 +15,7 @@
 
         <!-- Client: Load controllers of client -->
         <script src=<?= client('controllers/matters');?>></script>
-        <script src=<?= client('controllers/matter-logs');?>></script>
+        <script src=<?= client('controllers/matter-log');?>></script>
         <script src=<?= client('controllers/members');?>></script>
         <script src=<?= client('controllers/memos');?>></script>
         <script src=<?= client('controllers/minutes');?>></script>
