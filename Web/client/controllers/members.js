@@ -2,6 +2,7 @@ var members = {
     // Load members
     load: function (){
         membersDOM.clear();
+        showLoader();
         server.get(api('members'), membersDOM.addItems);
     },
 

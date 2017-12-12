@@ -24,6 +24,7 @@ var matters = {
     // Load matters
     load: function (){
         mattersDOM.clear();
+        showLoader();
         this.string = '';
 
         var suff = '';
@@ -49,7 +50,7 @@ var matters = {
             this.string = keywords;
         }
         // Show loading...
-        mattersDOM.getDOM.innerHTML = "<center>Loading...</center>";
+        showLoader();
         navbar.setState(keywords == "" ? 1 : 2); // Change navbar color
         // getDOM('search-field').value = keywords;
         var suff = '';

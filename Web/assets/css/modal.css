@@ -64,7 +64,12 @@
     background-color: #45a049;
 }
 
+.modal select {
+    background-color: white;
+}
+
 .modal select > option {
     padding: 10px;
     height: 10px;
+    color: white;
 }

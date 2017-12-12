@@ -8,7 +8,7 @@ var membersDOM = {
 
     // Add new member item
     addItems: function (data){
-        membersDOM.getDOM().innerHTML += "<div style='margin-top: 48px;'><div class='member-item'><div class='member-title'><span class='member-title'>Members</span></div></div>";
+        membersDOM.getDOM().innerHTML = "<div style='margin-top: 48px;'><div class='member-item'><div class='member-title'><span class='member-title'>Members</span></div></div>";
         data.forEach(function(i){
             membersDOM.getDOM().innerHTML += membersDOM.parseItem(i);
         });

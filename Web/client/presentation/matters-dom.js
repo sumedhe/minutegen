@@ -48,7 +48,7 @@ var mattersDOM = {
     // Add matter items
     addItems: function (data, isMemos = false){
         var section = mattersDOM.getDOM();
-        if (section.innerHTML.includes('No matters')) { section.innerHTML = ''; } // Clear 'No matters' message if exists
+        if (section.innerHTML.includes('loader') || section.innerHTML.includes('No matters')) { section.innerHTML = ''; } // Clear 'No matters' message if exists
         // Add items
         data.forEach(function (item){
             if (isMemos){

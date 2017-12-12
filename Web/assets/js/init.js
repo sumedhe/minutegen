@@ -33,7 +33,7 @@ window.onclick = function(event) {
     var modal = document.getElementById('modal');
     if (event.target == modal) {
         modal.style.display = "none";
-        matter.refresh();
+        matters.refresh();
     }
 
 }

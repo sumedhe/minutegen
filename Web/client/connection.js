@@ -40,7 +40,6 @@ var server = {
                 if (xhr.status != 200) {
                     showMessage(data['message']);
                 }
-
             }
         };
         var json = JSON.stringify(data);

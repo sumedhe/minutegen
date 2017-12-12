@@ -77,6 +77,10 @@ function nextItem(list, current){
     return list[(list.indexOf(current) + 1) % list.length];
 }
 
+// Show Loader
+function showLoader(){
+    getDOM('contentarea').innerHTML = "<center><div class='loader'></div></center>";
+}
 
 // Get Child element by it's class name
 // function getChildByClass(parent, className){

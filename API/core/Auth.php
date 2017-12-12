@@ -52,7 +52,7 @@ function authorize(){
             $db = new DB();
             $user = $_SESSION['user'];
             $data = $db->execute("SELECT * FROM member_view WHERE email like '$user'", []);
-            var_dump($data);
+            // var_dump($data);``
 
             if (count($data) ) {
                 // Authorize

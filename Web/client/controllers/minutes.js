@@ -2,6 +2,7 @@ var minutes = {
     // Load minutes
     load: function (){
         minutesDOM.clear();
+        showLoader();
         server.get(api('minutes?sort=-id'), minutesDOM.addItems);
     },
 

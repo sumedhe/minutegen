@@ -8,7 +8,7 @@ var minutesDOM = {
 
     // Add new minute item
     addItems: function (data){
-        minutesDOM.getDOM().innerHTML += "<div class='minute-item'><div class='minute-title'><span class='minute-title-text'>Minutes</span></div></div>";
+        minutesDOM.getDOM().innerHTML = "<div class='minute-item'><div class='minute-title'><span class='minute-title-text'>Minutes</span></div></div>";
         data.forEach(function(i){
             minutesDOM.getDOM().innerHTML += minutesDOM.parseItem(i);
         });
