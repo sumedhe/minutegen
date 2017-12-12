@@ -8,13 +8,20 @@ getDOM('search-field').onkeypress = function (e) {
 // On click add button
 getDOM('add-button').onclick = function () {
     matterEditorDOM.showNew();
-    // matterLog.load(1);
-    // popupDOM.show();
-    // matters.refresh();
 };
 
 // On click matter save button
 getDOM('matter-editor-submit').onclick = function (){
+    // Validate
+    if (getDOM('matter-editor-title').value.length == 0){
+        showMessage("Title field should not be empty!");
+        return;
+    }
+    if (getDOM('matter-editor-content').value.length == 0){
+        showMessage("Content field should not be empty!");
+        return;
+    }
+
     var userType = getDOM('member-type-name').innerHTML;
     if (getDOM('matter-editor-form').dataset.formType == 'NEW'){
         if (userType != 'Admin'){
@@ -48,7 +55,9 @@ getDOM('contentarea').onclick = function(e){
     } else if (target.innerHTML == 'edit') {
         matterEditorDOM.showEdit(mattersDOM.getValues(target.parentNode.parentNode)); // Show edit matter
     } else if (target.innerHTML == 'delete'){
-        matters.delete(target.parentNode.parentNode.dataset.id);
+        if (confirm("Do you want to delete this item?")){
+            matters.delete(target.parentNode.parentNode.dataset.id);
+        }
     } else if (target.innerHTML == 'info'){
         matterLog.load(target.parentNode.parentNode.dataset.id);
     } else if (target.innerHTML == 'add_to_photos'){
@@ -56,7 +65,7 @@ getDOM('contentarea').onclick = function(e){
         var data = {
             'id' : card.dataset.id,
         }
-        server.post(api('matters/memotomatter'), data);
+        server.post(api('matters/memotomatter'), data, matters.refresh);
 
     }
 };
@@ -72,11 +81,13 @@ getDOM('matters-button').onclick = function () {
 // On click minutes button
 getDOM('minutes-button').onclick = function () {
     minutes.load();
+    window.scrollTo(0, 0);
 };
 
 // On click members button
 getDOM('members-button').onclick = function () {
     members.load();
+    window.scrollTo(0, 0);
 };
 
 // On click members button
@@ -88,14 +99,3 @@ getDOM('help-button').onclick = function () {
 getDOM('logout-button').onclick = function () {
     window.location.href = BASEURL + '/api/logout';
 };
-
-// Generate Minute
-function generateMinute(){
-    server.get(api('minutes/generate'), minutes.load);
-}
-
-
-// Generate Minute
-function finalizeMinute(){
-    server.get(api('minutes/finalize'), minutes.load);
-}

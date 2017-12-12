@@ -24,11 +24,11 @@ var minutesDOM = {
         }
         // Generate button
         if (dataItem['hearing'] == 0){
-            str += "<button id='generate-button' onclick='generateMinute()' type='submit' class='minute-raw' name='raw' id='raw'>Generate</button> ";
+            str += "<button id='generate-button' onclick='minutes.generateMinute()' type='submit' class='minute-raw' name='raw' id='raw'>Generate</button> ";
         }
         // Finalize button
         if (dataItem['hearing'] == 1){
-            str += "<button id='finalize-button' onclick='finalizeMinute()' type='submit' class='minute-raw' name='raw' id='raw'>Finalize</button> ";
+            str += "<button id='finalize-button' onclick='minutes.finalizeMinute()' type='submit' class='minute-raw' name='raw' id='raw'>Finalize</button> ";
         }
 
 //        str += "<a href='" + server.basepath + '/minutes/download?minute_index=' + dataItem['minute_index'] + "' target='_blank'> <button type='submit' class='minute-raw' name='raw' id='raw'>Generate Minute</button> </a> ";

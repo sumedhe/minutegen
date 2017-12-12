@@ -5,28 +5,15 @@ var minutes = {
         server.get(api('minutes?sort=-id'), minutesDOM.addItems);
     },
 
-    // Update minutes
-    update: function (minuteIndex){
-
+    // Generate Minute
+    generateMinute: function(){
+        server.get(api('minutes/generate'), minutes.load);
     },
 
-    // Delete minutes
-    delete: function (minuteIndex){
 
+    // Generate Minute
+    finalizeMinute: function(){
+        server.get(api('minutes/finalize'), minutes.load);
     },
 
-    // Create the first minute
-    createFirstMinute: function(){
-
-    },
-
-    // Create the final minute
-    createFinalMinute: function(){
-
-    },
-
-    // Send the minute to the higher board
-    sendMinute: function(){
-
-    },
 }

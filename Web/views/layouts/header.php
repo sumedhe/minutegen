@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('members')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('matter-log')?>>
         <link rel="stylesheet" type="text/css" href=<?= stylesheet('popup')?>>
-        <title></title>
+        <title>MinuteGen | Automated Minute Tracker</title>
     </head>
     <body>
         <div class="flex-container">

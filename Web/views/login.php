@@ -5,6 +5,7 @@
   <meta name="google-signin-client_id" content="176345444318-ttisbjl64aqvngcmbqvn0iok4manb76m.apps.googleusercontent.com">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <title>MinuteGen | Login</title>
 </head>
 <style>
 body{

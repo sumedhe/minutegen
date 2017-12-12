@@ -5,23 +5,11 @@ var members = {
         server.get(api('members'), membersDOM.addItems);
     },
 
-    // Search members
-    search: function (keywords){
-
-    },
-
-    // Add new members
-    insert: function (title, content, section){
-
-    },
-
-    // Update members
-    update: function (matterIndex, title, content, section){
-
-    },
-
     // Delete members
-    delete: function (matterIndex){
-
+    delete: function (id){
+        // Generate Minute
+        if (confirm('Do you want to delete member?')){
+            server.delete(api('members/delete'), {'id': id}, members.load);
+        }
     },
 }
