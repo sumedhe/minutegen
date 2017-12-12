@@ -25,8 +25,17 @@ var matters = {
     load: function (){
         mattersDOM.clear();
         this.string = '';
-        server.get(api('matters?sort=-id'), mattersDOM.addItems);
-        server.get(api('memos'), mattersDOM.addMemos)
+
+        var suff = '';
+        var userType = getDOM('member-type-name').innerHTML;
+        if (userType == 'Student'){
+            suff = '&section_id=4';
+        }
+        // alert(userType);
+        server.get(api('matters?sort=-id' + suff), mattersDOM.addItems);
+        if (userType == 'Admin'){
+            server.get(api('memos'), mattersDOM.addMemos)
+        }
         navbar.setState(1);
     },
 
@@ -43,8 +52,17 @@ var matters = {
         mattersDOM.getDOM.innerHTML = "<center>Loading...</center>";
         navbar.setState(keywords == "" ? 1 : 2); // Change navbar color
         // getDOM('search-field').value = keywords;
-        server.get(api('matters?search=' + keywords + '&sort=-id'), mattersDOM.addItems);
-        server.get(api('memos?search=' + keywords + '&sort=-id'), mattersDOM.addMemos);
+        var suff = '';
+        var userType = getDOM('member-type-name').innerHTML;
+        // alert(userType);
+        if (userType == 'Student'){
+            suff = '&section_id=4';
+        }
+        // alert(suff);
+        server.get(api('matters?search=' + keywords + '&sort=-id' + suff), mattersDOM.addItems);
+        if (userType == 'Admin'){
+            server.get(api('memos?search=' + keywords + '&sort=-id'), mattersDOM.addMemos);
+        }
     },
 
     // Add new matter

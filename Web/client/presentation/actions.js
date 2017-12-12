@@ -15,8 +15,13 @@ getDOM('add-button').onclick = function () {
 
 // On click matter save button
 getDOM('matter-editor-submit').onclick = function (){
+    var userType = getDOM('member-type-name').innerHTML;
     if (getDOM('matter-editor-form').dataset.formType == 'NEW'){
-        matters.insert();
+        if (userType != 'Admin'){
+            memos.insert();
+        } else {
+            matters.insert();
+        }
     } else {
         matters.update();
     }
@@ -46,6 +51,13 @@ getDOM('contentarea').onclick = function(e){
         matters.delete(target.parentNode.parentNode.dataset.id);
     } else if (target.innerHTML == 'info'){
         matterLog.load(target.parentNode.parentNode.dataset.id);
+    } else if (target.innerHTML == 'add_to_photos'){
+        var card = target.parentNode.parentNode;
+        var data = {
+            'id' : card.dataset.id,
+        }
+        server.post(api('matters/memotomatter'), data);
+
     }
 };
 

@@ -5,22 +5,22 @@ session_start();
 // var_dump($_SESSION);
 
 // If Login
-// if (isset($_GET['url'])){
-//     if ($_GET['url'] == 'api/login'){
-//         session_unset();
-//         login();
-//         if (authorize()){
-//             respond('OK', 'LOGIN SUCCESS!');
-//             die();
-//         }
-//     } else if ($_GET['url'] == 'api/logout'){
-//         session_unset();
-//         header("Location: https://accounts.google.com/logout");
-//         die();
-//     } else {
-//         authorize();
-//     }
-// }
+if (isset($_GET['url'])){
+    if ($_GET['url'] == 'api/login'){
+        session_unset();
+        login();
+        if (authorize()){
+            respond('OK', 'LOGIN SUCCESS!');
+            die();
+        }
+    } else if ($_GET['url'] == 'api/logout'){
+        session_unset();
+        header("Location: https://accounts.google.com/logout");
+        die();
+    } else {
+        authorize();
+    }
+}
 
 // Login
 function login(){

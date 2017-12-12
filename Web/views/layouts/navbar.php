@@ -22,7 +22,7 @@
           <div class="info float-right">
               <div class='text-large'> <?= $_SESSION['data']['full_name']; ?> </div>
               <div class='text-small'> <?= $_SESSION['user']; ?> </div>
-              <div class='text-small'> <?= $_SESSION['member_type_name']; ?> </div>
+              <div id='member-type-name' class='text-small'><?= $_SESSION['member_type_name']; ?></div>
           </div>
       </div>
 

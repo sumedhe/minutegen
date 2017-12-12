@@ -15,4 +15,9 @@ class Matters extends Controller {
         $this->model->query("CALL modifyMatterState(:id, :state);", $this->request['data']);
     }
 
+    public function memoToMatter(){
+        $this->setModel('Matter');
+        $this->model->query("CALL createMatterFromMemo(:id);", $this->request['data']);
+    }
+
 }

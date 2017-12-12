@@ -4,12 +4,12 @@ var mattersDOM = {
     buttonList: {
         'MEMO'       : ['B_EDIT', 'B_CREATE_MATTER', 'B_DELETE'], // MEMO
         'ONGOING'    : ['B_EDIT', 'B_DELETE', 'B_LOG'], // ONGOING
-        'APPROVED'   : ['B_LOG'], // APPROVED
-        'REJECTED'   : ['B_LOG'], // REJECTED
-        'HOLD'       : ['B_DELETE', 'B_LOG'], // HOLD
+        'APPROVED'   : ['B_LOG', 'B_EDIT'], // APPROVED
+        'REJECTED'   : ['B_LOG', 'B_EDIT'], // REJECTED
+        'HOLD'       : ['B_DELETE', 'B_LOG','B_EDIT'], // HOLD
         'SENT'       : ['B_LOG'], // SENT
-        'RECOMMEND'  : ['B_LOG'], // SENT
-        'FAST_TRACK' : ['B_LOG'], // SENT
+        'RECOMMEND'  : ['B_LOG', 'B_EDIT'], // SENT
+        'FAST_TRACK' : ['B_LOG', 'B_EDIT'], // SENT
     },
 
     // Get DOM Element

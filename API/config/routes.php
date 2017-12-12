@@ -25,4 +25,5 @@ $routes = array(
   'matters/setstate'     => 'Matters/setState',
   'minutes/generate'     => 'Minutes/generate',
   'minutes/finalize'     => 'Minutes/finalize',
+  'matters/memotomatter'     => 'Matters/memoToMatter',
 );
