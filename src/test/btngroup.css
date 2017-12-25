@@ -1,0 +1,28 @@
+* {
+   box-sizing: border-box;
+ }
+
+ .material-icons.md { font-size: 28px; }
+
+.btn-group button {
+    color: #14B37D;
+    margin-right: 1%;
+    padding: 5px 5px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: right; /* Float the buttons side by side */
+    transition: 0.3s;
+    border: none;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    color: #3C474D;
+}

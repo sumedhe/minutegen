@@ -1,0 +1,42 @@
+* {
+   box-sizing: border-box;
+ }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body{
+    background-color: #1B1E24;
+  }
+
+
+.vertical-menu {
+   width: 100%;
+   float: left;
+  }
+
+.vertical-menu a {
+  color:  #7F7C75;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.vertical-menu a:hover {
+  background-color: #14B37D;
+  color: #E8E2D6;
+}
+
+.vertical-menu a.active {
+  color: #4d4d4d;
+  background-color: #f2f2f2;
+}
+
+.line{
+  border-top: 2px solid #ffffff;
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Matter List</title>
+  <link rel="stylesheet" href="accordion.css">
+  <link rel="stylesheet" href="palette.css">
+  <link rel="stylesheet" href="Table.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="btngroup.css">
+  <link rel="stylesheet" href="addbutton.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+  <body class="default-primary-color">
+
+    <form class="btn-group" action="minuteaccordion.html" method="get">
+    <h2 class="h-light-text-color">Matter List
+
+      <button type="submit" class="cards default-primary-color" formaction="matterview1.html"><i class="material-icons md">dashboard</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matterlist.html"><i class="material-icons md">list</i></button>
+      <button type="submit" class="cards default-primary-color" formaction="matteraccordion.html"><i class="material-icons md">view_stream</i></button>
+      </h2>
+    </form>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for minutes.." title="Type an ID">
+
+    <div class="accordion buttons" class="material-icons">129.3.1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.3 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.4 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.5 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.6 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.7 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.3.8 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.4.1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.4.2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.5.1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="accordion buttons" class="material-icons">129.5.2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <button type="button" class="transparent" name="edit" id="edit" style="float: right;" onmouseover="do_change(); return false;">
+          <i class="material-icons">more_vert</i>
+      </button>
+      <button type="submit" class="transparent" name="delete" id="delete" style="display:none; float: right;">
+          <i class="material-icons">delete</i>
+      </button>
+
+      <button class="transparent" name="alert" id="alert" style="display:none; float: right;">
+          <i class="material-icons">add_alert</i>
+      </button>
+
+      <button class="transparent" name="create" id="create" style="display:none; float: right;">
+          <i class="material-icons">create</i>
+      </button>
+
+      <button class="transparent" name="bookmark" id="bookmark" style="display:none; float: right;">
+          <i class="material-icons">bookmark</i>
+      </button>
+
+      <button class="transparent" name="info" id="info" style="display:none; float: right;">
+          <i class="material-icons">info</i>
+      </button>
+
+      <button class="transparent" name="hide" id="hide" style="display:none; float: right;" onmouseout="do_hide(); return true;">
+          <i class="material-icons">trending_flat</i>
+      </button>
+
+    </div>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+<script>
+/*function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}*/
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+}
+
+function do_change(){
+
+document.getElementById("delete").style.display = "block";
+document.getElementById("alert").style.display = "block";
+document.getElementById("create").style.display = "block";
+document.getElementById("bookmark").style.display = "block";
+document.getElementById("info").style.display = "block";
+document.getElementById("hide").style.display = "block";
+}
+function do_hide(){
+
+  document.getElementById("delete").style.display = "none";
+  document.getElementById("alert").style.display = "none";
+  document.getElementById("create").style.display = "none";
+  document.getElementById("bookmark").style.display = "none";
+  document.getElementById("info").style.display = "none";
+  document.getElementById("hide").style.display = "none";
+}
+
+</script>
+<form action="minuteaccordion.html" method="get">
+  <button type="submit" class="w3-circle default-primary-color" formaction="matterenter.html"><i class="material-icons md-48" >add_circle</i></button>
+</form>
+</body>
+</html>

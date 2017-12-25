@@ -1,0 +1,21 @@
+/*The button to go to the page creating minutes, matters*/
+.material-icons.md-48 { font-size: 48px; }
+
+.w3-circle{
+  color: #E62020;
+  position:fixed;
+  border: none;
+  top: 88%;
+  left: 93%;
+  z-index: 3000;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 200px;
+}
+.w3-circle{
+  font-size: 36px;
+}
+.w3-circle :hover{
+  color: #BD1B1B;
+}
