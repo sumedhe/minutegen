@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+table{
+  font-family: arial,sans-serif;
+  border: solid black 1px;
+  border-radius: 5px;
+  -moz-border-radius:6px;
+  border-collapse: seperate;
+  width: 100%;
+}
+td{
+  text-align: left;
+  padding: 2%;
+}
+th{
+  text-align: left;
+  padding: 2%;
+}
+
+td{
+  font-size: 80%;
+}
+
+
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 98%; /* Full-width */
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
